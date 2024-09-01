@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  1 SEP 2024 11:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  1 SEP 2024 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,7 +763,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [2
 
 ]
-Overfull \vbox (92.81108pt too high) has occurred while \output is active []
+Overfull \vbox (121.65193pt too high) has occurred while \output is active []
 
 
 
@@ -774,95 +774,100 @@ Overfull \vbox (92.81108pt too high) has occurred while \output is active []
 [4
 
 ]
+Overfull \vbox (2.3694pt too high) has occurred while \output is active []
+
+
+
+[5]
  3.
 
 
-[5
+[6
 
 ]
-Overfull \vbox (76.95914pt too high) has occurred while \output is active []
+Overfull \vbox (105.79999pt too high) has occurred while \output is active []
 
 
 
-[6]
+[7]
  4.
 
 
-[7
+[8
 
 ]
-Overfull \vbox (298.51595pt too high) has occurred while \output is active []
+Overfull \vbox (327.3568pt too high) has occurred while \output is active []
 
 
 
-[8]
+[9]
  5.
 
 
-[9
+[10
 
 ]
-Overfull \vbox (426.85167pt too high) has occurred while \output is active []
+Overfull \vbox (455.69252pt too high) has occurred while \output is active []
 
 
 
-[10]
+[11]
  6.
 
 
-[11
+[12
 
 ]
-Overfull \vbox (3.65808pt too high) has occurred while \output is active []
+Overfull \vbox (32.49893pt too high) has occurred while \output is active []
 
 
 
-[12]
+[13]
  7.
-
-
-[13
-
-]
- 8.
 
 
 [14
 
 ]
-Overfull \vbox (332.79959pt too high) has occurred while \output is active []
+ 8.
+
+
+[15
+
+]
+Overfull \vbox (361.64044pt too high) has occurred while \output is active []
 
 
 
-[15]
+[16]
  9.
 
 
-[16
+[17
 
 ]
 Overfull \vbox (248.51913pt too high) has occurred while \output is active []
 
 
 
-[17]
+[18]
  10.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 660.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 676.
 (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (12.406pt too wide) in paragraph at lines 666--667
+Overfull \hbox (12.406pt too wide) in paragraph at lines 682--683
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 667--668
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 683--684
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[18
+[19
 
 {c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./Data Structures and Algorithms.aux)
  ***********
@@ -870,21 +875,21 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: 58E3068635D759712D65A12CE3375F98;38032.
+(rerunfilecheck)             Checksum: 63EE56BAB82CC75EA1BF8F859224950F;38960.
  ) 
 Here is how much of TeX's memory you used:
- 20197 strings out of 475496
- 329166 string characters out of 5776763
+ 20214 strings out of 475496
+ 329365 string characters out of 5776763
  1947960 words of memory out of 5000000
- 42121 multiletter control sequences out of 15000+600000
+ 42129 multiletter control sequences out of 15000+600000
  662214 words of font info for 175 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,11n,107p,1342b,571s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (26 pages, 339595 bytes).
+Output written on "Data Structures and Algorithms.pdf" (27 pages, 339977 bytes).
 PDF statistics:
- 1577 PDF objects out of 1728 (max. 8388607)
- 1510 compressed objects within 16 object streams
- 292 named destinations out of 1000 (max. 500000)
- 62521 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1623 PDF objects out of 1728 (max. 8388607)
+ 1555 compressed objects within 16 object streams
+ 301 named destinations out of 1000 (max. 500000)
+ 62585 words of extra memory for PDF output out of 74296 (max. 10000000)
 
