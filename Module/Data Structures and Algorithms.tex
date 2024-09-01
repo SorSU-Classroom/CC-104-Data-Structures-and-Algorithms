@@ -1,0 +1,671 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage{modulestyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\BookTitle}{Data Structures and Algorithms}
+\newcommand{\BookTitleFootnote}{A course in the Bachelor of Science in Computer
+Science}
+
+\newcommand{\BookSubtitle}{A Study Guide for Students of Sorsogon State University - Bulan Campus}
+\newcommand{\BookSubtitleFootnote}{This book is a study guide for students of
+Sorsogon State University - Bulan Campus taking up the course Data Structures
+and Algorithms.}
+
+\newcommand{\BookAuthorFirstName}{Jarrian Vince}
+\newcommand{\BookAuthorLastName}{Gojar}
+\newcommand{\BookAuthorName}{Jarrian Vince G. Gojar}
+\newcommand{\BookAuthorURL}{https://github.com/godkingjay}
+
+% Book's title and subtitle
+\title{\Huge \textbf{\BookTitle}  \footnote{\BookTitleFootnote} \\
+\huge \BookSubtitle \footnote{\BookSubtitleFootnote}}
+
+% Author
+\author{\textsc{\BookAuthorName}\thanks{\url{\BookAuthorURL}}}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add a dedication paragraph to dedicate your book to someone %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+Sorsogon State University - Bulan Campus
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auto-generated table of contents, list of figures and list of tables %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+% \listoffigures
+% \listoftables
+
+\mainmatter
+
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+\chapter*{Preface}
+% A Quote all about Data Structures and Algorithms
+\begin{chapquote}{Linus Torvalds}
+``Bad programmers worry about the code. Good programmers worry about data structures and their relationships.''
+\end{chapquote}
+
+\noindent \BookAuthorName \\
+\noindent \url{\BookAuthorURL}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction to Data Structures and Algorithms}
+
+\section{What are Data Structures?}
+
+\section{What are Algorithms?}
+
+\section{Why Study Data Structures and Algorithms?}
+
+\section{Basic Terminologies}
+
+\subsection{Data}
+
+\subsection{Data Object}
+
+\subsection{Data Structure}
+
+\subsection{Data Type}
+
+\subsubsection{Primitive Data Types}
+
+\subsubsection{Non-primitive Data Types}
+
+\subsection{Abstract Data Type}
+
+\subsection{Algorithm}
+
+\subsection{Complexity of an Algorithm}
+
+\subsubsection{Time Complexity}
+
+\subsubsection{Space Complexity}
+
+\section{Asymptotic Notations}
+
+\subsection{Big-O Notation}
+
+\subsection{Omega Notation}
+
+\subsection{Theta Notation}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Arrays and Linked Lists}
+
+\section{Arrays}
+
+\subsection{Types of Arrays}
+
+\subsubsection{One-dimensional Array}
+
+\subsubsection{Multi-dimensional Array}
+
+\subsection{Array Operations}
+
+\subsubsection{Insertion}
+
+\subsubsection{Deletion}
+
+\subsubsection{Searching}
+
+\subsection{Complexity Analysis of Arrays}
+
+\section{Linked Lists}
+
+\subsection{Types of Linked Lists}
+
+\subsubsection{Singly Linked List}
+
+\subsubsection{Doubly Linked List}
+
+\subsubsection{Circular Linked List}
+
+\subsection{Operations on Linked Lists}
+
+\subsubsection{Insertion}
+
+\subsubsection{Deletion}
+
+\subsubsection{Searching}
+
+\subsection{Complexity Analysis of Linked Lists}
+
+\section{Comparison of Arrays and Linked Lists}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Stacks and Queues}
+
+\section{Stacks}
+
+\subsection{Operations on Stacks}
+
+\subsubsection{Push}
+
+\subsubsection{Pop}
+
+\subsubsection{Peek}
+
+\subsubsection{isEmpty}
+
+\subsubsection{isFull}
+
+\subsection{Complexity Analysis of Stacks}
+
+\subsection{Implementation of Stacks Using Arrays}
+
+\subsection{Implementation of Stacks Using Linked Lists}
+
+\section{Queues}
+
+\subsection{Types of Queues}
+
+\subsubsection{Linear Queue}
+
+\subsubsection{Circular Queue}
+
+\subsubsection{Priority Queue}
+
+\subsubsection{Double-ended Queue (Deque)}
+
+\subsection{Operations on Queues}
+
+\subsubsection{Enqueue}
+
+\subsubsection{Dequeue}
+
+\subsubsection{Front}
+
+\subsubsection{Rear}
+
+\subsection{Complexity Analysis of Queues}
+
+\subsection{Implementation of Queues Using Arrays}
+
+\subsection{Implementation of Queues Using Linked Lists}
+
+\section{Comparison of Stacks and Queues}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Trees}
+
+\section{Properties of Trees}
+
+\subsection{Root Node}
+
+\subsection{Parent Node}
+
+\subsection{Child Node}
+
+\subsection{Leaf Node}
+
+\subsection{Ancestors}
+
+\subsection{Siblings}
+
+\subsection{Descendants}
+
+\subsection{Height of a Tree}
+
+\subsection{Depth of a Node}
+
+\subsection{Degree of a Node}
+
+\subsection{Level of a Node}
+
+\subsection{Subtree}
+
+\section{Types of Trees}
+
+\subsection{Binary Tree}
+
+\subsubsection{Types of Binary Trees}
+
+\paragraph{Left-skewed Binary Tree}
+
+\paragraph{Right-skewed Binary Tree}
+
+\paragraph{Complete Binary Tree}
+
+\subsection{Ternary Tree}
+
+\subsection{N-ary Tree}
+
+\subsection{Binary Search Tree}
+
+\subsection{AVL Tree}
+
+\subsection{Red-Black Tree}
+
+\subsection{B-Tree}
+
+\subsection{B+ Tree}
+
+\subsection{Trie}
+
+\section{Basic Operations on Trees}
+
+\subsection{Creation of a Tree}
+
+\subsection{Insertion}
+
+\subsection{Deletion}
+
+\subsection{Searching}
+
+\subsection{Traversal}
+
+\subsubsection{Preorder Traversal}
+
+\subsubsection{Inorder Traversal}
+
+\subsubsection{Postorder Traversal}
+
+\subsubsection{Level-order Traversal}
+
+\section{Complexity Analysis of Trees}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Graphs}
+
+\section{Properties of Graphs}
+
+\subsection{Vertex}
+
+\subsection{Edge}
+
+\subsection{Degree of a Vertex}
+
+\subsection{Path}
+
+\section{Types of Graphs}
+
+\subsection{Finite Graph}
+
+\subsection{Infinite Graph}
+
+\subsection{Trivial Graph}
+
+\subsection{Simple Graph}
+
+\subsection{Multi Graph}
+
+\subsection{Null Graph}
+
+\subsection{Complete Graph}
+
+\subsection{Pseudo Graph}
+
+\subsection{Regular Graph}
+
+\subsection{Bipartite Graph}
+
+\subsection{Labelled Graph}
+
+\subsection{Weighted Graph}
+
+\subsection{Directed Graph}
+
+\subsection{Undirected Graph}
+
+\subsection{Connected Graph}
+
+\subsection{Disconnected Graph}
+
+\subsection{Cyclic Graph}
+
+\subsection{Acyclic Graph}
+
+\subsection{Directed Acyclic Graph (DAG)}
+
+\subsection{Digraph}
+
+\subsection{Subgraph}
+
+\section{Operations on Graphs}
+
+\subsection{Creation of a Graph}
+
+\subsection{Insertion}
+
+\subsubsection{Insertion of a Vertex}
+
+\subsubsection{Insertion of an Edge}
+
+\subsection{Deletion}
+
+\subsubsection{Deletion of a Vertex}
+
+\subsubsection{Deletion of an Edge}
+
+\subsection{Traversal}
+
+\subsubsection{Depth First Search (DFS)}
+
+\subsubsection{Breadth First Search (BFS)}
+
+\subsection{Shortest Path}
+
+\subsection{Minimum Spanning Tree}
+
+\section{Complexity Analysis of Graphs}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Sorting and Searching}
+
+\section{Sorting}
+
+\subsection{Types of Sorting Algorithms}
+
+\subsubsection{Bubble Sort}
+
+\subsubsection{Selection Sort}
+
+\subsubsection{Insertion Sort}
+
+\subsubsection{Merge Sort}
+
+\subsubsection{Quick Sort}
+
+\subsubsection{Heap Sort}
+
+\subsubsection{Radix Sort}
+
+\subsubsection{Counting Sort}
+
+\subsubsection{Bucket Sort}
+
+\subsection{Comparison of Sorting Algorithms}
+
+\section{Searching}
+
+\subsection{Types of Searching Algorithms}
+
+\subsubsection{Linear Search}
+
+\subsubsection{Binary Search}
+
+\subsubsection{Jump Search}
+
+\subsubsection{Interpolation Search}
+
+\subsubsection{Exponential Search}
+
+\subsubsection{Fibonacci Search}
+
+\subsubsection{Ternary Search}
+
+\subsection{Comparison of Searching Algorithms}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Hashing}
+
+\section{Hash Table}
+
+\section{Hash Function}
+
+\section{Collision Resolution Techniques}
+
+\subsection{Separate Chaining}
+
+\subsection{Open Addressing}
+
+\subsubsection{Linear Probing}
+
+\subsubsection{Quadratic Probing}
+
+\subsubsection{Double Hashing}
+
+\section{Complexity Analysis of Hashing}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Advanced Data Structures and Algorithms}
+
+\section{Advanced Data Structures}
+
+\subsection{Segment Tree}
+
+\subsection{Fenwick Tree}
+
+\subsection{Suffix Tree}
+
+\subsection{Suffix Array}
+
+\subsection{Trie}
+
+\subsection{Heap}
+
+\subsection{Disjoint Set}
+
+\subsection{Skip List}
+
+\subsection{Splay Tree}
+
+\subsection{Trie}
+
+\subsection{Bloom Filter}
+
+\subsection{KD Tree}
+
+\subsection{Quad Tree}
+
+\subsection{Octree}
+
+\subsection{B-Tree}
+
+\subsection{B+ Tree}
+
+\subsection{R-Tree}
+
+\subsection{X-Tree}
+
+\subsection{Y-Tree}
+
+\subsection{Z-Tree}
+
+\section{Advanced Algorithms}
+
+\subsection{Dynamic Programming}
+
+\subsection{Greedy Algorithms}
+
+\subsection{Backtracking}
+
+\subsection{Divide and Conquer}
+
+\subsection{Branch and Bound}
+
+\subsection{Randomized Algorithms}
+
+\subsection{Approximation Algorithms}
+
+\subsection{String Matching Algorithms}
+
+\subsection{Pattern Searching Algorithms}
+
+\subsection{Cryptography Algorithms}
+
+\subsection{Geometric Algorithms}
+
+\subsection{Graph Algorithms}
+
+\subsection{Network Flow Algorithms}
+
+\subsection{Game Theory Algorithms}
+
+\subsection{Quantum Algorithms}
+
+\section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Applications of Data Structures and Algorithms}
+
+\section{Applications in Computer Science}
+
+\subsection{Operating Systems}
+
+\subsection{Database Management Systems}
+
+\subsection{Compiler Design}
+
+\subsection{Networking}
+
+\subsection{Artificial Intelligence}
+
+\subsection{Machine Learning}
+
+\subsection{Computer Graphics}
+
+\subsection{Computer Vision}
+
+\subsection{Robotics}
+
+\subsection{Web Development}
+
+\subsection{Mobile Development}
+
+\subsection{Game Development}
+
+\subsection{Cybersecurity}
+
+\subsection{Quantum Computing}
+
+\section{Applications in Real Life}
+
+\subsection{Social Media}
+
+\subsection{E-commerce}
+
+\subsection{Healthcare}
+
+\subsection{Finance}
+
+\subsection{Transportation}
+
+\subsection{Education}
+
+\subsection{Agriculture}
+
+\subsection{Manufacturing}
+
+\subsection{Entertainment}
+
+\subsection{Sports}
+
+\subsection{Travel}
+
+\subsection{Telecommunications}
+
+\subsection{Energy}
+
+\subsection{Environment}
+
+\subsection{Politics}
+
+\subsection{Military}
+
+\section{Summary}
+
+\chapter{References}
+
+\begin{enumerate}[label={\textbf{\Alph*.}}]
+  \item \textbf{Books}
+    \begin{itemize}
+      \item Vishwas R. (2023). Data Structure Handbook. Dr. Vishwas Raval. ISBN: 978-9359063591
+      \item Cormen, T. H., Leiserson, C. E., Rivest, R. L., \& Stein, C. (2022). Introduction to algorithms. MIT press. ISBN: 978-0262046305
+      \item Erickson, J. (2019). Algorithms. ISBN: 978-1792644832
+    \end{itemize}
+  \item \textbf{Other Sources}
+    \begin{itemize}
+      \item Tutorialspoint. (n.d.). Data Structures Basics. Data Structure Basics. \url{https://www.tutorialspoint.com/data_structures_algorithms/data_structures_basics.htm}
+      \item Algorithm Archive · Arcane Algorithm Archive. (n.d.). \url{https://www.algorithm-archive.org/}
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
