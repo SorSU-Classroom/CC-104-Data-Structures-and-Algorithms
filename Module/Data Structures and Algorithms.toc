@@ -95,9 +95,6 @@
 \contentsline {subsection}{\numberline {4.2.4}Binary Search Tree}{7}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}AVL Tree}{7}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6}Red-Black Tree}{7}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}B-Tree}{7}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}B+ Tree}{7}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}Trie}{7}{subsection.4.2.9}%
 \contentsline {section}{\numberline {4.3}Basic Operations on Trees}{7}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Creation of a Tree}{7}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Insertion}{7}{subsection.4.3.2}%
@@ -199,17 +196,16 @@
 \contentsline {subsection}{\numberline {8.1.7}Disjoint Set}{14}{subsection.8.1.7}%
 \contentsline {subsection}{\numberline {8.1.8}Skip List}{14}{subsection.8.1.8}%
 \contentsline {subsection}{\numberline {8.1.9}Splay Tree}{14}{subsection.8.1.9}%
-\contentsline {subsection}{\numberline {8.1.10}Trie}{14}{subsection.8.1.10}%
-\contentsline {subsection}{\numberline {8.1.11}Bloom Filter}{14}{subsection.8.1.11}%
-\contentsline {subsection}{\numberline {8.1.12}KD Tree}{14}{subsection.8.1.12}%
-\contentsline {subsection}{\numberline {8.1.13}Quad Tree}{14}{subsection.8.1.13}%
-\contentsline {subsection}{\numberline {8.1.14}Octree}{14}{subsection.8.1.14}%
-\contentsline {subsection}{\numberline {8.1.15}B-Tree}{14}{subsection.8.1.15}%
-\contentsline {subsection}{\numberline {8.1.16}B+ Tree}{14}{subsection.8.1.16}%
-\contentsline {subsection}{\numberline {8.1.17}R-Tree}{14}{subsection.8.1.17}%
-\contentsline {subsection}{\numberline {8.1.18}X-Tree}{14}{subsection.8.1.18}%
-\contentsline {subsection}{\numberline {8.1.19}Y-Tree}{14}{subsection.8.1.19}%
-\contentsline {subsection}{\numberline {8.1.20}Z-Tree}{14}{subsection.8.1.20}%
+\contentsline {subsection}{\numberline {8.1.10}Bloom Filter}{14}{subsection.8.1.10}%
+\contentsline {subsection}{\numberline {8.1.11}KD Tree}{14}{subsection.8.1.11}%
+\contentsline {subsection}{\numberline {8.1.12}Quad Tree}{14}{subsection.8.1.12}%
+\contentsline {subsection}{\numberline {8.1.13}Octree}{14}{subsection.8.1.13}%
+\contentsline {subsection}{\numberline {8.1.14}B-Tree}{14}{subsection.8.1.14}%
+\contentsline {subsection}{\numberline {8.1.15}B+ Tree}{14}{subsection.8.1.15}%
+\contentsline {subsection}{\numberline {8.1.16}R-Tree}{14}{subsection.8.1.16}%
+\contentsline {subsection}{\numberline {8.1.17}X-Tree}{14}{subsection.8.1.17}%
+\contentsline {subsection}{\numberline {8.1.18}Y-Tree}{14}{subsection.8.1.18}%
+\contentsline {subsection}{\numberline {8.1.19}Z-Tree}{14}{subsection.8.1.19}%
 \contentsline {section}{\numberline {8.2}Advanced Algorithms}{14}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Dynamic Programming}{14}{subsection.8.2.1}%
 \contentsline {subsection}{\numberline {8.2.2}Greedy Algorithms}{14}{subsection.8.2.2}%
