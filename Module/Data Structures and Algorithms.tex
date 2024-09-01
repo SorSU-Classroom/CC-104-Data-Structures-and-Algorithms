@@ -86,8 +86,9 @@ Sorsogon State University - Bulan Campus
 % Auto-generated table of contents, list of figures and list of tables %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
-% \listoffigures
-% \listoftables
+\listoffigures
+\listoftables
+\lstlistoflistings
 
 \mainmatter
 
@@ -110,13 +111,90 @@ Sorsogon State University - Bulan Campus
 
 \section{Introduction}
 
+Data structures and algorithms are the building blocks of computer science.
+They are essential for solving complex problems efficiently and effectively.
+Data structures are used to store and organize data in a computer so that
+it can be accessed and manipulated efficiently. Algorithms are step-by-step
+procedures or formulas for solving a problem. They are the instructions that
+tell a computer how to perform a task.
+
+In this course, we will learn about the fundamental data structures and
+algorithms that are used in computer science. We will study how to design,
+implement, and analyze data structures and algorithms to solve real-world
+problems. By the end of this course, you will have a solid foundation in
+data structures and algorithms that will help you become a better programmer
+and problem solver.
+
 \section{Setup and Installation}
+
+In this course, we will be using the C++ programming language to implement
+data structures and algorithms. C++ is a powerful and versatile programming
+language that is widely used in the field of computer science. To get started,
+you will need to install a C++ compiler and an integrated development
+environment (IDE) on your computer.
 
 \subsection{C++ Compiler Installation}
 
+The first step is to install a C++ compiler on your computer. A compiler is
+a program that translates source code written in a programming language into
+machine code that can be executed by a computer. There are several C++
+compilers available, but we recommend using the GNU Compiler Collection (GCC)
+which is a free and open-source compiler that supports multiple programming
+languages including C++.
+
+\subsubsection{Windows}
+
+To install GCC on Windows, you can use the MinGW (Minimalist GNU for Windows)
+project which provides a port of GCC to Windows. You can download the MinGW
+installer from the MinGW website and follow the installation instructions.
+You can install MinGW by following the instructions here:
+\url{https://code.visualstudio.com/docs/languages/cpp#_example-install-mingwx64-on-windows}
+
 \subsection{Visual Studio Code Installation}
 
+The next step is to install an integrated development environment (IDE) on
+your computer. An IDE is a software application that provides comprehensive
+facilities to computer programmers for software development. We recommend
+using Visual Studio Code which is a free and open-source IDE developed by
+Microsoft. You can download Visual Studio Code from the official website
+and follow the installation instructions: \url{https://code.visualstudio.com/Download}
+
+Other than Visual Studio Code, you also need to install the C/C++ extension
+for Visual Studio Code. You can install the C/C++ extension by following the
+instructions here: \url{https://code.visualstudio.com/docs/languages/cpp}
+
 \subsection{Testing the Installation}
+
+To test if the installation was successful, you can create a simple C++
+program and compile it using the C++ compiler. Open Visual Studio Code and
+create a new file with the following C++ code:
+
+\begin{lstlisting}[language=C++, caption={Hello World Program}]
+#include <iostream>
+namespace std;
+
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+\end{lstlisting}
+
+Save the file with a .cpp extension (e.g., hello.cpp) and open a terminal
+window in Visual Studio Code. Compile the program using the following command:
+
+\begin{lstlisting}[language=bash, caption={Compiling the Program}]
+g++ hello.cpp -o hello
+\end{lstlisting}
+
+If there are no errors, you can run the program by executing the following
+command:
+
+\begin{lstlisting}[language=bash, caption={Running the Program}]
+./hello
+\end{lstlisting}
+
+If everything is set up correctly, you should see the output "Hello, World!"
+printed on the screen.
 
 \section{What are Data Structures?}
 

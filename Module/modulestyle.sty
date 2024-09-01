@@ -6,7 +6,8 @@
   top=1in,
   bottom=1in,
   left=1in,
-  right=1in
+  right=1in,
+  a4paper
 ]{geometry}
 \usepackage{tocbibind}
 \usepackage{blindtext}
@@ -88,6 +89,9 @@
 \makeatother
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
+
+\renewcommand{\lstlistingname}{Code}% Change Name
+\renewcommand{\lstlistlistingname}{List of \lstlistingname s}% List of Listings -> List of Algorithms
 
 \lstset{
    frame=single,

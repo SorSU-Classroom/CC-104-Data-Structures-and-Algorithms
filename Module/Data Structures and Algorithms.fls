@@ -327,11 +327,39 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 OUTPUT Data Structures and Algorithms.toc
+INPUT ./Data Structures and Algorithms.lof
+INPUT ./Data Structures and Algorithms.lof
+INPUT Data Structures and Algorithms.lof
+OUTPUT Data Structures and Algorithms.lof
+INPUT ./Data Structures and Algorithms.lot
+INPUT ./Data Structures and Algorithms.lot
+INPUT Data Structures and Algorithms.lot
+OUTPUT Data Structures and Algorithms.lot
+INPUT ./Data Structures and Algorithms.lol
+INPUT ./Data Structures and Algorithms.lol
+INPUT Data Structures and Algorithms.lol
+OUTPUT Data Structures and Algorithms.lol
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -346,6 +374,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
