@@ -11,3 +11,15 @@
 \contentsline {lstlisting}{\numberline {1.11}{\ignorespaces Structure Data Type}}{6}{lstlisting.1.11}%
 \contentsline {lstlisting}{\numberline {1.12}{\ignorespaces Class Data Type}}{7}{lstlisting.1.12}%
 \contentsline {lstlisting}{\numberline {1.13}{\ignorespaces Pointer Data Type}}{7}{lstlisting.1.13}%
+\contentsline {lstlisting}{\numberline {1.14}{\ignorespaces Constant Time Complexity}}{8}{lstlisting.1.14}%
+\contentsline {lstlisting}{\numberline {1.15}{\ignorespaces Logarithmic Time Complexity}}{8}{lstlisting.1.15}%
+\contentsline {lstlisting}{\numberline {1.16}{\ignorespaces Linear Time Complexity}}{8}{lstlisting.1.16}%
+\contentsline {lstlisting}{\numberline {1.17}{\ignorespaces Linearithmic Time Complexity}}{9}{lstlisting.1.17}%
+\contentsline {lstlisting}{\numberline {1.18}{\ignorespaces Quadratic Time Complexity}}{9}{lstlisting.1.18}%
+\contentsline {lstlisting}{\numberline {1.19}{\ignorespaces Exponential Time Complexity}}{10}{lstlisting.1.19}%
+\contentsline {lstlisting}{\numberline {1.20}{\ignorespaces Factorial Time Complexity}}{10}{lstlisting.1.20}%
+\contentsline {lstlisting}{\numberline {1.21}{\ignorespaces Constant Space Complexity}}{11}{lstlisting.1.21}%
+\contentsline {lstlisting}{\numberline {1.22}{\ignorespaces Linear Space Complexity}}{11}{lstlisting.1.22}%
+\contentsline {lstlisting}{\numberline {1.23}{\ignorespaces Quadratic Space Complexity}}{11}{lstlisting.1.23}%
+\contentsline {lstlisting}{\numberline {1.24}{\ignorespaces Exponential Space Complexity}}{12}{lstlisting.1.24}%
+\contentsline {lstlisting}{\numberline {1.25}{\ignorespaces Factorial Space Complexity}}{12}{lstlisting.1.25}%

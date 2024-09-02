@@ -421,6 +421,150 @@ it performs. The time complexity of an algorithm is usually expressed using big-
 notation, which provides an upper bound on the growth rate of the algorithm as the
 input size increases.
 
+\paragraph{Constant Time Complexity ($O(1)$)}
+
+An algorithm is said to have a \textbf{\textit{constant time complexity}} if the
+execution time of the algorithm does not depend on the input size. It means
+that the algorithm takes the same amount of time to execute regardless of
+the input size. An example of an algorithm with constant time complexity is
+accessing an element in an array using its index.
+
+\begin{lstlisting}[language=C++, caption={Constant Time Complexity}]
+int arr[5] = {1, 2, 3, 4, 5};
+int x = arr[2]; // Accessing the element at index 2
+\end{lstlisting}
+
+\paragraph{Logarithmic Time Complexity ($O(\log n)$)}
+
+An algorithm is said to have a \textbf{\textit{logarithmic time complexity}} if
+the execution time of the algorithm grows logarithmically as the input size
+increases. An example of an algorithm with logarithmic time complexity is
+binary search, where the input size is halved at each step.
+
+\begin{lstlisting}[language=C++, caption={Logarithmic Time Complexity}]
+int binarySearch(int arr[], int n, int x) {
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == x) return mid;
+        else if (arr[mid] < x) low = mid + 1;
+        else high = mid - 1;
+    }
+    return -1;
+}
+\end{lstlisting}
+
+\paragraph{Linear Time Complexity ($O(n)$)}
+
+An algorithm is said to have a \textbf{\textit{linear time complexity}} if the
+execution time of the algorithm grows linearly as the input size increases.
+It means that the algorithm takes a constant amount of time to process each
+element in the input. An example of an algorithm with linear time complexity
+is traversing an array to find the maximum element.
+
+\begin{lstlisting}[language=C++, caption={Linear Time Complexity}]
+int findMax(int arr[], int n) {
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) max = arr[i];
+    }
+    return max;
+}
+\end{lstlisting}
+
+\paragraph{Linearithmic Time Complexity ($O(n \log n)$)}
+
+An algorithm is said to have a \textbf{\textit{linearithmic time complexity}} if
+the execution time of the algorithm grows linearithmically as the input size
+increases. An example of an algorithm with linearithmic time complexity is
+sorting an array using the merge sort algorithm.
+
+\begin{lstlisting}[language=C++, caption={Linearithmic Time Complexity}]
+void merge(int arr[], int l, int m, int r) {
+    // Merge two subarrays of arr[]
+    int i, j, k;
+    int n1 = m - l + 1;
+    int n2 = r - m;
+    int L[n1], R[n2];
+    for (i = 0; i < n1; i++) L[i] = arr[l + i];
+    for (j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
+
+    i = 0; j = 0; k = l;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) arr[k++] = L[i++];
+        else arr[k++] = R[j++];
+    }
+
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}
+\end{lstlisting}
+
+\paragraph{Quadratic Time Complexity ($O(n^2)$)}
+
+An algorithm is said to have a \textbf{\textit{quadratic time complexity}} if
+the execution time of the algorithm grows quadratically as the input size
+increases. It means that the time taken by the algorithm to process each
+element in the input is proportional to the square of the input size. An
+example of an algorithm with quadratic time complexity is the bubble sort
+algorithm.
+
+\begin{lstlisting}[language=C++, caption={Quadratic Time Complexity}]
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+Another common example of an algorithm with quadratic time complexity is
+a nested loop that iterates over all pairs of elements in an array.
+
+\paragraph{Exponential Time Complexity ($O(2^n)$)}
+
+An algorithm is said to have an \textbf{\textit{exponential time complexity}} if
+the execution time of the algorithm grows exponentially as the input size
+increases. It means that the time taken by the algorithm increases
+exponentially with each additional element in the input. An example of an
+algorithm with exponential time complexity is the recursive Fibonacci
+sequence algorithm.
+
+\begin{lstlisting}[language=C++, caption={Exponential Time Complexity}]
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+\end{lstlisting}
+
+\paragraph{Factorial Time Complexity ($O(n!)$)}
+
+An algorithm is said to have a \textbf{\textit{factorial time complexity}} if
+the execution time of the algorithm grows factorially as the input size
+increases. It means that the time taken by the algorithm increases
+a factorial number of times with each additional element in the input.
+An example of an algorithm with factorial time complexity is the
+permutation algorithm that generates all possible permutations of a
+set of elements.
+
+\begin{lstlisting}[language=C++, caption={Factorial Time Complexity}]
+void permute(string str, int l, int r) {
+    if (l == r) cout << str << endl;
+    else {
+        for (int i = l; i <= r; i++) {
+            swap(str[l], str[i]);
+            permute(str, l + 1, r);
+            swap(str[l], str[i]);
+        }
+    }
+}
+\end{lstlisting}
+
 \subsubsection{Space Complexity}
 
 The \textbf{\textit{space complexity}} of an algorithm is a measure of the amount
@@ -429,6 +573,94 @@ is used to analyze the efficiency of an algorithm in terms of the amount of
 memory it uses. The space complexity of an algorithm is usually expressed using
 big-O notation, which provides an upper bound on the amount of memory the
 algorithm uses as the input size increases.
+
+\paragraph{Constant Space Complexity ($O(1)$)}
+
+An algorithm is said to have a \textbf{\textit{constant space complexity}} if
+the amount of memory required to execute the algorithm does not depend on the
+input size. It means that the algorithm uses a fixed amount of memory to
+process the input. An example of an algorithm with constant space complexity
+is swapping two variables without using a temporary variable.
+
+\begin{lstlisting}[language=C++, caption={Constant Space Complexity}]
+void swap(int &a, int &b) {
+    a = a + b;
+    b = a - b;
+    a = a - b;
+}
+\end{lstlisting}
+
+\paragraph{Linear Space Complexity ($O(n)$)}
+
+An algorithm is said to have a \textbf{\textit{linear space complexity}} if the
+amount of memory required to execute the algorithm grows linearly as the input
+size increases. It means that the algorithm uses a memory space that is
+proportional to the input size. An example of an algorithm with linear space
+complexity is storing the elements of an array in a separate array in reverse
+order.
+
+\begin{lstlisting}[language=C++, caption={Linear Space Complexity}]
+void reverseArray(int arr[], int n) {
+    int rev[n];
+    for (int i = 0; i < n; i++) {
+        rev[i] = arr[n - i - 1];
+    }
+}
+\end{lstlisting}
+
+\paragraph{Quadratic Space Complexity ($O(n^2)$)}
+
+An algorithm is said to have a \textbf{\textit{quadratic space complexity}} if
+the amount of memory required to execute the algorithm grows quadratically as
+the input size increases. It means that the algorithm uses a memory space that
+is proportional to the square of the input size. An example of an algorithm
+with quadratic space complexity is storing all pairs of elements in an array
+in a separate array.
+
+\begin{lstlisting}[language=C++, caption={Quadratic Space Complexity}]
+void allPairs(int arr[], int n) {
+    int pairs[n * n];
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            pairs[i * n + j] = arr[i] + arr[j];
+        }
+    }
+}
+\end{lstlisting}
+
+\paragraph{Exponential Space Complexity ($O(2^n)$)}
+
+An algorithm is said to have an \textbf{\textit{exponential space complexity}}
+if the amount of memory required to execute the algorithm grows exponentially
+as the input size increases. An example of an algorithm with exponential space
+complexity is generating all subsets of a set of elements.
+
+\begin{lstlisting}[language=C++, caption={Exponential Space Complexity}]
+void generateSubsets(int arr[], int n) {
+    for (int i = 0; i < (1 << n); i++) {
+        for (int j = 0; j < n; j++) {
+            if (i & (1 << j)) cout << arr[j] << " ";
+        }
+        cout << endl;
+    }
+}
+\end{lstlisting}
+
+\paragraph{Factorial Space Complexity ($O(n!)$)}
+
+An algorithm is said to have a \textbf{\textit{factorial space complexity}} if
+the amount of memory required to execute the algorithm grows factorially as
+the input size increases. An example of an algorithm with factorial space
+complexity is generating all permutations of a set of elements.
+
+\begin{lstlisting}[language=C++, caption={Factorial Space Complexity}]
+void generatePermutations(int arr[], int n) {
+    do {
+        for (int i = 0; i < n; i++) cout << arr[i] << " ";
+        cout << endl;
+    } while (next_permutation(arr, arr + n));
+}
+\end{lstlisting}
 
 \section{Asymptotic Notations}
 
@@ -444,18 +676,6 @@ notation, and theta notation.
   \includegraphics[width=0.6\textwidth]{./assets/images/Asymptotic Notations.png}
   \caption{Asymptotic Notation}
 \end{figure}
-
-Common notation ranges from best to worst performance are as follows:
-
-\begin{itemize}
-  \item $O(1)$: Constant Time
-  \item $O(\log n)$: Logarithmic Time
-  \item $O(n)$: Linear Time
-  \item $O(n \log n)$: Linearithmic Time
-  \item $O(n^2)$: Quadratic Time
-  \item $O(2^n)$: Exponential Time
-  \item $O(n!)$: Factorial Time
-\end{itemize}
 
 \subsection{Big-O Notation}
 
@@ -485,14 +705,17 @@ operations it performs.
 
 \section{Summary}
 
-In this chapter, we introduced the basic concepts of data structures and
-algorithms. We discussed the importance of data structures and algorithms
+In this chapter, we introduced the fundamental concepts of data structures
+and algorithms. We discussed the importance of data structures and algorithms
 in computer science and software engineering. We also covered some basic
-terminologies related to data structures and algorithms, such as data,
-data object, data type, abstract data type, and complexity of an algorithm.
-We also introduced asymptotic notations, such as big-O notation, omega
-notation, and theta notation, which are used to analyze the complexity of
-algorithms.
+terminologies related to data structures and algorithms, such as data, data
+object, data type, abstract data type, and complexity of an algorithm. We
+introduced the concept of asymptotic notations, such as big-O notation, omega
+notation, and theta notation, and discussed the time complexity of algorithms
+in terms of big-O notation. We covered common time complexity ranges from best
+to worst performance, such as constant time complexity, logarithmic time
+complexity, linear time complexity, linearithmic time complexity, quadratic
+time complexity, exponential time complexity, and factorial time complexity.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%

@@ -35,34 +35,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -87,6 +61,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -116,6 +92,33 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
@@ -206,17 +209,10 @@ INPUT ./Data Structures and Algorithms.aux
 INPUT ./Data Structures and Algorithms.aux
 INPUT Data Structures and Algorithms.aux
 OUTPUT Data Structures and Algorithms.aux
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-INPUT ./Data Structures and Algorithms.out
-INPUT ./Data Structures and Algorithms.out
-INPUT Data Structures and Algorithms.out
-INPUT Data Structures and Algorithms.out
 OUTPUT Data Structures and Algorithms.pdf
-INPUT ./Data Structures and Algorithms.out
-INPUT ./Data Structures and Algorithms.out
-OUTPUT Data Structures and Algorithms.out
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -325,6 +321,8 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmmi10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 OUTPUT Data Structures and Algorithms.toc
 INPUT ./Data Structures and Algorithms.lof
@@ -371,11 +369,7 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT Data Structures and Algorithms.aux
-INPUT ./Data Structures and Algorithms.out
-INPUT ./Data Structures and Algorithms.out
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
