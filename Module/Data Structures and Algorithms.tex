@@ -111,15 +111,15 @@ Sorsogon State University - Bulan Campus
 
 \section{Introduction}
 
-Data structures and algorithms are the building blocks of computer science.
-They are essential for solving complex problems efficiently and effectively.
-Data structures are used to store and organize data in a computer so that
-it can be accessed and manipulated efficiently. Algorithms are step-by-step
-procedures or formulas for solving a problem. They are the instructions that
-tell a computer how to perform a task.
+Data structures and algorithms are one of the fundamental components of computer
+science. They are essential for solving complex problems efficiently and
+effectively. Data structures are used to store and organize data in a computer
+so that it can be accessed and manipulated efficiently. Algorithms
+are step-by-step procedures or formulas for solving a problem. They are the
+instructions that tell a computer how to perform a task.
 
 In this course, we will learn about the fundamental data structures and
-algorithms that are used in computer science. We will study how to design,
+algorithms that are used in computers. We will study how to design,
 implement, and analyze data structures and algorithms to solve real-world
 problems. By the end of this course, you will have a solid foundation in
 data structures and algorithms that will help you become a better programmer
@@ -198,27 +198,130 @@ printed on the screen.
 
 \section{What are Data Structures?}
 
+A \textbf{\textit{data structure}} is a way of organizing and storing data in a computer so
+that it can be accessed and manipulated efficiently. Data structures provide a
+way to manage large amounts of data effectively for various applications. They
+define the relationship between the data, and the operations that can be
+performed on the data. There are many different types of data structures that
+are used in computer science, each with its own strengths and weaknesses. The use
+of the right data structure can significantly improve the performance of an
+algorithm and make it more efficient.
+
 \section{What are Algorithms?}
+
+An \textbf{\textit{algorithm}} is a step-by-step procedure or formula for solving a problem.
+It is a sequence of well-defined instructions that take some input and produce
+an output. Algorithms are used to solve complex problems and perform various
+tasks efficiently. They are the instructions that tell a computer how to perform
+a task. Algorithms are essential for writing computer programs and developing
+software applications. The efficiency of an algorithm is measured by its time
+complexity and space complexity.
 
 \section{Why Study Data Structures and Algorithms?}
 
+Data structures and algorithms are essential topics in computer science and
+software engineering. They are one of the fundamental components of computer
+science and are used in various applications such as operating systems,
+database management systems, networking, artificial intelligence, and many
+others. A good understanding of data structures and algorithms will help
+you become a better programmer and problem solver. In addition, many companies
+use data structures and algorithms as part of their technical interviews to
+assess the problem-solving skills of candidates. Therefore, studying data
+structures and algorithms is essential for anyone pursuing a career in
+software engineering or software development.
+
 \section{Basic Terminologies}
+
+Before we dive into the details of data structures and algorithms, let's
+understand some basic terminologies that might be helpful in understanding
+the concepts better.
 
 \subsection{Data}
 
+\textbf{\textit{Data}} is a collection of facts, figures, or information that
+can be used for analysis or reference. It can be in the form of numbers, text,
+images, audio, video, or any other format. Data is the raw material that is
+processed by a computer to produce meaningful information.
+
 \subsection{Data Object}
 
-\subsection{Data Structure}
+A \textbf{\textit{data object}} is an instance of a data structure that contains
+data along with the operations that can be performed on the data. It is an
+abstraction of a real-world entity that is represented in a computer program.
 
 \subsection{Data Type}
 
+A \textbf{\textit{data type}} is a classification of data that tells the compiler
+or interpreter how the programmer intends to use the data. It defines the
+operations that can be performed on the data, the values that can be stored
+in the data, and the memory space required to store the data.
+
 \subsubsection{Primitive Data Types}
+
+Primitive data types are the basic data types that are built into the programming
+language. They are used to store simple values such as integers, floating-point
+numbers, characters, and booleans. Examples of primitive data types include
+int, float, char, and bool. The following are the common primitive data types
+used in programming:
+
+\paragraph{Integer (int)}
+
+The integer data type is used to store whole numbers without any decimal points.
+It can be either signed or unsigned, depending on whether it can store negative
+values or not. An integer's value can range from -2,147,483,648 to 2,147,483,647
+and takes 4 bytes of memory.
+
+\begin{lstlisting}[language=C++, caption={Integer Data Type}]
+int x = 10;
+\end{lstlisting}
+
+
+\paragraph{Character (char)}
+
+The character data type is used to store a single character such as a letter,
+digit, or special symbol. It is represented by a single byte of memory. A char
+value can range from -128 to 127 or 0 to 255, depending on whether it is signed
+or unsigned. These values are represented using ASCII codes.
+
+\begin{lstlisting}[language=C++, caption={Character Data Type}]
+char c = 'A';
+\end{lstlisting}
+
+\paragraph{Boolean (bool)}
+
+The boolean data type is used to store true or false values. It is represented
+by a single byte of memory. A bool value can be either true or false.
+
+\begin{lstlisting}[language=C++, caption={Boolean Data Type}]
+bool flag = true;
+\end{lstlisting}
+
+\paragraph{Floating-Point (float)}
+
+The floating-point data type is used to store real numbers with decimal points.
+It can represent both integer and fractional parts of a number. It can be either
+single precision or double precision, depending on the number of bits used to
+store the value. A float value can range from 1.2E-38 to 3.4E+38 and takes 4
+bytes of memory.
+
+\begin{lstlisting}[language=C++, caption={Floating-Point Data Type}]
+float y = 3.14;
+\end{lstlisting}
+
+\paragraph{Double (double)}
+
+The double data type is used to store real numbers with double precision. It can
+represent both integer and fractional parts of a number with higher precision
+than the float data type. A double value can range from 2.3E-308 to 1.7E+308 and
+takes 8 bytes of memory.
+
+\begin{lstlisting}[language=C++, caption={Double Data Type}]
+double z = 3.14159;
+\end{lstlisting}
 
 \subsubsection{Non-primitive Data Types}
 
 \subsection{Abstract Data Type}
-
-\subsection{Algorithm}
 
 \subsection{Complexity of an Algorithm}
 
