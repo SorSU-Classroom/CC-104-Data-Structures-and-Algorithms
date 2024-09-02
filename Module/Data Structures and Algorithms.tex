@@ -403,6 +403,47 @@ to the process of hiding the implementation details of a data structure and expo
 only the essential features. An ADT is defined by its interface, which includes the
 data values and operations that can be performed on those values.
 
+\section{Asymptotic Notations}
+
+\textbf{\textit{Asymptotic notations}} are mathematical notations used to
+describe the limiting behavior of a function as the input size approaches
+infinity. They are used to analyze the complexity of algorithms and to
+compare the performance of different algorithms. The three most common
+asymptotic notations used in computer science are big-O notation, omega
+notation, and theta notation.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/images/Asymptotic Notations.png}
+  \caption{Asymptotic Notation}
+\end{figure}
+
+\subsection{Big-O Notation}
+
+The \textbf{\textit{big-O notation}} is used to describe the upper bound
+on the growth rate of an algorithm as the input size approaches infinity.
+It provides an upper limit on the worst-case time complexity of an algorithm.
+The big-O notation is used to analyze the efficiency of an algorithm in terms
+of the number of basic operations it performs.
+
+\subsection{Omega Notation}
+
+The \textbf{\textit{omega notation}} or \textbf{\textit{big-omega notation}}
+is used to describe the lower bound on the growth rate of an algorithm as the
+input size approaches infinity. It provides a lower limit on the best-case
+time complexity of an algorithm. The omega notation is used to analyze the
+efficiency of an algorithm in terms of the minimum number of basic operations
+it performs.
+
+\subsection{Theta Notation}
+
+The \textbf{\textit{theta notation}} or \textbf{\textit{big-theta notation}}
+is used to describe the tight bound on the growth rate of an algorithm as
+the input size approaches infinity. It provides an upper and lower limit on
+the time complexity of an algorithm. The theta notation is used to analyze
+the efficiency of an algorithm in terms of the average number of basic
+operations it performs.
+
 \subsection{Complexity of an Algorithm}
 
 The \textbf{\textit{complexity of an algorithm}} is a measure of the amount of time and
@@ -485,7 +526,10 @@ void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
     int n2 = r - m;
-    int L[n1], R[n2];
+    
+    int *L = new int[n1];
+    int *R = new int[n2];
+
     for (i = 0; i < n1; i++) L[i] = arr[l + i];
     for (j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
 
@@ -497,6 +541,15 @@ void merge(int arr[], int l, int m, int r) {
 
     while (i < n1) arr[k++] = L[i++];
     while (j < n2) arr[k++] = R[j++];
+}
+
+void mergeSort(int arr[], int l, int r) {
+    if (l < r) {
+        int m = l + (r - l) / 2;
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+        merge(arr, l, m, r);
+    }
 }
 \end{lstlisting}
 
@@ -601,9 +654,13 @@ order.
 
 \begin{lstlisting}[language=C++, caption={Linear Space Complexity}]
 void reverseArray(int arr[], int n) {
-    int rev[n];
-    for (int i = 0; i < n; i++) {
-        rev[i] = arr[n - i - 1];
+    int start = 0, end = n - 1;
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
     }
 }
 \end{lstlisting}
@@ -619,7 +676,7 @@ in a separate array.
 
 \begin{lstlisting}[language=C++, caption={Quadratic Space Complexity}]
 void allPairs(int arr[], int n) {
-    int pairs[n * n];
+    vector<int> pairs(n * n);
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             pairs[i * n + j] = arr[i] + arr[j];
@@ -654,54 +711,17 @@ the input size increases. An example of an algorithm with factorial space
 complexity is generating all permutations of a set of elements.
 
 \begin{lstlisting}[language=C++, caption={Factorial Space Complexity}]
-void generatePermutations(int arr[], int n) {
-    do {
-        for (int i = 0; i < n; i++) cout << arr[i] << " ";
-        cout << endl;
-    } while (next_permutation(arr, arr + n));
+void permute(string str, int l, int r) {
+    if (l == r) cout << str << endl;
+    else {
+        for (int i = l; i <= r; i++) {
+            swap(str[l], str[i]);
+            permute(str, l + 1, r);
+            swap(str[l], str[i]);
+        }
+    }
 }
 \end{lstlisting}
-
-\section{Asymptotic Notations}
-
-\textbf{\textit{Asymptotic notations}} are mathematical notations used to
-describe the limiting behavior of a function as the input size approaches
-infinity. They are used to analyze the complexity of algorithms and to
-compare the performance of different algorithms. The three most common
-asymptotic notations used in computer science are big-O notation, omega
-notation, and theta notation.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.6\textwidth]{./assets/images/Asymptotic Notations.png}
-  \caption{Asymptotic Notation}
-\end{figure}
-
-\subsection{Big-O Notation}
-
-The \textbf{\textit{big-O notation}} is used to describe the upper bound
-on the growth rate of an algorithm as the input size approaches infinity.
-It provides an upper limit on the worst-case time complexity of an algorithm.
-The big-O notation is used to analyze the efficiency of an algorithm in terms
-of the number of basic operations it performs.
-
-\subsection{Omega Notation}
-
-The \textbf{\textit{omega notation}} or \textbf{\textit{big-omega notation}}
-is used to describe the lower bound on the growth rate of an algorithm as the
-input size approaches infinity. It provides a lower limit on the best-case
-time complexity of an algorithm. The omega notation is used to analyze the
-efficiency of an algorithm in terms of the minimum number of basic operations
-it performs.
-
-\subsection{Theta Notation}
-
-The \textbf{\textit{theta notation}} or \textbf{\textit{big-theta notation}}
-is used to describe the tight bound on the growth rate of an algorithm as
-the input size approaches infinity. It provides an upper and lower limit on
-the time complexity of an algorithm. The theta notation is used to analyze
-the efficiency of an algorithm in terms of the average number of basic
-operations it performs.
 
 \section{Summary}
 
