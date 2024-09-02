@@ -24,256 +24,261 @@
 \contentsline {paragraph}{Floating-Point (float)}{5}{section*.9}%
 \contentsline {paragraph}{Double (double)}{6}{section*.10}%
 \contentsline {subsubsection}{\numberline {1.6.3.2}Non-primitive Data Types}{6}{subsubsection.1.6.3.2}%
-\contentsline {subsection}{\numberline {1.6.4}Abstract Data Type}{6}{subsection.1.6.4}%
-\contentsline {subsection}{\numberline {1.6.5}Complexity of an Algorithm}{6}{subsection.1.6.5}%
-\contentsline {subsubsection}{\numberline {1.6.5.1}Time Complexity}{6}{subsubsection.1.6.5.1}%
-\contentsline {subsubsection}{\numberline {1.6.5.2}Space Complexity}{6}{subsubsection.1.6.5.2}%
-\contentsline {section}{\numberline {1.7}Asymptotic Notations}{6}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Big-O Notation}{6}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}Omega Notation}{6}{subsection.1.7.2}%
-\contentsline {subsection}{\numberline {1.7.3}Theta Notation}{6}{subsection.1.7.3}%
-\contentsline {section}{\numberline {1.8}Summary}{6}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Arrays and Linked Lists}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Arrays}{8}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Types of Arrays}{8}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}One-dimensional Array}{8}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Multi-dimensional Array}{8}{subsubsection.2.2.1.2}%
-\contentsline {subsection}{\numberline {2.2.2}Array Operations}{8}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Insertion}{8}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Deletion}{8}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Searching}{8}{subsubsection.2.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.3}Complexity Analysis of Arrays}{8}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Linked Lists}{8}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Types of Linked Lists}{8}{subsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.1.1}Singly Linked List}{8}{subsubsection.2.3.1.1}%
-\contentsline {subsubsection}{\numberline {2.3.1.2}Doubly Linked List}{8}{subsubsection.2.3.1.2}%
-\contentsline {subsubsection}{\numberline {2.3.1.3}Circular Linked List}{8}{subsubsection.2.3.1.3}%
-\contentsline {subsection}{\numberline {2.3.2}Operations on Linked Lists}{8}{subsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.1}Insertion}{8}{subsubsection.2.3.2.1}%
-\contentsline {subsubsection}{\numberline {2.3.2.2}Deletion}{8}{subsubsection.2.3.2.2}%
-\contentsline {subsubsection}{\numberline {2.3.2.3}Searching}{8}{subsubsection.2.3.2.3}%
-\contentsline {subsection}{\numberline {2.3.3}Complexity Analysis of Linked Lists}{8}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Comparison of Arrays and Linked Lists}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Summary}{8}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Stacks and Queues}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Stacks}{10}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Operations on Stacks}{10}{subsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.1}Push}{10}{subsubsection.3.2.1.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.2}Pop}{10}{subsubsection.3.2.1.2}%
-\contentsline {subsubsection}{\numberline {3.2.1.3}Peek}{10}{subsubsection.3.2.1.3}%
-\contentsline {subsubsection}{\numberline {3.2.1.4}isEmpty}{10}{subsubsection.3.2.1.4}%
-\contentsline {subsubsection}{\numberline {3.2.1.5}isFull}{10}{subsubsection.3.2.1.5}%
-\contentsline {subsection}{\numberline {3.2.2}Complexity Analysis of Stacks}{10}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Implementation of Stacks Using Arrays}{10}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Implementation of Stacks Using Linked Lists}{10}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Queues}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Types of Queues}{10}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}Linear Queue}{10}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Circular Queue}{10}{subsubsection.3.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.3.1.3}Priority Queue}{10}{subsubsection.3.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.3.1.4}Double-ended Queue (Deque)}{10}{subsubsection.3.3.1.4}%
-\contentsline {subsection}{\numberline {3.3.2}Operations on Queues}{10}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Enqueue}{10}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Dequeue}{10}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}Front}{10}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}Rear}{10}{subsubsection.3.3.2.4}%
-\contentsline {subsection}{\numberline {3.3.3}Complexity Analysis of Queues}{10}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Implementation of Queues Using Arrays}{10}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Implementation of Queues Using Linked Lists}{10}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Comparison of Stacks and Queues}{10}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Summary}{10}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Trees}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Properties of Trees}{12}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Root Node}{12}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Parent Node}{12}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Child Node}{12}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Leaf Node}{12}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Ancestors}{12}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Siblings}{12}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Descendants}{12}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Height of a Tree}{12}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}Depth of a Node}{12}{subsection.4.2.9}%
-\contentsline {subsection}{\numberline {4.2.10}Degree of a Node}{12}{subsection.4.2.10}%
-\contentsline {subsection}{\numberline {4.2.11}Level of a Node}{12}{subsection.4.2.11}%
-\contentsline {subsection}{\numberline {4.2.12}Subtree}{12}{subsection.4.2.12}%
-\contentsline {section}{\numberline {4.3}Types of Trees}{12}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Binary Tree}{12}{subsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.1}Types of Binary Trees}{12}{subsubsection.4.3.1.1}%
-\contentsline {paragraph}{Left-skewed Binary Tree}{12}{section*.11}%
-\contentsline {paragraph}{Right-skewed Binary Tree}{12}{section*.12}%
-\contentsline {paragraph}{Complete Binary Tree}{12}{section*.13}%
-\contentsline {subsection}{\numberline {4.3.2}Ternary Tree}{12}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}N-ary Tree}{12}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Binary Search Tree}{12}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}AVL Tree}{12}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Red-Black Tree}{12}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Basic Operations on Trees}{12}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Creation of a Tree}{12}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Insertion}{12}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Deletion}{12}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Searching}{12}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Traversal}{12}{subsection.4.4.5}%
-\contentsline {subsubsection}{\numberline {4.4.5.1}Preorder Traversal}{12}{subsubsection.4.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.4.5.2}Inorder Traversal}{12}{subsubsection.4.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.4.5.3}Postorder Traversal}{12}{subsubsection.4.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.4.5.4}Level-order Traversal}{12}{subsubsection.4.4.5.4}%
-\contentsline {section}{\numberline {4.5}Complexity Analysis of Trees}{12}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Summary}{12}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Graphs}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{14}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Properties of Graphs}{14}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Vertex}{14}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Edge}{14}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Degree of a Vertex}{14}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Path}{14}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Types of Graphs}{14}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Finite Graph}{14}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Infinite Graph}{14}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Trivial Graph}{14}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Simple Graph}{14}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Multi Graph}{14}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Null Graph}{14}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}Complete Graph}{14}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Pseudo Graph}{14}{subsection.5.3.8}%
-\contentsline {subsection}{\numberline {5.3.9}Regular Graph}{14}{subsection.5.3.9}%
-\contentsline {subsection}{\numberline {5.3.10}Bipartite Graph}{14}{subsection.5.3.10}%
-\contentsline {subsection}{\numberline {5.3.11}Labelled Graph}{14}{subsection.5.3.11}%
-\contentsline {subsection}{\numberline {5.3.12}Weighted Graph}{14}{subsection.5.3.12}%
-\contentsline {subsection}{\numberline {5.3.13}Directed Graph}{14}{subsection.5.3.13}%
-\contentsline {subsection}{\numberline {5.3.14}Undirected Graph}{14}{subsection.5.3.14}%
-\contentsline {subsection}{\numberline {5.3.15}Connected Graph}{14}{subsection.5.3.15}%
-\contentsline {subsection}{\numberline {5.3.16}Disconnected Graph}{14}{subsection.5.3.16}%
-\contentsline {subsection}{\numberline {5.3.17}Cyclic Graph}{14}{subsection.5.3.17}%
-\contentsline {subsection}{\numberline {5.3.18}Acyclic Graph}{14}{subsection.5.3.18}%
-\contentsline {subsection}{\numberline {5.3.19}Directed Acyclic Graph (DAG)}{14}{subsection.5.3.19}%
-\contentsline {subsection}{\numberline {5.3.20}Digraph}{14}{subsection.5.3.20}%
-\contentsline {subsection}{\numberline {5.3.21}Subgraph}{14}{subsection.5.3.21}%
-\contentsline {section}{\numberline {5.4}Operations on Graphs}{14}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Creation of a Graph}{14}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Insertion}{14}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}Insertion of a Vertex}{14}{subsubsection.5.4.2.1}%
-\contentsline {subsubsection}{\numberline {5.4.2.2}Insertion of an Edge}{14}{subsubsection.5.4.2.2}%
-\contentsline {subsection}{\numberline {5.4.3}Deletion}{14}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}Deletion of a Vertex}{14}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Deletion of an Edge}{14}{subsubsection.5.4.3.2}%
-\contentsline {subsection}{\numberline {5.4.4}Traversal}{14}{subsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.4.1}Depth First Search (DFS)}{14}{subsubsection.5.4.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.4.2}Breadth First Search (BFS)}{14}{subsubsection.5.4.4.2}%
-\contentsline {subsection}{\numberline {5.4.5}Shortest Path}{14}{subsection.5.4.5}%
-\contentsline {subsection}{\numberline {5.4.6}Minimum Spanning Tree}{14}{subsection.5.4.6}%
-\contentsline {section}{\numberline {5.5}Complexity Analysis of Graphs}{14}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Summary}{14}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Sorting and Searching}{15}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{16}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Sorting}{16}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Types of Sorting Algorithms}{16}{subsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.1}Bubble Sort}{16}{subsubsection.6.2.1.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.2}Selection Sort}{16}{subsubsection.6.2.1.2}%
-\contentsline {subsubsection}{\numberline {6.2.1.3}Insertion Sort}{16}{subsubsection.6.2.1.3}%
-\contentsline {subsubsection}{\numberline {6.2.1.4}Merge Sort}{16}{subsubsection.6.2.1.4}%
-\contentsline {subsubsection}{\numberline {6.2.1.5}Quick Sort}{16}{subsubsection.6.2.1.5}%
-\contentsline {subsubsection}{\numberline {6.2.1.6}Heap Sort}{16}{subsubsection.6.2.1.6}%
-\contentsline {subsubsection}{\numberline {6.2.1.7}Radix Sort}{16}{subsubsection.6.2.1.7}%
-\contentsline {subsubsection}{\numberline {6.2.1.8}Counting Sort}{16}{subsubsection.6.2.1.8}%
-\contentsline {subsubsection}{\numberline {6.2.1.9}Bucket Sort}{16}{subsubsection.6.2.1.9}%
-\contentsline {subsection}{\numberline {6.2.2}Comparison of Sorting Algorithms}{16}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Searching}{16}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Types of Searching Algorithms}{16}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Linear Search}{16}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Binary Search}{16}{subsubsection.6.3.1.2}%
-\contentsline {subsubsection}{\numberline {6.3.1.3}Jump Search}{16}{subsubsection.6.3.1.3}%
-\contentsline {subsubsection}{\numberline {6.3.1.4}Interpolation Search}{16}{subsubsection.6.3.1.4}%
-\contentsline {subsubsection}{\numberline {6.3.1.5}Exponential Search}{16}{subsubsection.6.3.1.5}%
-\contentsline {subsubsection}{\numberline {6.3.1.6}Fibonacci Search}{16}{subsubsection.6.3.1.6}%
-\contentsline {subsubsection}{\numberline {6.3.1.7}Ternary Search}{16}{subsubsection.6.3.1.7}%
-\contentsline {subsection}{\numberline {6.3.2}Comparison of Searching Algorithms}{16}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Summary}{16}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Hashing}{17}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{17}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Hash Table}{17}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Hash Function}{17}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Collision Resolution Techniques}{17}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Separate Chaining}{17}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Open Addressing}{17}{subsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.2.1}Linear Probing}{17}{subsubsection.7.4.2.1}%
-\contentsline {subsubsection}{\numberline {7.4.2.2}Quadratic Probing}{17}{subsubsection.7.4.2.2}%
-\contentsline {subsubsection}{\numberline {7.4.2.3}Double Hashing}{17}{subsubsection.7.4.2.3}%
-\contentsline {section}{\numberline {7.5}Complexity Analysis of Hashing}{17}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Summary}{17}{section.7.6}%
-\contentsline {chapter}{\numberline {8}Advanced Data Structures and Algorithms}{18}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{19}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Advanced Data Structures}{19}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Segment Tree}{19}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Fenwick Tree}{19}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Suffix Tree}{19}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Suffix Array}{19}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Trie}{19}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6}Heap}{19}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Disjoint Set}{19}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}Skip List}{19}{subsection.8.2.8}%
-\contentsline {subsection}{\numberline {8.2.9}Splay Tree}{19}{subsection.8.2.9}%
-\contentsline {subsection}{\numberline {8.2.10}Bloom Filter}{19}{subsection.8.2.10}%
-\contentsline {subsection}{\numberline {8.2.11}KD Tree}{19}{subsection.8.2.11}%
-\contentsline {subsection}{\numberline {8.2.12}Quad Tree}{19}{subsection.8.2.12}%
-\contentsline {subsection}{\numberline {8.2.13}Octree}{19}{subsection.8.2.13}%
-\contentsline {subsection}{\numberline {8.2.14}B-Tree}{19}{subsection.8.2.14}%
-\contentsline {subsection}{\numberline {8.2.15}B+ Tree}{19}{subsection.8.2.15}%
-\contentsline {subsection}{\numberline {8.2.16}R-Tree}{19}{subsection.8.2.16}%
-\contentsline {subsection}{\numberline {8.2.17}X-Tree}{19}{subsection.8.2.17}%
-\contentsline {subsection}{\numberline {8.2.18}Y-Tree}{19}{subsection.8.2.18}%
-\contentsline {subsection}{\numberline {8.2.19}Z-Tree}{19}{subsection.8.2.19}%
-\contentsline {section}{\numberline {8.3}Advanced Algorithms}{19}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Dynamic Programming}{19}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Greedy Algorithms}{19}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Backtracking}{19}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Divide and Conquer}{19}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Branch and Bound}{19}{subsection.8.3.5}%
-\contentsline {subsection}{\numberline {8.3.6}Randomized Algorithms}{19}{subsection.8.3.6}%
-\contentsline {subsection}{\numberline {8.3.7}Approximation Algorithms}{19}{subsection.8.3.7}%
-\contentsline {subsection}{\numberline {8.3.8}String Matching Algorithms}{19}{subsection.8.3.8}%
-\contentsline {subsection}{\numberline {8.3.9}Pattern Searching Algorithms}{19}{subsection.8.3.9}%
-\contentsline {subsection}{\numberline {8.3.10}Cryptography Algorithms}{19}{subsection.8.3.10}%
-\contentsline {subsection}{\numberline {8.3.11}Geometric Algorithms}{19}{subsection.8.3.11}%
-\contentsline {subsection}{\numberline {8.3.12}Graph Algorithms}{19}{subsection.8.3.12}%
-\contentsline {subsection}{\numberline {8.3.13}Network Flow Algorithms}{19}{subsection.8.3.13}%
-\contentsline {subsection}{\numberline {8.3.14}Game Theory Algorithms}{19}{subsection.8.3.14}%
-\contentsline {subsection}{\numberline {8.3.15}Quantum Algorithms}{19}{subsection.8.3.15}%
-\contentsline {section}{\numberline {8.4}Summary}{19}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Applications of Data Structures and Algorithms}{20}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Applications in Computer Science}{21}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Operating Systems}{21}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Database Management Systems}{21}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Compiler Design}{21}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Networking}{21}{subsection.9.1.4}%
-\contentsline {subsection}{\numberline {9.1.5}Artificial Intelligence}{21}{subsection.9.1.5}%
-\contentsline {subsection}{\numberline {9.1.6}Machine Learning}{21}{subsection.9.1.6}%
-\contentsline {subsection}{\numberline {9.1.7}Computer Graphics}{21}{subsection.9.1.7}%
-\contentsline {subsection}{\numberline {9.1.8}Computer Vision}{21}{subsection.9.1.8}%
-\contentsline {subsection}{\numberline {9.1.9}Robotics}{21}{subsection.9.1.9}%
-\contentsline {subsection}{\numberline {9.1.10}Web Development}{21}{subsection.9.1.10}%
-\contentsline {subsection}{\numberline {9.1.11}Mobile Development}{21}{subsection.9.1.11}%
-\contentsline {subsection}{\numberline {9.1.12}Game Development}{21}{subsection.9.1.12}%
-\contentsline {subsection}{\numberline {9.1.13}Cybersecurity}{21}{subsection.9.1.13}%
-\contentsline {subsection}{\numberline {9.1.14}Quantum Computing}{21}{subsection.9.1.14}%
-\contentsline {section}{\numberline {9.2}Applications in Real Life}{21}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Social Media}{21}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}E-commerce}{21}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Healthcare}{21}{subsection.9.2.3}%
-\contentsline {subsection}{\numberline {9.2.4}Finance}{21}{subsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.2.5}Transportation}{21}{subsection.9.2.5}%
-\contentsline {subsection}{\numberline {9.2.6}Education}{21}{subsection.9.2.6}%
-\contentsline {subsection}{\numberline {9.2.7}Agriculture}{21}{subsection.9.2.7}%
-\contentsline {subsection}{\numberline {9.2.8}Manufacturing}{21}{subsection.9.2.8}%
-\contentsline {subsection}{\numberline {9.2.9}Entertainment}{21}{subsection.9.2.9}%
-\contentsline {subsection}{\numberline {9.2.10}Sports}{21}{subsection.9.2.10}%
-\contentsline {subsection}{\numberline {9.2.11}Travel}{21}{subsection.9.2.11}%
-\contentsline {subsection}{\numberline {9.2.12}Telecommunications}{21}{subsection.9.2.12}%
-\contentsline {subsection}{\numberline {9.2.13}Energy}{21}{subsection.9.2.13}%
-\contentsline {subsection}{\numberline {9.2.14}Environment}{21}{subsection.9.2.14}%
-\contentsline {subsection}{\numberline {9.2.15}Politics}{21}{subsection.9.2.15}%
-\contentsline {subsection}{\numberline {9.2.16}Military}{21}{subsection.9.2.16}%
-\contentsline {section}{\numberline {9.3}Summary}{21}{section.9.3}%
-\contentsline {chapter}{\numberline {10}References}{22}{chapter.10}%
+\contentsline {paragraph}{Array (int, float, char, etc.)}{6}{section*.11}%
+\contentsline {paragraph}{String (char)}{6}{section*.12}%
+\contentsline {paragraph}{Structure}{6}{section*.13}%
+\contentsline {paragraph}{Class}{7}{section*.14}%
+\contentsline {paragraph}{Pointer}{7}{section*.15}%
+\contentsline {subsection}{\numberline {1.6.4}Abstract Data Type}{7}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Complexity of an Algorithm}{7}{subsection.1.6.5}%
+\contentsline {subsubsection}{\numberline {1.6.5.1}Time Complexity}{8}{subsubsection.1.6.5.1}%
+\contentsline {subsubsection}{\numberline {1.6.5.2}Space Complexity}{8}{subsubsection.1.6.5.2}%
+\contentsline {section}{\numberline {1.7}Asymptotic Notations}{8}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Big-O Notation}{8}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Omega Notation}{9}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Theta Notation}{9}{subsection.1.7.3}%
+\contentsline {section}{\numberline {1.8}Summary}{9}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Arrays and Linked Lists}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Arrays}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Types of Arrays}{11}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}One-dimensional Array}{11}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Multi-dimensional Array}{11}{subsubsection.2.2.1.2}%
+\contentsline {subsection}{\numberline {2.2.2}Array Operations}{11}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Insertion}{11}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Deletion}{11}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Searching}{11}{subsubsection.2.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Complexity Analysis of Arrays}{11}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Linked Lists}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Types of Linked Lists}{11}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Singly Linked List}{11}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Doubly Linked List}{11}{subsubsection.2.3.1.2}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Circular Linked List}{11}{subsubsection.2.3.1.3}%
+\contentsline {subsection}{\numberline {2.3.2}Operations on Linked Lists}{11}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}Insertion}{11}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}Deletion}{11}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}Searching}{11}{subsubsection.2.3.2.3}%
+\contentsline {subsection}{\numberline {2.3.3}Complexity Analysis of Linked Lists}{11}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Comparison of Arrays and Linked Lists}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Summary}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Stacks and Queues}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Stacks}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Operations on Stacks}{13}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Push}{13}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}Pop}{13}{subsubsection.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {3.2.1.3}Peek}{13}{subsubsection.3.2.1.3}%
+\contentsline {subsubsection}{\numberline {3.2.1.4}isEmpty}{13}{subsubsection.3.2.1.4}%
+\contentsline {subsubsection}{\numberline {3.2.1.5}isFull}{13}{subsubsection.3.2.1.5}%
+\contentsline {subsection}{\numberline {3.2.2}Complexity Analysis of Stacks}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Implementation of Stacks Using Arrays}{13}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Implementation of Stacks Using Linked Lists}{13}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Queues}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Types of Queues}{13}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}Linear Queue}{13}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Circular Queue}{13}{subsubsection.3.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.3.1.3}Priority Queue}{13}{subsubsection.3.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.3.1.4}Double-ended Queue (Deque)}{13}{subsubsection.3.3.1.4}%
+\contentsline {subsection}{\numberline {3.3.2}Operations on Queues}{13}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Enqueue}{13}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Dequeue}{13}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}Front}{13}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}Rear}{13}{subsubsection.3.3.2.4}%
+\contentsline {subsection}{\numberline {3.3.3}Complexity Analysis of Queues}{13}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Implementation of Queues Using Arrays}{13}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Implementation of Queues Using Linked Lists}{13}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Comparison of Stacks and Queues}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Summary}{13}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Trees}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Properties of Trees}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Root Node}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Parent Node}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Child Node}{15}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Leaf Node}{15}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Ancestors}{15}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Siblings}{15}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Descendants}{15}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Height of a Tree}{15}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}Depth of a Node}{15}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}Degree of a Node}{15}{subsection.4.2.10}%
+\contentsline {subsection}{\numberline {4.2.11}Level of a Node}{15}{subsection.4.2.11}%
+\contentsline {subsection}{\numberline {4.2.12}Subtree}{15}{subsection.4.2.12}%
+\contentsline {section}{\numberline {4.3}Types of Trees}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Binary Tree}{15}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Types of Binary Trees}{15}{subsubsection.4.3.1.1}%
+\contentsline {paragraph}{Left-skewed Binary Tree}{15}{section*.17}%
+\contentsline {paragraph}{Right-skewed Binary Tree}{15}{section*.18}%
+\contentsline {paragraph}{Complete Binary Tree}{15}{section*.19}%
+\contentsline {subsection}{\numberline {4.3.2}Ternary Tree}{15}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}N-ary Tree}{15}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Binary Search Tree}{15}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}AVL Tree}{15}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Red-Black Tree}{15}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Basic Operations on Trees}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Creation of a Tree}{15}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Insertion}{15}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Deletion}{15}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Searching}{15}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Traversal}{15}{subsection.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.5.1}Preorder Traversal}{15}{subsubsection.4.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.4.5.2}Inorder Traversal}{15}{subsubsection.4.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.4.5.3}Postorder Traversal}{15}{subsubsection.4.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.4.5.4}Level-order Traversal}{15}{subsubsection.4.4.5.4}%
+\contentsline {section}{\numberline {4.5}Complexity Analysis of Trees}{15}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Summary}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Graphs}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Properties of Graphs}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Vertex}{17}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Edge}{17}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Degree of a Vertex}{17}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Path}{17}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Types of Graphs}{17}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Finite Graph}{17}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Infinite Graph}{17}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Trivial Graph}{17}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Simple Graph}{17}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Multi Graph}{17}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Null Graph}{17}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Complete Graph}{17}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Pseudo Graph}{17}{subsection.5.3.8}%
+\contentsline {subsection}{\numberline {5.3.9}Regular Graph}{17}{subsection.5.3.9}%
+\contentsline {subsection}{\numberline {5.3.10}Bipartite Graph}{17}{subsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.3.11}Labelled Graph}{17}{subsection.5.3.11}%
+\contentsline {subsection}{\numberline {5.3.12}Weighted Graph}{17}{subsection.5.3.12}%
+\contentsline {subsection}{\numberline {5.3.13}Directed Graph}{17}{subsection.5.3.13}%
+\contentsline {subsection}{\numberline {5.3.14}Undirected Graph}{17}{subsection.5.3.14}%
+\contentsline {subsection}{\numberline {5.3.15}Connected Graph}{17}{subsection.5.3.15}%
+\contentsline {subsection}{\numberline {5.3.16}Disconnected Graph}{17}{subsection.5.3.16}%
+\contentsline {subsection}{\numberline {5.3.17}Cyclic Graph}{17}{subsection.5.3.17}%
+\contentsline {subsection}{\numberline {5.3.18}Acyclic Graph}{17}{subsection.5.3.18}%
+\contentsline {subsection}{\numberline {5.3.19}Directed Acyclic Graph (DAG)}{17}{subsection.5.3.19}%
+\contentsline {subsection}{\numberline {5.3.20}Digraph}{17}{subsection.5.3.20}%
+\contentsline {subsection}{\numberline {5.3.21}Subgraph}{17}{subsection.5.3.21}%
+\contentsline {section}{\numberline {5.4}Operations on Graphs}{17}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Creation of a Graph}{17}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Insertion}{17}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}Insertion of a Vertex}{17}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}Insertion of an Edge}{17}{subsubsection.5.4.2.2}%
+\contentsline {subsection}{\numberline {5.4.3}Deletion}{17}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}Deletion of a Vertex}{17}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}Deletion of an Edge}{17}{subsubsection.5.4.3.2}%
+\contentsline {subsection}{\numberline {5.4.4}Traversal}{17}{subsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.4.1}Depth First Search (DFS)}{17}{subsubsection.5.4.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.4.2}Breadth First Search (BFS)}{17}{subsubsection.5.4.4.2}%
+\contentsline {subsection}{\numberline {5.4.5}Shortest Path}{17}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Minimum Spanning Tree}{17}{subsection.5.4.6}%
+\contentsline {section}{\numberline {5.5}Complexity Analysis of Graphs}{17}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Summary}{17}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Sorting and Searching}{18}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Sorting}{19}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Types of Sorting Algorithms}{19}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}Bubble Sort}{19}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}Selection Sort}{19}{subsubsection.6.2.1.2}%
+\contentsline {subsubsection}{\numberline {6.2.1.3}Insertion Sort}{19}{subsubsection.6.2.1.3}%
+\contentsline {subsubsection}{\numberline {6.2.1.4}Merge Sort}{19}{subsubsection.6.2.1.4}%
+\contentsline {subsubsection}{\numberline {6.2.1.5}Quick Sort}{19}{subsubsection.6.2.1.5}%
+\contentsline {subsubsection}{\numberline {6.2.1.6}Heap Sort}{19}{subsubsection.6.2.1.6}%
+\contentsline {subsubsection}{\numberline {6.2.1.7}Radix Sort}{19}{subsubsection.6.2.1.7}%
+\contentsline {subsubsection}{\numberline {6.2.1.8}Counting Sort}{19}{subsubsection.6.2.1.8}%
+\contentsline {subsubsection}{\numberline {6.2.1.9}Bucket Sort}{19}{subsubsection.6.2.1.9}%
+\contentsline {subsection}{\numberline {6.2.2}Comparison of Sorting Algorithms}{19}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Searching}{19}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Types of Searching Algorithms}{19}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Linear Search}{19}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Binary Search}{19}{subsubsection.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {6.3.1.3}Jump Search}{19}{subsubsection.6.3.1.3}%
+\contentsline {subsubsection}{\numberline {6.3.1.4}Interpolation Search}{19}{subsubsection.6.3.1.4}%
+\contentsline {subsubsection}{\numberline {6.3.1.5}Exponential Search}{19}{subsubsection.6.3.1.5}%
+\contentsline {subsubsection}{\numberline {6.3.1.6}Fibonacci Search}{19}{subsubsection.6.3.1.6}%
+\contentsline {subsubsection}{\numberline {6.3.1.7}Ternary Search}{19}{subsubsection.6.3.1.7}%
+\contentsline {subsection}{\numberline {6.3.2}Comparison of Searching Algorithms}{19}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Summary}{19}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Hashing}{20}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{20}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Hash Table}{20}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Hash Function}{20}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Collision Resolution Techniques}{20}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Separate Chaining}{20}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Open Addressing}{20}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}Linear Probing}{20}{subsubsection.7.4.2.1}%
+\contentsline {subsubsection}{\numberline {7.4.2.2}Quadratic Probing}{20}{subsubsection.7.4.2.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.3}Double Hashing}{20}{subsubsection.7.4.2.3}%
+\contentsline {section}{\numberline {7.5}Complexity Analysis of Hashing}{20}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary}{20}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Advanced Data Structures and Algorithms}{21}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{22}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Advanced Data Structures}{22}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Segment Tree}{22}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Fenwick Tree}{22}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Suffix Tree}{22}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Suffix Array}{22}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Trie}{22}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Heap}{22}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Disjoint Set}{22}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}Skip List}{22}{subsection.8.2.8}%
+\contentsline {subsection}{\numberline {8.2.9}Splay Tree}{22}{subsection.8.2.9}%
+\contentsline {subsection}{\numberline {8.2.10}Bloom Filter}{22}{subsection.8.2.10}%
+\contentsline {subsection}{\numberline {8.2.11}KD Tree}{22}{subsection.8.2.11}%
+\contentsline {subsection}{\numberline {8.2.12}Quad Tree}{22}{subsection.8.2.12}%
+\contentsline {subsection}{\numberline {8.2.13}Octree}{22}{subsection.8.2.13}%
+\contentsline {subsection}{\numberline {8.2.14}B-Tree}{22}{subsection.8.2.14}%
+\contentsline {subsection}{\numberline {8.2.15}B+ Tree}{22}{subsection.8.2.15}%
+\contentsline {subsection}{\numberline {8.2.16}R-Tree}{22}{subsection.8.2.16}%
+\contentsline {subsection}{\numberline {8.2.17}X-Tree}{22}{subsection.8.2.17}%
+\contentsline {subsection}{\numberline {8.2.18}Y-Tree}{22}{subsection.8.2.18}%
+\contentsline {subsection}{\numberline {8.2.19}Z-Tree}{22}{subsection.8.2.19}%
+\contentsline {section}{\numberline {8.3}Advanced Algorithms}{22}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Dynamic Programming}{22}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Greedy Algorithms}{22}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Backtracking}{22}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Divide and Conquer}{22}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Branch and Bound}{22}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {8.3.6}Randomized Algorithms}{22}{subsection.8.3.6}%
+\contentsline {subsection}{\numberline {8.3.7}Approximation Algorithms}{22}{subsection.8.3.7}%
+\contentsline {subsection}{\numberline {8.3.8}String Matching Algorithms}{22}{subsection.8.3.8}%
+\contentsline {subsection}{\numberline {8.3.9}Pattern Searching Algorithms}{22}{subsection.8.3.9}%
+\contentsline {subsection}{\numberline {8.3.10}Cryptography Algorithms}{22}{subsection.8.3.10}%
+\contentsline {subsection}{\numberline {8.3.11}Geometric Algorithms}{22}{subsection.8.3.11}%
+\contentsline {subsection}{\numberline {8.3.12}Graph Algorithms}{22}{subsection.8.3.12}%
+\contentsline {subsection}{\numberline {8.3.13}Network Flow Algorithms}{22}{subsection.8.3.13}%
+\contentsline {subsection}{\numberline {8.3.14}Game Theory Algorithms}{22}{subsection.8.3.14}%
+\contentsline {subsection}{\numberline {8.3.15}Quantum Algorithms}{22}{subsection.8.3.15}%
+\contentsline {section}{\numberline {8.4}Summary}{22}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Applications of Data Structures and Algorithms}{23}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Applications in Computer Science}{24}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Operating Systems}{24}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Database Management Systems}{24}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Compiler Design}{24}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Networking}{24}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Artificial Intelligence}{24}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Machine Learning}{24}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {9.1.7}Computer Graphics}{24}{subsection.9.1.7}%
+\contentsline {subsection}{\numberline {9.1.8}Computer Vision}{24}{subsection.9.1.8}%
+\contentsline {subsection}{\numberline {9.1.9}Robotics}{24}{subsection.9.1.9}%
+\contentsline {subsection}{\numberline {9.1.10}Web Development}{24}{subsection.9.1.10}%
+\contentsline {subsection}{\numberline {9.1.11}Mobile Development}{24}{subsection.9.1.11}%
+\contentsline {subsection}{\numberline {9.1.12}Game Development}{24}{subsection.9.1.12}%
+\contentsline {subsection}{\numberline {9.1.13}Cybersecurity}{24}{subsection.9.1.13}%
+\contentsline {subsection}{\numberline {9.1.14}Quantum Computing}{24}{subsection.9.1.14}%
+\contentsline {section}{\numberline {9.2}Applications in Real Life}{24}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Social Media}{24}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}E-commerce}{24}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Healthcare}{24}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Finance}{24}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Transportation}{24}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}Education}{24}{subsection.9.2.6}%
+\contentsline {subsection}{\numberline {9.2.7}Agriculture}{24}{subsection.9.2.7}%
+\contentsline {subsection}{\numberline {9.2.8}Manufacturing}{24}{subsection.9.2.8}%
+\contentsline {subsection}{\numberline {9.2.9}Entertainment}{24}{subsection.9.2.9}%
+\contentsline {subsection}{\numberline {9.2.10}Sports}{24}{subsection.9.2.10}%
+\contentsline {subsection}{\numberline {9.2.11}Travel}{24}{subsection.9.2.11}%
+\contentsline {subsection}{\numberline {9.2.12}Telecommunications}{24}{subsection.9.2.12}%
+\contentsline {subsection}{\numberline {9.2.13}Energy}{24}{subsection.9.2.13}%
+\contentsline {subsection}{\numberline {9.2.14}Environment}{24}{subsection.9.2.14}%
+\contentsline {subsection}{\numberline {9.2.15}Politics}{24}{subsection.9.2.15}%
+\contentsline {subsection}{\numberline {9.2.16}Military}{24}{subsection.9.2.16}%
+\contentsline {section}{\numberline {9.3}Summary}{24}{section.9.3}%
+\contentsline {chapter}{\numberline {10}References}{25}{chapter.10}%

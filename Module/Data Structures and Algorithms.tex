@@ -266,7 +266,7 @@ used in programming:
 
 \paragraph{Integer (int)}
 
-The integer data type is used to store whole numbers without any decimal points.
+The \textbf{\textit{integer}} data type is used to store whole numbers without any decimal points.
 It can be either signed or unsigned, depending on whether it can store negative
 values or not. An integer's value can range from -2,147,483,648 to 2,147,483,647
 and takes 4 bytes of memory.
@@ -278,7 +278,7 @@ int x = 10;
 
 \paragraph{Character (char)}
 
-The character data type is used to store a single character such as a letter,
+The \textbf{\textit{character}} data type is used to store a single character such as a letter,
 digit, or special symbol. It is represented by a single byte of memory. A char
 value can range from -128 to 127 or 0 to 255, depending on whether it is signed
 or unsigned. These values are represented using ASCII codes.
@@ -289,7 +289,7 @@ char c = 'A';
 
 \paragraph{Boolean (bool)}
 
-The boolean data type is used to store true or false values. It is represented
+The \textbf{\textit{boolean}} data type is used to store true or false values. It is represented
 by a single byte of memory. A bool value can be either true or false.
 
 \begin{lstlisting}[language=C++, caption={Boolean Data Type}]
@@ -298,7 +298,7 @@ bool flag = true;
 
 \paragraph{Floating-Point (float)}
 
-The floating-point data type is used to store real numbers with decimal points.
+The \textbf{\textit{floating-point}} data type is used to store real numbers with decimal points.
 It can represent both integer and fractional parts of a number. It can be either
 single precision or double precision, depending on the number of bits used to
 store the value. A float value can range from 1.2E-38 to 3.4E+38 and takes 4
@@ -310,7 +310,7 @@ float y = 3.14;
 
 \paragraph{Double (double)}
 
-The double data type is used to store real numbers with double precision. It can
+The \textbf{\textit{double}} data type is used to store real numbers with double precision. It can
 represent both integer and fractional parts of a number with higher precision
 than the float data type. A double value can range from 2.3E-308 to 1.7E+308 and
 takes 8 bytes of memory.
@@ -321,23 +321,178 @@ double z = 3.14159;
 
 \subsubsection{Non-primitive Data Types}
 
+Non-primitive data types are more complex data types that are derived from primitive
+data types. They are used to store collections of values or objects. Examples of
+non-primitive data types include arrays, strings, structures, classes, and pointers.
+
+\paragraph{Array (int, float, char, etc.)}
+
+An \textbf{\textit{array}} is a collection of elements of the same data type that are stored in
+contiguous memory locations. It is used to store multiple values of the same
+type under a single name. The elements of an array can be accessed using an
+index value. In C++, arrays are zero-indexed, which means the first element is
+at index 0. Arrays also have a fixed size that is specified at the time of
+declaration. If you need a dynamic size array, you can use a vector in C++.
+
+\begin{lstlisting}[language=C++, caption={Array Data Type}]
+int arr[5] = {1, 2, 3, 4, 5};
+\end{lstlisting}
+
+\paragraph{String (char)}
+
+A \textbf{\textit{string}} is a collection of characters that are stored as a sequence of characters
+terminated by a null character '\textbackslash0'. It is used to represent text in a computer
+program. Strings are treated as arrays of characters in C++.
+
+\begin{lstlisting}[language=C++, caption={String Data Type}]
+char str[] = "Hello, World!";
+\end{lstlisting}
+
+\paragraph{Structure}
+
+A \textbf{\textit{structure}} is a user-defined data type that is used to store a collection of
+different data types under a single name. It is used to represent a record that
+contains multiple fields or members. Each field in a structure can have a different
+data type.
+
+\begin{lstlisting}[language=C++, caption={Structure Data Type}]
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+\end{lstlisting}
+
+\paragraph{Class}
+
+A \textbf{\textit{class}} is a user-defined data type that is used to define objects that contain
+data members and member functions. It is used to implement object-oriented
+programming concepts such as encapsulation, inheritance, and polymorphism.
+
+\begin{lstlisting}[language=C++, caption={Class Data Type}]
+class Circle {
+    private:
+        float radius;
+    public:
+        float getArea() {
+            return 3.14 * radius * radius;
+        }
+};
+\end{lstlisting}
+
+\paragraph{Pointer}
+
+A \textbf{\textit{pointer}} is a special type of data type that stores the memory address of another
+data type. It is used to store the address of a variable or object in memory. Pointers
+are used to implement dynamic memory allocation and to pass parameters by reference.
+
+\begin{lstlisting}[language=C++, caption={Pointer Data Type}]
+int x = 10;
+int *ptr = &x;
+
+cout << *ptr; // Output: 10
+\end{lstlisting}
+
 \subsection{Abstract Data Type}
+
+An \textbf{\textit{abstract data type (ADT)}} is a mathematical model that defines a
+set of data values and operations that can be performed on those values. It is an
+abstraction of a data structure that specifies the operations that can be performed
+on the data without specifying how they are implemented. \textit{Abstraction} refers
+to the process of hiding the implementation details of a data structure and exposing
+only the essential features. An ADT is defined by its interface, which includes the
+data values and operations that can be performed on those values.
 
 \subsection{Complexity of an Algorithm}
 
+The \textbf{\textit{complexity of an algorithm}} is a measure of the amount of time and
+space required to execute the algorithm as a function of the input size. It is used
+to analyze the efficiency of an algorithm and to compare different algorithms for
+the same problem. The complexity of an algorithm is usually expressed using big-O
+notation, which provides an upper bound on the growth rate of the algorithm as the
+input size increases.
+
 \subsubsection{Time Complexity}
+
+The \textbf{\textit{time complexity}} of an algorithm is a measure of the amount of time
+required to execute the algorithm as a function of the input size. It is used to
+analyze the efficiency of an algorithm in terms of the number of basic operations
+it performs. The time complexity of an algorithm is usually expressed using big-O
+notation, which provides an upper bound on the growth rate of the algorithm as the
+input size increases.
 
 \subsubsection{Space Complexity}
 
+The \textbf{\textit{space complexity}} of an algorithm is a measure of the amount
+of memory required to execute the algorithm as a function of the input size. It
+is used to analyze the efficiency of an algorithm in terms of the amount of
+memory it uses. The space complexity of an algorithm is usually expressed using
+big-O notation, which provides an upper bound on the amount of memory the
+algorithm uses as the input size increases.
+
 \section{Asymptotic Notations}
+
+\textbf{\textit{Asymptotic notations}} are mathematical notations used to
+describe the limiting behavior of a function as the input size approaches
+infinity. They are used to analyze the complexity of algorithms and to
+compare the performance of different algorithms. The three most common
+asymptotic notations used in computer science are big-O notation, omega
+notation, and theta notation.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/images/Asymptotic Notations.png}
+  \caption{Asymptotic Notation}
+\end{figure}
+
+Common notation ranges from best to worst performance are as follows:
+
+\begin{itemize}
+  \item $O(1)$: Constant Time
+  \item $O(\log n)$: Logarithmic Time
+  \item $O(n)$: Linear Time
+  \item $O(n \log n)$: Linearithmic Time
+  \item $O(n^2)$: Quadratic Time
+  \item $O(2^n)$: Exponential Time
+  \item $O(n!)$: Factorial Time
+\end{itemize}
 
 \subsection{Big-O Notation}
 
+The \textbf{\textit{big-O notation}} is used to describe the upper bound
+on the growth rate of an algorithm as the input size approaches infinity.
+It provides an upper limit on the worst-case time complexity of an algorithm.
+The big-O notation is used to analyze the efficiency of an algorithm in terms
+of the number of basic operations it performs.
+
 \subsection{Omega Notation}
+
+The \textbf{\textit{omega notation}} or \textbf{\textit{big-omega notation}}
+is used to describe the lower bound on the growth rate of an algorithm as the
+input size approaches infinity. It provides a lower limit on the best-case
+time complexity of an algorithm. The omega notation is used to analyze the
+efficiency of an algorithm in terms of the minimum number of basic operations
+it performs.
 
 \subsection{Theta Notation}
 
+The \textbf{\textit{theta notation}} or \textbf{\textit{big-theta notation}}
+is used to describe the tight bound on the growth rate of an algorithm as
+the input size approaches infinity. It provides an upper and lower limit on
+the time complexity of an algorithm. The theta notation is used to analyze
+the efficiency of an algorithm in terms of the average number of basic
+operations it performs.
+
 \section{Summary}
+
+In this chapter, we introduced the basic concepts of data structures and
+algorithms. We discussed the importance of data structures and algorithms
+in computer science and software engineering. We also covered some basic
+terminologies related to data structures and algorithms, such as data,
+data object, data type, abstract data type, and complexity of an algorithm.
+We also introduced asymptotic notations, such as big-O notation, omega
+notation, and theta notation, which are used to analyze the complexity of
+algorithms.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
