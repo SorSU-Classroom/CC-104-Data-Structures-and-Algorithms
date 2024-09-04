@@ -92,6 +92,15 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
+\makeatletter
+\renewcommand{\subparagraph}{\@startsection{subparagraph}{5}{0ex}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
 \renewcommand{\lstlistingname}{Code}% Change Name
 \renewcommand{\lstlistlistingname}{List of \lstlistingname s}% List of Listings -> List of Algorithms
 

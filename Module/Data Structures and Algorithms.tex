@@ -340,9 +340,10 @@ int arr[5] = {1, 2, 3, 4, 5};
 
 \paragraph{String (char)}
 
-A \textbf{\textit{string}} is a collection of characters that are stored as a sequence of characters
-terminated by a null character '\textbackslash0'. It is used to represent text in a computer
-program. Strings are treated as arrays of characters in C++.
+A \textbf{\textit{string}} is a collection of characters that are stored
+as a sequence of characters terminated by a null character
+'\textbackslash0'. It is used to represent text in a computer program.
+Strings are treated as arrays of characters in C++.
 
 \begin{lstlisting}[language=C++, caption={String Data Type}]
 char str[] = "Hello, World!";
@@ -350,10 +351,10 @@ char str[] = "Hello, World!";
 
 \paragraph{Structure}
 
-A \textbf{\textit{structure}} is a user-defined data type that is used to store a collection of
-different data types under a single name. It is used to represent a record that
-contains multiple fields or members. Each field in a structure can have a different
-data type.
+A \textbf{\textit{structure}} is a user-defined data type that is used to
+store a collection of different data types under a single name. It is used
+to represent a record that contains multiple fields or members. Each field
+in a structure can have a different data type.
 
 \begin{lstlisting}[language=C++, caption={Structure Data Type}]
 struct Person {
@@ -365,9 +366,10 @@ struct Person {
 
 \paragraph{Class}
 
-A \textbf{\textit{class}} is a user-defined data type that is used to define objects that contain
-data members and member functions. It is used to implement object-oriented
-programming concepts such as encapsulation, inheritance, and polymorphism.
+A \textbf{\textit{class}} is a user-defined data type that is used to define
+objects that contain data members and member functions. It is used to
+implement object-oriented programming concepts such as encapsulation,
+inheritance, and polymorphism.
 
 \begin{lstlisting}[language=C++, caption={Class Data Type}]
 class Circle {
@@ -382,9 +384,10 @@ class Circle {
 
 \paragraph{Pointer}
 
-A \textbf{\textit{pointer}} is a special type of data type that stores the memory address of another
-data type. It is used to store the address of a variable or object in memory. Pointers
-are used to implement dynamic memory allocation and to pass parameters by reference.
+A \textbf{\textit{pointer}} is a special type of data type that stores the
+memory address of another data type. It is used to store the address of a
+variable or object in memory. Pointers are used to implement dynamic
+memory allocation and to pass parameters by reference.
 
 \begin{lstlisting}[language=C++, caption={Pointer Data Type}]
 int x = 10;
@@ -393,15 +396,267 @@ int *ptr = &x;
 cout << *ptr; // Output: 10
 \end{lstlisting}
 
+\paragraph{Vector}
+
+A \textbf{\textit{vector}} is a dynamic array that can grow or shrink in size
+dynamically. It is a part of the Standard Template Library (STL) in C++ and
+provides a more flexible alternative to fixed-size arrays. Vectors are used
+to store a collection of elements of the same data type.
+
+\begin{lstlisting}[language=C++, caption={Vector Data Type}]
+vector<int> vec = {1, 2, 3, 4, 5};
+\end{lstlisting}
+
+\paragraph{List}
+
+A \textbf{\textit{list}} is a linear data structure that is used to store a
+collection of elements in a sequential order. It is a part of the Standard
+Template Library (STL) in C++ and provides operations to insert, delete, and
+access elements in the list. Lists are used to implement linked lists in C++.
+
+\begin{lstlisting}[language=C++, caption={List Data Type}]
+list<int> lst = {1, 2, 3, 4, 5};
+\end{lstlisting}
+
+There are different types of lists in C++, such as singly linked list, doubly
+linked list, circular linked list, and circular doubly linked list, that provide different operations and
+performance characteristics.
+
+\subparagraph{Singly Linked List}
+
+A \textbf{\textit{singly linked list}} is a linear data structure that is used
+to store a collection of elements in a sequential order. Each element in the
+list is stored in a node that contains the data and a pointer to the next node
+in the list.
+
+\begin{lstlisting}[language=C++, caption={Singly Linked List Data Type}]
+struct Node {
+    int data;
+    Node *next;
+};
+\end{lstlisting}
+
+\subparagraph{Doubly Linked List}
+
+A \textbf{\textit{doubly linked list}} is a linear data structure that is used
+to store a collection of elements in a sequential order. Each element in the
+list is stored in a node that contains the data, a pointer to the next node,
+and a pointer to the previous node in the list.
+
+\begin{lstlisting}[language=C++, caption={Doubly Linked List Data Type}]
+struct Node {
+    int data;
+    Node *next;
+    Node *prev;
+};
+\end{lstlisting}
+
+\subparagraph{Circular Linked List}
+
+A \textbf{\textit{circular linked list}} is a linear data structure that is used
+to store a collection of elements in a circular order. Each element in the list
+is stored in a node that contains the data and a pointer to the next node in
+the list. The last node in the list points back to the first node, creating a
+circular structure.
+
+\begin{lstlisting}[language=C++, caption={Circular Linked List Data Type}]
+struct Node {
+    int data;
+    Node *next;
+};
+\end{lstlisting}
+
+\subparagraph{Circular Doubly Linked List}
+
+A \textbf{\textit{circular doubly linked list}} is a linear data structure that
+is used to store a collection of elements in a circular order. Each element in
+the list is stored in a node that contains the data, a pointer to the next node,
+and a pointer to the previous node in the list. The last node in the list points
+back to the first node, creating a circular structure.
+
+\begin{lstlisting}[language=C++, caption={Circular Doubly Linked List Data Type}]
+struct Node {
+    int data;
+    Node *next;
+    Node *prev;
+};
+\end{lstlisting}
+
+\paragraph{Stack}
+
+A \textbf{\textit{stack}} is a linear data structure that follows the Last In
+First Out (LIFO) principle. It is used to store a collection of elements in a
+sequential order. The main operations on a stack are push (to insert an element)
+and pop (to remove an element).
+
+\begin{lstlisting}[language=C++, caption={Stack Data Type}]
+stack<int> stk;
+stk.push(1);
+stk.push(2);
+stk.push(3);
+stk.push(4);
+stk.pop();
+\end{lstlisting}
+
+\paragraph{Queue}
+
+A \textbf{\textit{queue}} is a linear data structure that follows the First In
+First Out (FIFO) principle. It is used to store a collection of elements in a
+sequential order. The main operations on a queue are enqueue (to insert an
+element) and dequeue (to remove an element).
+
+\begin{lstlisting}[language=C++, caption={Queue Data Type}]
+queue<int> que;
+que.push(1);
+que.push(2);
+que.push(3);
+que.push(4);
+que.pop();
+\end{lstlisting}
+
+There are different types of queues in C++, such as linear queue, circular
+queue, priority queue, and double-ended queue (deque), that provide different
+operations and performance characteristics.
+
+\subparagraph{Circular Queue}
+
+A \textbf{\textit{circular queue}} is a type of queue that uses a circular
+structure to store elements. Unlike a linear queue, a circular queue does not
+have a fixed front and rear end. Instead, the front and rear ends wrap around
+the ends of the queue. This allows the queue to reuse the space freed up by
+dequeued elements. In C++, there is no built-in circular queue data type, but
+you can implement one using an array and a few pointers.
+
+\subparagraph{Priority Queue}
+
+A \textbf{\textit{priority queue}} is a type of queue that stores elements
+based on their priority. The element with the highest priority is dequeued
+first. Priority queues are typically implemented using heaps, which are a
+type of binary tree data structure.
+
+\begin{lstlisting}[language=C++, caption={Priority Queue Data Type}]
+priority_queue<int> pq;
+pq.push(1);
+pq.push(4);
+pq.push(2);
+pq.push(3);
+pq.pop();
+\end{lstlisting}
+
+\subparagraph{Double-Ended Queue (Deque)}
+
+A \textbf{\textit{double-ended queue}} or \textbf{\textit{deque}} is a type of
+queue that allows elements to be inserted and removed from both ends. It is
+a generalization of both stacks and queues and provides more flexibility in
+manipulating elements.
+
+\begin{lstlisting}[language=C++, caption={Deque Data Type}]
+deque<int> dq;
+dq.push_front(1);
+dq.push_back(2);
+dq.push_front(3);
+dq.push_back(4);
+dq.pop_front();
+\end{lstlisting}
+
+\paragraph{Tree}
+
+A \textbf{\textit{tree}} is a non-linear data structure that is used to store
+a collection of elements in a hierarchical order. It consists of nodes that
+are connected by edges. The topmost node in a tree is called the root node,
+and the nodes below it are called child nodes. Trees are used to represent
+hierarchical relationships between elements.
+
+\begin{lstlisting}[language=C++, caption={Tree Data Type}]
+struct Node {
+    int data;
+    Node *left;
+    Node *right;
+};
+\end{lstlisting}
+
+There are different types of trees in computer science, such as binary trees,
+binary search trees, AVL trees, red-black trees, and many others, that provide
+different operations and performance characteristics.
+
+\paragraph{Graph}
+
+A \textbf{\textit{graph}} is a non-linear data structure that is used to store
+a collection of elements and the relationships between them. It consists of
+nodes (vertices) that are connected by edges. Graphs are used to represent
+networks, social relationships, maps, and many other real-world applications.
+
+\begin{lstlisting}[language=C++, caption={Graph Data Type}]
+struct Graph {
+    int V;
+    list<int> *adj;
+};
+\end{lstlisting}
+
+There are different types of graphs in computer science, such as directed graphs,
+undirected graphs, weighted graphs, and many others, each with its own set of
+advantages and disadvantages.
+
+Another important thing to note is that ``Every tree is a graph, but not every
+graph is a tree.''
+
+\paragraph{Hash Map or Hash Table}
+
+A \textbf{\textit{Hash Map}} is a data structure that is used to store a
+collection of key-value pairs. It uses a hash function to map keys to values
+and stores them in an array. Hash maps provide fast access to elements and
+are used to implement associative arrays, sets, and dictionaries.
+
+There are two ways to implement a hash map in C++: the ordered map using the
+map class or using the unordered\_map class.
+
+\begin{lstlisting}[language=C++, caption={Ordered Map Data Type}]
+map<string, int> mp;
+mp["one"] = 1;
+mp["two"] = 2;
+mp["three"] = 3;
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Unordered Map Data Type}]
+unordered_map<string, int> ump;
+ump["one"] = 1;
+ump["two"] = 2;
+ump["three"] = 3;
+\end{lstlisting}
+
+\paragraph{Set}
+
+A \textbf{\textit{set}} is a data structure that is used to store a collection
+of unique elements. It is used to implement the mathematical set abstraction
+and provides operations to insert, delete, and search for elements.
+
+There are two ways to implement a set in C++: the ordered set using the set
+class or using the unordered\_set class.
+
+\begin{lstlisting}[language=C++, caption={Ordered Set Data Type}]
+set<int> st;
+st.insert(1);
+st.insert(2);
+st.insert(3);
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Unordered Set Data Type}]
+unordered_set<int> ust;
+ust.insert(1);
+ust.insert(2);
+ust.insert(3);
+\end{lstlisting}
+
 \subsection{Abstract Data Type}
 
-An \textbf{\textit{abstract data type (ADT)}} is a mathematical model that defines a
-set of data values and operations that can be performed on those values. It is an
-abstraction of a data structure that specifies the operations that can be performed
-on the data without specifying how they are implemented. \textit{Abstraction} refers
-to the process of hiding the implementation details of a data structure and exposing
-only the essential features. An ADT is defined by its interface, which includes the
-data values and operations that can be performed on those values.
+An \textbf{\textit{abstract data type (ADT)}} is a mathematical model that
+defines a set of data values and operations that can be performed on those
+values. It is an abstraction of a data structure that specifies the operations
+that can be performed on the data without specifying how they are implemented.
+\textit{Abstraction} refers to the process of hiding the implementation
+details of a data structure and exposing only the essential features. An ADT
+is defined by its interface, which includes the data values and operations
+that can be performed on those values.
 
 \section{Asymptotic Notations}
 

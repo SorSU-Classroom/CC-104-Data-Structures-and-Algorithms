@@ -1,13 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1725329572.89025 "c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex" "Data Structures and Algorithms.pdf" "Data Structures and Algorithms" 1725329575.26357 0
-  "Data Structures and Algorithms.aux" 1725329574 119621 695ee2a6eea5402d32cc981a0a434535 "pdflatex"
-  "Data Structures and Algorithms.lof" 1725329574 327 7ad9aae0a46574d94f4e5d8529d790b9 "pdflatex"
-  "Data Structures and Algorithms.lol" 1725329574 2631 9b08a189e14110419d91ca8a39d9483b "pdflatex"
-  "Data Structures and Algorithms.lot" 1725329574 230 3e91a5484bdc20b1d9faaaddae70e2a0 "pdflatex"
-  "Data Structures and Algorithms.tex" 1725329572 39731 d879464a7fc0a3ea325f7b38123e6c53 ""
-  "Data Structures and Algorithms.toc" 1725329574 25770 a4bcf483449efd2e1447a077a9090461 "pdflatex"
+["pdflatex"] 1725409341.72567 "c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex" "Data Structures and Algorithms.pdf" "Data Structures and Algorithms" 1725409344.7916 0
+  "Data Structures and Algorithms.aux" 1725409344 127693 62ede4f50b33f7a569e984778566d92f "pdflatex"
+  "Data Structures and Algorithms.lof" 1725409344 328 c48f8566d94b4d313530090f94cbef49 "pdflatex"
+  "Data Structures and Algorithms.lol" 1725409344 4325 8e5bbc0f520d48dba5ab0dd657ff37b6 "pdflatex"
+  "Data Structures and Algorithms.lot" 1725409344 230 3e91a5484bdc20b1d9faaaddae70e2a0 "pdflatex"
+  "Data Structures and Algorithms.tex" 1725409338 48450 6737fdb4c354a2eefb7c72d858b94126 ""
+  "Data Structures and Algorithms.toc" 1725409344 27196 6e09a07e1054453910f4c8f7751fd766 "pdflatex"
   "assets/images/Asymptotic Notations.png" 1725273797 313850 8bf2b27b1a25d8e3dae32e96f4b2ccd9 ""
-  "c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex" 1725329572 39731 d879464a7fc0a3ea325f7b38123e6c53 ""
+  "c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex" 1725409338 48450 6737fdb4c354a2eefb7c72d858b94126 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1724677516 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1724677516 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1724677516 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -181,7 +181,7 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725320753 83400 ce4ff0081f8d2b1e202005341a644167 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1724679739 6879095 72a3cb72f9c7a4fb016777144f3f31db ""
   "c:/texlive/2024/texmf.cnf" 1724678489 713 614551405fc44b98efbf516466e3c909 ""
-  "modulestyle.sty" 1725322532 3468 a97bfaad0b6b9df2e985c96291ab3f6b ""
+  "modulestyle.sty" 1725406577 3723 785787d3eb0697024c134b675a97cdea ""
   (generated)
   "Data Structures and Algorithms.aux"
   "Data Structures and Algorithms.lof"
