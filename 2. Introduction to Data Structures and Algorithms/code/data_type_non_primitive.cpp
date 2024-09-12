@@ -91,11 +91,6 @@ int main() {
     Circle circle;
     cout << "Circle Area: " << circle.getArea() << endl;
 
-    // pointer
-    int x = 10;
-    int *ptr = &x;
-    cout << "Pointer: " << *ptr << endl;
-
     // vector
     vector<int> vec = {1, 2, 3, 4, 5};
     cout << "Vector: ";
