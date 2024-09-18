@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 07:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 07:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/0. Basics of C++/DSA - 0 Basics of C++.tex"
-(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/0. Basics of C++/DSA - 0 Basics of C++.tex
+**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/1. Introduction to Data Structures and Algorithms/DSA - 1 Introduction to Data Structures and Algorithms.tex"
+(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/1. Introduction to Data Structures and Algorithms/DSA - 1 Introduction to Data Structures and Algorithms.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -837,30 +837,30 @@ File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 148.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 87.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 86.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./DSA - 0 Basics of C++.aux)
-\openout1 = `"DSA - 0 Basics of C++.aux"'.
+) (./DSA - 1 Introduction to Data Structures and Algorithms.aux)
+\openout1 = `"DSA - 1 Introduction to Data Structures and Algorithms.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -900,19 +900,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 87.
-Package microtype Info: Applying patch `item' on input line 87.
-Package microtype Info: Applying patch `toc' on input line 87.
-Package microtype Info: Applying patch `eqnum' on input line 87.
-Package microtype Info: Applying patch `footnote' on input line 87.
-Package microtype Info: Applying patch `verbatim' on input line 87.
+LaTeX Info: Redefining \microtypecontext on input line 86.
+Package microtype Info: Applying patch `item' on input line 86.
+Package microtype Info: Applying patch `toc' on input line 86.
+Package microtype Info: Applying patch `eqnum' on input line 86.
+Package microtype Info: Applying patch `footnote' on input line 86.
+Package microtype Info: Applying patch `verbatim' on input line 86.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 87.
+LaTeX Info: Redefining \showhyphens on input line 86.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -937,10 +937,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 87.
- (./DSA - 0 Basics of C++.out) (./DSA - 0 Basics of C++.out)
+Package hyperref Info: Link coloring ON on input line 86.
+ (./DSA - 1 Introduction to Data Structures and Algorithms.out) (./DSA - 1 Introduction to Data Structures and Algorithms.out)
 \@outlinefile=\write4
-\openout4 = `"DSA - 0 Basics of C++.out"'.
+\openout4 = `"DSA - 1 Introduction to Data Structures and Algorithms.out"'.
 
 \c@lstlisting=\count385
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 91.
@@ -1019,60 +1019,60 @@ l.97 \end{dedication}
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 126.
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Overfull \hbox (41.66989pt too wide) in paragraph at lines 156--158
-[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1uc3ehhK4Mv84KXPe8oV3l3AGI6czVhBx ?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
- []
-
-
-Overfull \hbox (24.42369pt too wide) in paragraph at lines 156--158
-[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1eIkUp3t2cAKIpd9KZGbQlZEGU516S _
- []
-
+(Font)              <10.95> on input line 137.
 
 
 [1
 
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-Overfull \hbox (18.10008pt too wide) in paragraph at lines 171--174
+]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Overfull \hbox (41.66989pt too wide) in paragraph at lines 183--185
+[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1uc3ehhK4Mv84KXPe8oV3l3AGI6czVhBx ?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+
+Overfull \hbox (24.42369pt too wide) in paragraph at lines 183--185
+[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1eIkUp3t2cAKIpd9KZGbQlZEGU516S _
+ []
+
+
+Overfull \hbox (18.10008pt too wide) in paragraph at lines 198--201
 [][]$\T1/lmtt/m/n/10.95 https : / / docs . google . com / document / d / 1zZf3W0Hj6NfCGU7sKAaz _ cztSER5e7Vx /
  []
 
 
 
-[2] (./DSA - 0 Basics of C++.aux)
+[2] (./DSA - 1 Introduction to Data Structures and Algorithms.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-Package rerunfilecheck Info: File `"DSA - 0 Basics of C++".out' has not changed.
+Package rerunfilecheck Info: File `"DSA - 1 Introduction to Data Structures and Algorithms".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31155 strings out of 475496
- 557480 string characters out of 5776763
- 1947960 words of memory out of 5000000
- 53126 multiletter control sequences out of 15000+600000
- 658492 words of font info for 169 fonts, out of 8000000 for 9000
+ 30829 strings out of 475496
+ 555459 string characters out of 5776763
+ 1937960 words of memory out of 5000000
+ 52796 multiletter control sequences out of 15000+600000
+ 658752 words of font info for 172 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 117i,11n,121p,1360b,1363s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "DSA - 0 Basics of C++.pdf" (4 pages, 285524 bytes).
+ 117i,11n,121p,1426b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "DSA - 1 Introduction to Data Structures and Algorithms.pdf" (4 pages, 251753 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 28 named destinations out of 1000 (max. 500000)
  56333 words of extra memory for PDF output out of 61914 (max. 10000000)
 

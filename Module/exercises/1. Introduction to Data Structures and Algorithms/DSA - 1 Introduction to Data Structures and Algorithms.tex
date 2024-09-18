@@ -50,21 +50,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\CourseTitle}{Data Structures and Algorithms}
-\newcommand{\ChapterNumber}{0}
-\newcommand{\ChapterTitle}{Basics of C++}
-\newcommand{\CodingNumber}{0}
-\newcommand{\CodingTitle}{Hello, World!}
+\newcommand{\ChapterNumber}{1}
+\newcommand{\ChapterTitle}{Introduction to Data Structures and Algorithms}
+\newcommand{\CodingNumber}{1}
+\newcommand{\CodingTitle}{Introduction to Data Structures and Algorithms}
 \newcommand{\SubmissionDeadline}{October 11, 2024}
 \newcommand{\SubmissionDeadlineText}{on or before \SubmissionDeadline}
 \newcommand{\SubmissionTemplateURL}{https://docs.google.com/document/d/1zZf3W0Hj6NfCGU7sKAaz_cztSER5e7Vx/edit?usp=sharing&ouid=112709378145681657270&rtpof=true&sd=true}
 
 \newcommand{\BookTitle}{Coding Exercise: \CodingNumber - \CodingTitle}
 \newcommand{\BookTitleFootnote}{A coding exercise for
-Chapter \ChapterNumber of the Study Guide on the course \CourseTitle.}
+\textnormal{Chapter \ChapterNumber} of the Study Guide on the course \CourseTitle.}
 
 \newcommand{\BookSubtitle}{Chapter \ChapterNumber: \ChapterTitle}
-\newcommand{\BookSubtitleFootnote}{This chapter introduces the basic concepts
-of C++}
+\newcommand{\BookSubtitleFootnote}{This chapter introduces the basic concepts of data structures and algorithms.}
 
 \newcommand{\BookAuthorFirstName}{Jarrian Vince}
 \newcommand{\BookAuthorLastName}{Gojar}
@@ -87,6 +86,7 @@ of C++}
 \begin{document}
 
 \frontmatter
+\date{}
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,36 +115,63 @@ you do, it blows away your whole leg.''
 Instructions: Write a program that solves the following problems.
 Submit your code to the Google Drive folder provided by the instructor.
 
-% The following are the exercises to test out the basic concepts of C++.
+% The following are the exercises
 
 \begin{enumerate}
-  % Hello World!
-  \item Write a program that prints the message ``Hello, World!'' to the console.
-  % Simple Arithmetic
-  \item Write a program that computes the sum, difference, product, quotient,
-  and remainder of two numbers then prints the results to the console.
-  \begin{align}
-    num1 &= 10 \\
-    num2 &= 4 \\
-    num3 &= 3.5 \\
-    num4 &= 2.5
-  \end{align}
-  \begin{align}
-    sum &= num1 + num2 \\
-    diff &= num1 - num2 \\
-    prod &= num3 \times num4 \\
-    quot &= num3 / num4 \\
-    rem &= num1 \% num2
-  \end{align}
-  % Print
-  Output:
-  \begin{lstlisting}
-    Sum: 14
-    Difference: 6
-    Product: 8.75
-    Quotient: 1.4
-    Remainder: 2
-  \end{lstlisting}
+  \item Implement a C++ program that demonstrates the primitive data types.
+  \begin{enumerate}
+      \item Declare and initialize variables of the following different data types.
+      \begin{enumerate}
+          \item Integer
+          \item Float
+          \item Double
+          \item Character
+          \item Boolean
+      \end{enumerate}
+      \item Print the values of the variables to the console.
+  \end{enumerate}
+  \item Implement a C++ program to find the maximum element in an array
+  using linear time complexity.
+  \begin{enumerate}
+      \item Declare an array of integers.
+      \begin{align*}
+          \text{int arr[6];}
+      \end{align*}
+      \item Initialize the array with random values.
+      \begin{align*}
+          \text{arr[6] = \{19, 10, 8, 17, 9, 15\};}
+      \end{align*}
+      \item Find the maximum element in the array.
+      \item Print the maximum element to the console.
+      \begin{quote}
+          Output: 19
+      \end{quote}
+  \end{enumerate}
+  \item Implement a C++ program to find the sum of all elements in an array
+  using linear time complexity.
+  \begin{enumerate}
+      \item Declare an array of integers.
+      \begin{align*}
+          \text{int arr[6];}
+      \end{align*}
+      \item Initialize the array with random values.
+      \begin{align*}
+          \text{arr[6] = \{19, 10, 8, 17, 9, 15\};}
+      \end{align*}
+      \item Find the sum of all elements in the array.
+      \item Print the sum to the console.
+      \begin{quote}
+          Output: 78
+      \end{quote}
+  \end{enumerate}
+  % \item Implement a C++ program to reverse an array in place using linear
+  % time complexity.
+  % \item Implement a C++ program to sort an array using the bubble sort
+  % algorithm with quadratic time complexity.
+  % \item Implement a C++ program to generate all subsets of a set of elements
+  % using exponential space complexity.
+  % \item Implement a C++ program to generate all permutations of a set of
+  % elements using factorial space complexity.
 \end{enumerate}
 
 \section*{Submission of Coding Exercises}
