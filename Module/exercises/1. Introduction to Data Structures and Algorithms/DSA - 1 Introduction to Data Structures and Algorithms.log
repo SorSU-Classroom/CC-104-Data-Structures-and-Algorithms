@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 09:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1017,42 +1017,59 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
 l.97 \end{dedication}
                       [1
 
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 137.
-
+] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 114.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 121.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+)
 
 [1
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 188.
+
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Overfull \hbox (41.66989pt too wide) in paragraph at lines 185--187
+Overfull \hbox (41.66989pt too wide) in paragraph at lines 236--238
 [][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1uc3ehhK4Mv84KXPe8oV3l3AGI6czVhBx ?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--187
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 
-Overfull \hbox (24.42369pt too wide) in paragraph at lines 185--187
+Overfull \hbox (24.42369pt too wide) in paragraph at lines 236--238
 [][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1eIkUp3t2cAKIpd9KZGbQlZEGU516S _
  []
 
 
-Overfull \hbox (18.10008pt too wide) in paragraph at lines 200--203
+Overfull \hbox (18.10008pt too wide) in paragraph at lines 251--254
 [][]$\T1/lmtt/m/n/10.95 https : / / docs . google . com / document / d / 1zZf3W0Hj6NfCGU7sKAaz _ cztSER5e7Vx /
  []
 
 
 
-[2] (./DSA - 1 Introduction to Data Structures and Algorithms.aux)
+[3] (./DSA - 1 Introduction to Data Structures and Algorithms.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -1061,18 +1078,18 @@ Package rerunfilecheck Info: File `"DSA - 1 Introduction to Data Structures and 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30831 strings out of 475496
- 555473 string characters out of 5776763
- 1937960 words of memory out of 5000000
- 52796 multiletter control sequences out of 15000+600000
- 658752 words of font info for 172 fonts, out of 8000000 for 9000
+ 31409 strings out of 475496
+ 562128 string characters out of 5776763
+ 1981960 words of memory out of 5000000
+ 53330 multiletter control sequences out of 15000+600000
+ 659413 words of font info for 177 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 117i,11n,121p,1426b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "DSA - 1 Introduction to Data Structures and Algorithms.pdf" (4 pages, 252105 bytes).
+ 117i,11n,121p,1426b,1379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "DSA - 1 Introduction to Data Structures and Algorithms.pdf" (5 pages, 282409 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
- 56333 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 58381 words of extra memory for PDF output out of 61914 (max. 10000000)
 

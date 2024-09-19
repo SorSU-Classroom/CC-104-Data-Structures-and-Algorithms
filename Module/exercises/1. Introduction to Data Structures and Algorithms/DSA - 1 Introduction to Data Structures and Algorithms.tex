@@ -105,6 +105,57 @@ Sorsogon State University - Bulan Campus
 %%%%%%%%%%%
 % Preface %
 %%%%%%%%%%%
+\section*{For Loop}
+
+In C++, the \texttt{for} loop is used to execute a block of code repeatedly.
+It is often used when the number of iterations is known. The syntax of the
+\texttt{for} loop is as follows:
+
+\begin{lstlisting}[language=C++, caption={Syntax of the for loop}]
+for (initialization; condition; advancement) {
+    // code block to be executed
+}
+\end{lstlisting}
+
+\begin{itemize}
+    \item \textbf{Initialization:} It is executed only once when the loop
+    starts.
+    \item \textbf{Condition:} It is evaluated before each iteration. If it
+    is true, the code block is executed.
+    \item \textbf{Advancement:} It is executed after the code block has
+    been executed.
+\end{itemize}
+  
+The following example demonstrates the use of the \texttt{for} loop to print
+the elements of an array.
+
+\begin{lstlisting}[language=C++, caption={Example of the for loop}]
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+The code above shows a simple program that prints the elements of an array.
+It initializes an array of integers with five elements and then uses a
+\texttt{for} loop to print the elements to the console. The `n' variable
+stores the size of the array, which is used as the condition for the loop.
+
+The output of the program is as follows:
+
+\begin{lstlisting}[language=bash, caption={Output of the for loop}]
+1 2 3 4 5
+\end{lstlisting}
+
 \section*{Coding Exercises}
 
 \begin{chapquote}{Bjarne Stroustrup}
