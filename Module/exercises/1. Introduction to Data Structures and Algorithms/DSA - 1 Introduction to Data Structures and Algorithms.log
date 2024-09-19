@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 08:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 SEP 2024 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,27 +1026,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Overfull \hbox (41.66989pt too wide) in paragraph at lines 183--185
+Overfull \hbox (41.66989pt too wide) in paragraph at lines 185--187
 [][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1uc3ehhK4Mv84KXPe8oV3l3AGI6czVhBx ?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
 
-Overfull \hbox (24.42369pt too wide) in paragraph at lines 183--185
+Overfull \hbox (24.42369pt too wide) in paragraph at lines 185--187
 [][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1eIkUp3t2cAKIpd9KZGbQlZEGU516S _
  []
 
 
-Overfull \hbox (18.10008pt too wide) in paragraph at lines 198--201
+Overfull \hbox (18.10008pt too wide) in paragraph at lines 200--203
 [][]$\T1/lmtt/m/n/10.95 https : / / docs . google . com / document / d / 1zZf3W0Hj6NfCGU7sKAaz _ cztSER5e7Vx /
  []
 
@@ -1061,18 +1061,18 @@ Package rerunfilecheck Info: File `"DSA - 1 Introduction to Data Structures and 
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30829 strings out of 475496
- 555459 string characters out of 5776763
+ 30831 strings out of 475496
+ 555473 string characters out of 5776763
  1937960 words of memory out of 5000000
  52796 multiletter control sequences out of 15000+600000
  658752 words of font info for 172 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 117i,11n,121p,1426b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,11n,121p,1426b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "DSA - 1 Introduction to Data Structures and Algorithms.pdf" (4 pages, 251753 bytes).
+Output written on "DSA - 1 Introduction to Data Structures and Algorithms.pdf" (4 pages, 252105 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
  56333 words of extra memory for PDF output out of 61914 (max. 10000000)
 
