@@ -1282,9 +1282,9 @@ the first element is at index 0. Arrays also have a fixed size that is
 specified at the time of declaration.
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\textwidth]{./assets/images/cpp-array-declaration_0.png}
-  \caption{Elements of an array in C++}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./assets/images/cpp-array-declaration_0.png}
+    \caption{Elements of an array in C++}
     \floatfoot{Elements of an array in C++ from Programiz}
     \label{fig:array-elements}
 \end{figure}
@@ -1495,39 +1495,1224 @@ integer elements.
 
 \subsection{Array Operations}
 
+Arrays support various operations such as insertion, deletion, and searching
+of elements. These operations are essential for manipulating the elements of
+an array and performing various tasks in a computer program.
+
 \subsubsection{Insertion}
+
+The \textbf{\textit{insertion}} operation is used to add an element to an array
+at a specific position. The element is inserted at the specified index, and
+the existing elements are shifted to accommodate the new element.
+
+% TikZ diagram for array insertion
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Make a one dimensional grid with 6 elements
+        \draw (0, 0) grid (6, 1);
+        % Fill the grid with the elements
+        \foreach \x/\y in {
+            0/19, 1/10, 2/8, 3/17, 4/9, 5/15
+        }
+        \node at (\x + 0.5, 0.5) {\y};
+        \node at (-2, 0.5) {Before Insertion};
+
+        % Insert a new element at index 2
+        \draw (2, -1) rectangle (3, -2);
+        \node at (2.5, -1.5) {12};
+
+        % Draw Arrow with label "Insert"
+        \draw[->] (2.5, -2) -- (2.5, -3);
+        \node at (4.5, -2.5) {Insert 12 at index 2};
+        
+        % Create a new grid with the inserted element
+        \draw (0, -4) grid (7, -3);
+        % Color the grid with inserted element
+        \draw[fill=blue] (2, -4) rectangle (3, -3);
+
+        \foreach \x/\y in {
+            0/19, 1/10, 2/12, 3/8, 4/17, 5/9, 6/15
+        }
+        \node at (\x + 0.5, -3.5) {\y};
+        \node at (-2, -3.5) {After Insertion};
+    \end{tikzpicture}
+    \caption{Array Insertion}
+    \label{fig:array-insertion}
+\end{figure}
+
+Figure \ref{fig:array-insertion} shows the visual representation of the
+insertion operation in an array. The element 12 is inserted at index 2 of
+the array, and the existing elements are shifted to accommodate the new
+element.
+
+% Code example for array insertion
+\begin{lstlisting}[language=C++, caption={Array Insertion}, label={lst:array-insertion}]
+int main() {
+    int arr[100] = {19, 10, 8, 17, 9, 15};
+    int n = 6;
+    int index = 2;
+    int value = 12;
+
+    for (int i = n - 1; i >= index; i--) {
+        arr[i + 1] = arr[i];
+    }
+    arr[index] = value;
+    n++;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:array-insertion} shows the code for inserting an element
+into an array in C++. The code snippet declares an array \texttt{arr} of size
+100 and initializes it with 6 elements. It then inserts the element 12 at
+index 2 of the array and shifts the existing elements to accommodate the new
+element.
 
 \subsubsection{Deletion}
 
+The \textbf{\textit{deletion}} operation is used to remove an element from an
+array at a specific position. The element is deleted from the specified index,
+and the remaining elements are shifted to fill the gap created by the deletion.
+
+% TikZ diagram for array deletion
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Make a one dimensional grid with 6 elements
+        \draw (0, 0) grid (6, 1);
+        % Fill the grid with the elements
+        \foreach \x/\y in {
+            0/19, 1/10, 2/8, 3/17, 4/9, 5/15
+        }
+        \node at (\x + 0.5, 0.5) {\y};
+        \node at (-2, 0.5) {Before Deletion};
+
+        % Delete the element at index 2
+        \draw[fill=red] (2, -1) rectangle (3, -2);
+        \node at (2.5, -1.5) {8};
+
+        % Draw Arrow with label "Delete"
+        \draw[->] (2.5, -3) -- (2.5, -2);
+        \node at (4.75, -2.5) {Delete element at index 2};
+        
+        % Create a new grid with the deleted element
+        \draw (0, -4) grid (5, -3);
+
+        \foreach \x/\y in {
+            0/19, 1/10, 2/17, 3/9, 4/15
+        }
+        \node at (\x + 0.5, -3.5) {\y};
+        \node at (-2, -3.5) {After Deletion};
+    \end{tikzpicture}
+    \caption{Array Deletion}
+    \label{fig:array-deletion}
+\end{figure}
+
+
+Figure \ref{fig:array-deletion} shows the visual representation of the deletion
+operation in an array. The element 8 is deleted from index 2 of the array, and
+the remaining elements are shifted to fill the gap created by the deletion.
+
+% Code example for array deletion
+\begin{lstlisting}[language=C++, caption={Array Deletion}, label={lst:array-deletion}]
+int main() {
+    int arr[100] = {19, 10, 8, 17, 9, 15};
+    int n = 6;
+    int index = 2;
+
+    for (int i = index; i < n - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+    n--;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:array-deletion} shows the code for deleting an element from an
+array in C++. The code snippet declares an array \texttt{arr} of size 100 and
+initializes it with 6 elements. It then deletes the element at index 2 of the
+array and shifts the remaining elements to fill the gap created by the deletion.
+
 \subsubsection{Searching}
 
-\subsection{Complexity Analysis of Arrays}
+The \textbf{\textit{searching}} operation is used to find the position of an
+element in an array. The element is searched for in the array, and the index
+of the element is returned if it is found. If the element is not found, a
+special value such as -1 is returned to indicate that the element is not
+present in the array.
+
+% TikZ diagram for array searching
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Make a one dimensional grid with 6 elements
+        \draw (0, 0) grid (6, 1);
+        % Fill the grid with the elements
+        \foreach \x/\y in {
+            0/19, 1/10, 2/8, 3/17, 4/9, 5/15
+        }
+        \node at (\x + 0.5, 0.5) {\y};
+        \node at (-2, 0.5) {Array};
+
+        % Search for the element 17
+        \draw[fill=green] (3, -1) rectangle (4, -2);
+        \node at (3.5, -1.5) {17};
+
+        % Draw Arrow with label "Search"
+        \draw[->] (3.5, -3) -- (3.5, -2);
+        \node at (4.75, -2.5) {Search for 17};
+        \node at (5.75, -1.5) {17 found at index 3};
+
+        % Create a new grid with the searched element
+        \draw (0, -4) grid (6, -3);
+
+        \foreach \x/\y in {
+            0/19, 1/10, 2/8, 3/17, 4/9, 5/15
+        }
+        \node at (\x + 0.5, -3.5) {\y};
+        \node at (-2, -3.5) {Result: Index 3};
+    \end{tikzpicture}
+    \caption{Array Searching}
+    \label{fig:array-searching}
+\end{figure}
+
+Figure \ref{fig:array-searching} shows the visual representation of the
+searching operation in an array. The element 17 is searched for in the array,
+and the index of the element is returned if it is found. In this case, the
+element 17 is found at index 3 of the array.
+
+% Code example for array searching
+\begin{lstlisting}[language=C++, caption={Array Searching}, label={lst:array-searching}]
+int main() {
+    int arr[100] = {19, 10, 8, 17, 9, 15};
+    int n = 6;
+    int value = 17;
+    int index = -1;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == value) {
+            index = i;
+            break;
+        }
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:array-searching} shows the code for searching an element in an
+array in C++. The code snippet declares an array \texttt{arr} of size 100 and
+initializes it with 6 elements. It then searches for the element 17 in the
+array and returns the index of the element if it is found. In this case, the
+element 17 is found at index 3 of the array. The searching algorithm used in
+the example is a linear search algorithm.
+
+% \subsection{Complexity Analysis of Arrays}
 
 \section{Linked Lists}
+
+A \textbf{\textit{linked list}} is a data structure that consists of a sequence
+of elements called nodes. A node contains a data part and a reference part that
+points to the next or previous node in the sequence. Linked lists are used to
+store and manipulate collections of elements in a computer program. Unlike
+arrays, linked lists do not require contiguous memory locations, and the size
+of a linked list can grow or shrink dynamically.
 
 \subsection{Types of Linked Lists}
 
 \subsubsection{Singly Linked List}
 
+A \textbf{\textit{singly linked list}} is a type of linked list in which each
+node contains a data part and a next part that points to the next node in the
+sequence. The last node in the list points to a special value called NULL to
+indicate the end of the list.
+
+% TikZ diagram for singly linked list
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the singly linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+
+        \draw (12, 0) rectangle (13.25, 1);
+        \node at (12.625, 0.5) {NULL};
+
+        % Draw the arrows between the nodes
+        \draw[->] (1.125, 0.5) -- (2, 0.5);
+        \draw[->] (3.125, 0.5) -- (4, 0.5);
+        \draw[->] (5.125, 0.5) -- (6, 0.5);
+        \draw[->] (7.125, 0.5) -- (8, 0.5);
+        \draw[->] (9.125, 0.5) -- (10, 0.5);
+        \draw[->] (11.125, 0.5) -- (12, 0.5);
+    \end{tikzpicture}
+    \caption{Singly Linked List}
+    \label{fig:singly-linked-list}
+\end{figure}
+
+Figure \ref{fig:singly-linked-list} shows the visual representation of a singly
+linked list. The linked list contains nodes with data values 19, 10, 8, 17, 9,
+and 15. Each node points to the next node in the sequence, and the last node
+points to NULL to indicate the end of the list.
+
+% Code example for singly linked list
+\begin{lstlisting}[language=C++, caption={Singly Linked List}, label={lst:singly-linked-list}]
+struct Node {
+    int data;
+    Node *next;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:singly-linked-list} shows the code for creating a singly linked
+list in C++. The code snippet defines a structure \texttt{Node} that contains
+a data part and a next part that points to the next node in the sequence. It
+then creates a linked list with nodes containing data values 19, 10, 8, 17, 9,
+and 15. Each node points to the next node in the sequence, and the last node
+points to NULL to indicate the end of the list.
+
 \subsubsection{Doubly Linked List}
 
+A \textbf{\textit{doubly linked list}} is a type of linked list in which each
+node contains a data part, a next part that points to the next node in the
+sequence, and a previous part that points to the previous node in the sequence.
+The first node in the list points to NULL in the previous part, and the last
+node in the list points to NULL in the next part.
+
+% TikZ diagram for doubly linked list
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the doubly linked list
+        \draw (-1, 0) rectangle (-2.25, 1);
+        \node at (-1.625, 0.5) {NULL};
+
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+        \draw[fill=gray] (-0.25, 1) rectangle (0, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+        \draw[fill=gray] (1.75, 1) rectangle (2, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+        \draw[fill=gray] (3.75, 1) rectangle (4, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+        \draw[fill=gray] (5.75, 1) rectangle (6, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+        \draw[fill=gray] (7.75, 1) rectangle (8, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+        \draw[fill=gray] (9.75, 1) rectangle (10, 0);
+
+        \draw (12, 0) rectangle (13.25, 1);
+        \node at (12.625, 0.5) {NULL};
+
+        % Draw the arrows between the nodes
+        \draw[<-] (-1, 0.5) -- (-0.125, 0.5);
+        \draw[<->] (1.125, 0.5) -- (1.875, 0.5);
+        \draw[<->] (3.125, 0.5) -- (3.875, 0.5);
+        \draw[<->] (5.125, 0.5) -- (5.875, 0.5);
+        \draw[<->] (7.125, 0.5) -- (7.875, 0.5);
+        \draw[<->] (9.125, 0.5) -- (9.875, 0.5);
+        \draw[->] (11.125, 0.5) -- (12, 0.5);
+    \end{tikzpicture}
+    \caption{Doubly Linked List}
+    \label{fig:doubly-linked-list}
+\end{figure}
+
+Figure \ref{fig:doubly-linked-list} shows the visual representation of a doubly
+linked list. The linked list contains nodes with data values 19, 10, 8, 17, 9,
+and 15. Each node points to the next and previous nodes in the sequence, and
+the first and last nodes point to NULL to indicate the end of the list.
+
+% Code example for doubly linked list
+\begin{lstlisting}[language=C++, caption={Doubly Linked List}, label={lst:doubly-linked-list}]
+struct Node {
+    int data;
+    Node *next;
+    Node *prev;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+        this->prev = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+    
+    second->prev = first;
+    third->prev = second;
+    fourth->prev = third;
+    fifth->prev = fourth;
+    sixth->prev = fifth;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:doubly-linked-list} shows the code for creating a doubly linked
+list in C++. The code snippet defines a structure \texttt{Node} that contains
+a data part, a next part that points to the next node in the sequence, and a
+previous part that points to the previous node in the sequence. It then creates
+a linked list with nodes containing data values 19, 10, 8, 17, 9, and 15. Each
+node points to the next and previous nodes in the sequence, and the first and
+last nodes point to NULL to indicate the end of the list.
+
 \subsubsection{Circular Linked List}
+
+A \textbf{\textit{circular linked list}} is a type of linked list in which the
+last node in the list points back to the first node, forming a circular loop.
+This allows traversal of the list in a circular manner, starting from any node
+in the list.
+
+% TikZ diagram for circular linked list
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the circular linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+
+        % Draw the arrows between the nodes
+        \draw[->] (1.125, 0.5) -- (2, 0.5);
+        \draw[->] (3.125, 0.5) -- (4, 0.5);
+        \draw[->] (5.125, 0.5) -- (6, 0.5);
+        \draw[->] (7.125, 0.5) -- (8, 0.5);
+        \draw[->] (9.125, 0.5) -- (10, 0.5);
+
+        % Add Curved Arrow from last node to first node
+        \draw[->] (11.125, 0.5) to [out=45, in=135] (-0.125, 0.5);
+    \end{tikzpicture}
+    \caption{Circular Linked List}
+    \label{fig:circular-linked-list}
+\end{figure}
+
+Figure \ref{fig:circular-linked-list} shows the visual representation of a
+circular linked list. The linked list contains nodes with data values 19, 10,
+8, 17, 9, and 15. Each node points to the next node in the sequence, and the
+last node points back to the first node, forming a circular loop.
+
+% Code example for circular linked list
+\begin{lstlisting}[language=C++, caption={Circular Linked List}, label={lst:circular-linked-list}]
+struct Node {
+    int data;
+    Node *next;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+    sixth->next = head;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:circular-linked-list} shows the code for creating a circular
+linked list in C++. The code snippet defines a structure \texttt{Node} that
+contains a data part and a next part that points to the next node in the
+sequence. It then creates a linked list with nodes containing data values 19,
+10, 8, 17, 9, and 15. Each node points to the next node in the sequence, and
+the last node points back to the first node, forming a circular loop.
+
+\subsubsection{Doubly Circular Linked List}
+
+A \textbf{\textit{doubly circular linked list}} is a type of linked list in
+which each node contains a data part, a next part that points to the next node
+in the sequence, and a previous part that points to the previous node in the
+sequence. The first node in the list points to the last node in the previous
+part, and the last node in the list points to the first node in the next part,
+forming a circular loop.
+
+% TikZ diagram for doubly circular linked list
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the doubly circular linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+        \draw[fill=gray] (-0.25, 1) rectangle (0, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+        \draw[fill=gray] (1.75, 1) rectangle (2, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+        \draw[fill=gray] (3.75, 1) rectangle (4, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+        \draw[fill=gray] (5.75, 1) rectangle (6, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+        \draw[fill=gray] (7.75, 1) rectangle (8, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+        \draw[fill=gray] (9.75, 1) rectangle (10, 0);
+
+        % Draw the arrows between the nodes
+        \draw[<->] (1.125, 0.5) -- (1.875, 0.5);
+        \draw[<->] (3.125, 0.5) -- (3.875, 0.5);
+        \draw[<->] (5.125, 0.5) -- (5.875, 0.5);
+        \draw[<->] (7.125, 0.5) -- (7.875, 0.5);
+        \draw[<->] (9.125, 0.5) -- (9.875, 0.5);
+        
+        % Add Curved Arrow from last node to first node
+        \draw[<->] (11.125, 0.5) to [out=45, in=135] (-0.125, 0.5);
+    \end{tikzpicture}
+    \caption{Doubly Circular Linked List}
+    \label{fig:doubly-circular-linked-list}
+\end{figure}
+
+Figure \ref{fig:doubly-circular-linked-list} shows the visual representation of
+a doubly circular linked list. The linked list contains nodes with data values
+19, 10, 8, 17, 9, and 15. Each node points to the next and previous nodes in
+the sequence, and the first and last nodes point to each other, forming a
+circular loop.
+
+% Code example for doubly circular linked list
+\begin{lstlisting}[language=C++, caption={Doubly Circular Linked List}, label={lst:doubly-circular-linked-list}]
+struct Node {
+    int data;
+    Node *next;
+    Node *prev;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+        this->prev = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+    sixth->next = first;
+
+    first->prev = sixth;
+    second->prev = first;
+    third->prev = second;
+    fourth->prev = third;
+    fifth->prev = fourth;
+    sixth->prev = fifth;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:doubly-circular-linked-list} shows the code for creating a doubly
+circular linked list in C++. The code snippet defines a structure \texttt{Node}
+that contains a data part, a next part that points to the next node in the
+sequence, and a previous part that points to the previous node in the sequence.
+It then creates a linked list with nodes containing data values 19, 10, 8, 17,
+9, and 15. Each node points to the next and previous nodes in the sequence, and
+the first and last nodes point to each other, forming a circular loop.
 
 \subsection{Operations on Linked Lists}
 
 \subsubsection{Insertion}
 
+The \textbf{\textit{insertion}} operation is used to add a new node to a linked
+list at a specific position. The new node is inserted at the specified position,
+and the existing nodes are adjusted to accommodate the new node.
+
+% TikZ diagram for linked list insertion
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+
+        \draw (12, 0) rectangle (13.25, 1);
+        \node at (12.625, 0.5) {NULL};
+
+        % Insert the element 12 at index 2
+        \draw (3, -1) rectangle (4, -2);
+        \node at (3.5, -1.5) {12};
+        \draw[fill=gray] (4, -1) rectangle (4.25, -2);
+
+        % Draw the arrows between the nodes
+        \draw[->] (1.125, 0.5) -- (2, 0.5);
+        \draw[->] (5.125, 0.5) -- (6, 0.5);
+        \draw[->] (7.125, 0.5) -- (8, 0.5);
+        \draw[->] (9.125, 0.5) -- (10, 0.5);
+        \draw[->] (11.125, 0.5) -- (12, 0.5);
+
+        % Draw curved arrows for the inserted element
+        \draw[->] (3.125, 0.5) to [out=315, in=135] (3.0, -1.5);
+        \draw[->] (4.125, -1.5) to [out=45, in=225] (4.0, 0.5);
+    \end{tikzpicture}
+    \caption{Linked List Insertion}
+    \label{fig:linked-list-insertion}
+\end{figure}
+
+Figure \ref{fig:linked-list-insertion} shows the visual representation of the
+insertion operation in a linked list. The element 12 is inserted at index 2 of
+the linked list, and the existing nodes are adjusted to accommodate the new
+node. 
+
+% Code example for linked list insertion
+\begin{lstlisting}[language=C++, caption={Linked List Insertion}, label={lst:linked-list-insertion}]
+struct Node {
+    int data;
+    Node *next;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+
+    Node *newNode = new Node(12);
+    Node *temp = head;
+    int index = 2;
+
+    for (int i = 0; i < index - 1; i++) {
+        temp = temp->next;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:linked-list-insertion} shows the code for inserting an element in
+a linked list in C++. The code snippet defines a structure \texttt{Node} that
+contains a data part and a next part that points to the next node in the
+sequence. It then creates a linked list with nodes containing data values 19,
+10, 8, 17, 9, and 15. The element 12 is inserted at index 2 of the linked list,
+and the existing nodes are adjusted to accommodate the new node.
+
 \subsubsection{Deletion}
+
+The \textbf{\textit{deletion}} operation is used to remove a node from a linked
+list at a specific position. The node at the specified position is removed, and
+the existing nodes are adjusted to maintain the integrity of the list.
+
+% TikZ diagram for linked list deletion
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+
+        % \draw (4, 0) rectangle (5, 1);
+        % \node at (4.5, 0.5) {8};
+        % \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {17};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {9};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {15};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+
+        \draw (10, 0) rectangle (11.5, 1);
+        \node at (10.75, 0.5) {NULL};
+
+        % Delete the element at index 2
+        \draw (3, -1) rectangle (4, -2);
+        \node at (3.5, -1.5) {8};
+        \draw[fill=gray] (4, -1) rectangle (4.25, -2);
+
+        % Draw the arrows between the nodes
+        \draw[->] (1.125, 0.5) -- (2, 0.5);
+        \draw[->] (3.125, 0.5) -- (4, 0.5);
+        \draw[->] (5.125, 0.5) -- (6, 0.5);
+        \draw[->] (7.125, 0.5) -- (8, 0.5);
+        \draw[->] (9.125, 0.5) -- (10, 0.5); 
+    \end{tikzpicture}
+    \caption{Linked List Deletion}
+    \label{fig:linked-list-deletion}
+\end{figure}
+
+Figure \ref{fig:linked-list-deletion} shows the visual representation of the
+deletion operation in a linked list. The element 10 is deleted from index 2 of
+the linked list, and the existing nodes are adjusted to maintain the integrity
+of the list.
+
+% Code example for linked list deletion
+\begin{lstlisting}[language=C++, caption={Linked List Deletion}, label={lst:linked-list-deletion}]
+struct Node {
+    int data;
+    Node *next;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+
+    Node *temp = head;
+    int index = 2;
+
+    for (int i = 0; i < index - 1; i++) {
+        temp = temp->next;
+    }
+
+    Node *deletedNode = temp->next;
+    temp->next = temp->next->next;
+    delete deletedNode;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:linked-list-deletion} shows the code for deleting an element from
+a linked list in C++. The code snippet defines a structure \texttt{Node} that
+contains a data part and a next part that points to the next node in the
+sequence. It then creates a linked list with nodes containing data values 19,
+10, 8, 17, 9, and 15. The element 10 is deleted from index 2 of the linked
+list, and the existing nodes are adjusted to maintain the integrity of the list.
 
 \subsubsection{Searching}
 
-\subsection{Complexity Analysis of Linked Lists}
+The \textbf{\textit{searching}} operation is used to find a specific element in
+a linked list. The list is traversed from the head node to the last node to find
+the element with the specified value.
+
+% TikZ diagram for linked list searching
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the nodes of the linked list
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {10};
+        \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {8};
+        \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {17};
+        \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {9};
+        \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {15};
+        \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+
+        \draw (12, 0) rectangle (13.25, 1);
+        \node at (12.625, 0.5) {NULL};
+
+        % Search for the element 17
+        \draw (6, -1) rectangle (7, -2);
+        \node at (6.5, -1.5) {17};
+        \draw[fill=gray] (7, -1) rectangle (7.25, -2);
+
+        % Label the search result
+        \node at (9, -1.5) {17 Found at 3rd Node};
+
+        % Draw the arrows between the nodes
+        \draw[->] (1.125, 0.5) -- (2, 0.5);
+        \draw[->] (3.125, 0.5) -- (4, 0.5);
+        \draw[->] (5.125, 0.5) -- (6, 0.5);
+        \draw[->] (7.125, 0.5) -- (8, 0.5);
+        \draw[->] (9.125, 0.5) -- (10, 0.5);
+        \draw[->] (11.125, 0.5) -- (12, 0.5);
+    \end{tikzpicture}
+    \caption{Linked List Searching}
+    \label{fig:linked-list-searching}
+\end{figure}
+
+Figure \ref{fig:linked-list-searching} shows the visual representation of the
+searching operation in a linked list. The element 17 is searched for in the
+linked list, and the list is traversed from the head node to the last node to
+find the element with the specified value.
+
+% Code example for linked list searching
+\begin{lstlisting}[language=C++, caption={Linked List Searching}, label={lst:linked-list-searching}]
+struct Node {
+    int data;
+    Node *next;
+    
+    Node(int data) {
+        this->data = data;
+        this->next = NULL;
+    }
+};
+
+int main() {
+    Node *first = new Node(19);
+    Node *second = new Node(10);
+    Node *third = new Node(8);
+    Node *fourth = new Node(17);
+    Node *fifth = new Node(9);
+    Node *sixth = new Node(15);
+
+    Node *head = first;
+
+    first->next = second;
+    second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+
+    int searchValue = 17;
+    Node *temp = head;
+    int position = 1;
+
+    while (temp != NULL) {
+        if (temp->data == searchValue) {
+            break;
+        }
+        temp = temp->next;
+        position++;
+    }
+
+    return 0;
+}
+\end{lstlisting}
+    
+Code \ref{lst:linked-list-searching} shows the code for searching an element in
+a linked list in C++. The code snippet defines a structure \texttt{Node} that
+contains a data part and a next part that points to the next node in the
+sequence. It then creates a linked list with nodes containing data values 19,
+10, 8, 17, 9, and 15. The element 17 is searched for in the linked list, and
+the list is traversed from the head node to the last node to find the element
+with the specified value.
+
+% \subsection{Complexity Analysis of Linked Lists}
 
 \section{Comparison of Arrays and Linked Lists}
 
+Unlike arrays, linked lists do not have a fixed size and can grow dynamically
+by adding new nodes. This makes linked lists more flexible and efficient for
+insertion and deletion operations, as they do not require shifting elements to
+accommodate new elements. However, linked lists have higher memory overhead due
+to the additional pointers in each node.
+
+Arrays are more efficient for random access operations, as elements can be
+accessed directly using their index. In contrast, linked lists require
+traversing the list from the head node to the desired node, which can be slower
+for large lists. Arrays also have better cache locality, as elements are stored
+contiguously in memory, leading to faster access times.
+
+Thus, if the application requires frequent insertion and deletion operations
+with a dynamic size, linked lists are a better choice. On the other hand, if the
+application requires frequent random access operations and has a fixed size,
+arrays are more suitable.
+
 \section{Summary}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In this chapter, we discussed arrays and linked lists as fundamental data
+structures in computer science. We covered the basic concepts, operations, and
+implementations of arrays and linked lists, along with their comparison in terms
+of performance and memory usage. We also explored different types of linked
+lists, such as singly linked lists, doubly linked lists, circular linked lists,
+and doubly circular linked lists, and discussed the operations on linked lists,
+such as insertion, deletion, and searching. Finally, we compared arrays and
+linked lists based on their characteristics and use cases.
+
+\section{Coding Exercises}
+
+\begin{enumerate}
+    % Reverse an Array
+    \item \textbf{Reverse an Array:} Write a C++ program to reverse an array of
+    integers. The program should take the size of the array and the elements of
+    the array as input and output the reversed array.
+    \begin{enumerate}
+        \item Declare an array of integers with a fixed size.
+        \begin{align*}
+            \text{int arr[6];}
+        \end{align*}
+        \item Initialize the array with the input elements.
+        \begin{align*}
+            \text{arr = \{19, 10, 8, 17, 9, 15\};}
+        \end{align*}
+        \item Reverse the array using a loop. \\
+        \begin{figure*}[h]
+            \centering
+            \begin{tikzpicture}[scale=1]
+                \draw (0, 0) grid (6, 1);
+                \node at (0.5, 0.5) {19};
+                \node at (1.5, 0.5) {10};
+                \node at (2.5, 0.5) {8};
+                \node at (3.5, 0.5) {17};
+                \node at (4.5, 0.5) {9};
+                \node at (5.5, 0.5) {15};
+                \node at (-1.75, 0.5) {Original Array};
+
+                % \draw[->] (3, 0) -- (3, -1);
+
+                \draw (0, -1) grid (6, -2);
+                \node at (0.5, -1.5) {15};
+                \node at (1.5, -1.5) {9};
+                \node at (2.5, -1.5) {17};
+                \node at (3.5, -1.5) {8};
+                \node at (4.5, -1.5) {10};
+                \node at (5.5, -1.5) {19};
+                \node at (-1.75, -1.5) {Reversed Array};
+            \end{tikzpicture}
+            \caption{Reversing an Array}
+            \label{fig:reverse-array}
+        \end{figure*}
+        \item Print the reversed array to the console.
+        \begin{align*}
+            \text{Reversed Array: 15, 9, 17, 8, 10, 19}
+        \end{align*}
+        \item Determine the \textbf{time complexity} and
+        \textbf{space complexity} of the program.
+    \end{enumerate}
+
+    % Reverse a Linked List
+    \item \textbf{Reverse a Linked List:} Write a C++ program to reverse a singly
+    linked list. The program should take the elements of the linked list as input
+    and output the reversed linked list.
+
+    \begin{enumerate}
+        \item Create a singly linked list with nodes containing the elements
+        \begin{center}
+            \begin{tikzpicture}
+                \draw (0, 0) rectangle (1, 1);
+                \node at (0.5, 0.5) {19};
+                \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+    
+                \draw (2, 0) rectangle (3, 1);
+                \node at (2.5, 0.5) {10};
+                \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+    
+                \draw (4, 0) rectangle (5, 1);
+                \node at (4.5, 0.5) {8};
+                \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+    
+                \draw (6, 0) rectangle (7, 1);
+                \node at (6.5, 0.5) {17};
+                \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+    
+                \draw (8, 0) rectangle (9, 1);
+                \node at (8.5, 0.5) {9};
+                \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+    
+                \draw (10, 0) rectangle (11, 1);
+                \node at (10.5, 0.5) {15};
+                \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+    
+                \draw (12, 0) rectangle (13.25, 1);
+                \node at (12.625, 0.5) {NULL};
+    
+                \draw[->] (1.125, 0.5) -- (2, 0.5);
+                \draw[->] (3.125, 0.5) -- (4, 0.5);
+                \draw[->] (5.125, 0.5) -- (6, 0.5);
+                \draw[->] (7.125, 0.5) -- (8, 0.5);
+                \draw[->] (9.125, 0.5) -- (10, 0.5);
+                \draw[->] (11.125, 0.5) -- (12, 0.5);
+            \end{tikzpicture}
+        \end{center}
+        \item Reverse the linked list using a loop.
+        \begin{center}
+            \begin{tikzpicture}
+                \draw (0, 0) rectangle (1, 1);
+                \node at (0.5, 0.5) {15};
+                \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+    
+                \draw (2, 0) rectangle (3, 1);
+                \node at (2.5, 0.5) {9};
+                \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+    
+                \draw (4, 0) rectangle (5, 1);
+                \node at (4.5, 0.5) {17};
+                \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+    
+                \draw (6, 0) rectangle (7, 1);
+                \node at (6.5, 0.5) {8};
+                \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+    
+                \draw (8, 0) rectangle (9, 1);
+                \node at (8.5, 0.5) {10};
+                \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+    
+                \draw (10, 0) rectangle (11, 1);
+                \node at (10.5, 0.5) {19};
+                \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+    
+                \draw (12, 0) rectangle (13.25, 1);
+                \node at (12.625, 0.5) {NULL};
+    
+                \draw[->] (1.125, 0.5) -- (2, 0.5);
+                \draw[->] (3.125, 0.5) -- (4, 0.5);
+                \draw[->] (5.125, 0.5) -- (6, 0.5);
+                \draw[->] (7.125, 0.5) -- (8, 0.5);
+                \draw[->] (9.125, 0.5) -- (10, 0.5);
+                \draw[->] (11.125, 0.5) -- (12, 0.5);
+            \end{tikzpicture}
+        \end{center}
+        \item Print the reversed linked list to the console.
+        \begin{align*}
+            \text{Reversed Linked List: 15, 9, 17, 8, 10, 19}
+        \end{align*}
+        \item Determine the \textbf{time complexity} and
+        \textbf{space complexity} of the program.
+    \end{enumerate}
+    
+    % Search a Circular Linked List
+    \item \textbf{Search a Circular Linked List:} Write a C++ program to search
+    for an element in a circular linked list. The program should take the elements
+    of the circular linked list as input and output the position of the element
+    in the list. If the current node's next pointer points to the head node, the
+    list is circular. If the element is not found in the list, output "Element not
+    found." Else, output the position of the element in the list.
+    \begin{enumerate}
+        \item Create a circular linked list with nodes containing the elements \\
+        \begin{tikzpicture}[scale=1]
+            % Draw the nodes of the circular linked list
+            \draw (0, 0) rectangle (1, 1);
+            \node at (0.5, 0.5) {19};
+            \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+    
+            \draw (2, 0) rectangle (3, 1);
+            \node at (2.5, 0.5) {10};
+            \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+    
+            \draw (4, 0) rectangle (5, 1);
+            \node at (4.5, 0.5) {8};
+            \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+    
+            \draw (6, 0) rectangle (7, 1);
+            \node at (6.5, 0.5) {17};
+            \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+    
+            \draw (8, 0) rectangle (9, 1);
+            \node at (8.5, 0.5) {9};
+            \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+    
+            \draw (10, 0) rectangle (11, 1);
+            \node at (10.5, 0.5) {15};
+            \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+    
+            % Draw the arrows between the nodes
+            \draw[->] (1.125, 0.5) -- (2, 0.5);
+            \draw[->] (3.125, 0.5) -- (4, 0.5);
+            \draw[->] (5.125, 0.5) -- (6, 0.5);
+            \draw[->] (7.125, 0.5) -- (8, 0.5);
+            \draw[->] (9.125, 0.5) -- (10, 0.5);
+    
+            % Add Curved Arrow from last node to first node
+            \draw[->] (11.125, 0.5) to [out=45, in=135] (0, 0.5);
+        \end{tikzpicture}
+        \item Using \textit{cin}, take the input element to search for
+        \begin{align*}
+            \text{Search Element: 21}
+        \end{align*}
+        \item Search for the element in the circular linked list
+        \begin{align*}
+            \text{Element not found.}
+        \end{align*}
+        \item Determine the \textbf{time complexity} and
+        \textbf{space complexity} of the program.
+    \end{enumerate}
+\end{enumerate}
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Stacks and Queues}
