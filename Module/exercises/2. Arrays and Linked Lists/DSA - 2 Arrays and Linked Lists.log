@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  25 SEP 2024 09:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  25 SEP 2024 09:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex"
-(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/Data Structures and Algorithms.tex
+**"c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/2. Arrays and Linked Lists/DSA - 2 Arrays and Linked Lists.tex"
+(c:/Users/glori/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CC-104-Data-Structures-and-Algorithms/Module/exercises/2. Arrays and Linked Lists/DSA - 2 Arrays and Linked Lists.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (c:/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -24,7 +24,7 @@ File: bk11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
-) (./modulestyle.sty (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+) (../../modulestyle.sty (c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (c:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
@@ -840,36 +840,41 @@ File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 File: listings.cfg 2024/05/25 1.10b listings configuration
 ))
 Package: listings 2024/05/25 1.10b (Carsten Heinz)
+
+
+LaTeX Warning: You have requested package `../../modulestyle',
+               but the package provides `modulestyle'.
+
 Package: modulestyle 2011/05/07 v1.2a modulestyle
- (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 148.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 88.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./Data Structures and Algorithms.aux)
-\openout1 = `"Data Structures and Algorithms.aux"'.
+) (./DSA - 2 Arrays and Linked Lists.aux)
+\openout1 = `"DSA - 2 Arrays and Linked Lists.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -909,19 +914,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 73.
-Package microtype Info: Applying patch `item' on input line 73.
-Package microtype Info: Applying patch `toc' on input line 73.
-Package microtype Info: Applying patch `eqnum' on input line 73.
-Package microtype Info: Applying patch `footnote' on input line 73.
-Package microtype Info: Applying patch `verbatim' on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 88.
+Package microtype Info: Applying patch `item' on input line 88.
+Package microtype Info: Applying patch `toc' on input line 88.
+Package microtype Info: Applying patch `eqnum' on input line 88.
+Package microtype Info: Applying patch `footnote' on input line 88.
+Package microtype Info: Applying patch `verbatim' on input line 88.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 73.
+LaTeX Info: Redefining \showhyphens on input line 88.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -946,64 +951,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 73.
- (./Data Structures and Algorithms.out) (./Data Structures and Algorithms.out)
+Package hyperref Info: Link coloring ON on input line 88.
+ (./DSA - 2 Arrays and Linked Lists.out) (./DSA - 2 Arrays and Linked Lists.out)
 \@outlinefile=\write4
-\openout4 = `"Data Structures and Algorithms.out"'.
+\openout4 = `"DSA - 2 Arrays and Linked Lists.out"'.
 
 \c@lstlisting=\count385
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 77.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 77.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 77.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 77.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 77.
+(Font)              <24.88> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 77.
+(Font)              <20.74> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 77.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+(Font)              <17.28> on input line 93.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 77.
+(Font)              <14.4> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 77.
+(Font)              <12> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 77.
+(Font)              <8> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 77.
+(Font)              <6> on input line 93.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 77.
+(Font)              <10> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 77.
+(Font)              <7> on input line 93.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 77.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 77.
+(Font)              <5> on input line 93.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 93.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1023,482 +1028,72 @@ Package microtype Info: Loading generic protrusion settings for font family
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{dedication}
+l.99 \end{dedication}
                       [1
 
-] (./Data Structures and Algorithms.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 6.
-
-
-[2
-
-
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 129.
 
-[3{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
-[4]
-
-[5]
-
-[6]
-
-[7])
-\tf@toc=\write5
-\openout5 = `"Data Structures and Algorithms.toc"'.
+ []
 
 
-
-[8] (./Data Structures and Algorithms.lof)
-\tf@lof=\write6
-\openout6 = `"Data Structures and Algorithms.lof"'.
-
-
-
-[9
-
-] (./Data Structures and Algorithms.lot)
-\tf@lot=\write7
-\openout7 = `"Data Structures and Algorithms.lot"'.
-
-
-
-[10
-
-] (./Data Structures and Algorithms.lol
-
-[11
-
-])
-\tf@lol=\write8
-\openout8 = `"Data Structures and Algorithms.lol"'.
-
-
-
-[12]
 
 [1
 
 
 ]
- 1.
-
-
-[2
-
-] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/05/25 1.10b listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/05/25 1.10b listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 172.
- (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/05/25 1.10b listings language file
-) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/05/25 1.10b listings language file
-)
-
-[3]
-
-[4]
-
-[5]
-
-[6]
-
-[7]
-
-[8]
-
-[9]
-
-[10]
-
-[11]
-
-[12]
-
-[13]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[14]
-<./assets/images/Asymptotic Notations.png, id=2031, 662.475pt x 418.56375pt>
-File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
-<use ./assets/images/Asymptotic Notations.png>
-Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
-(pdftex.def)             Requested size: 271.7835pt x 171.71443pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[15]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 926.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 926.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 939.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\log' on input line 939.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 939.
-
-
-
-[16 <./assets/images/Asymptotic Notations.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 959.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 959.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 977.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\log' on input line 977.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 977.
-
-
-
-[17]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1017.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1017.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1017.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1043.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1043.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1043.
-
-
-
-[18]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1059.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1059.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1091.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1091.
-
-
-
-[19]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1107.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1107.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1129.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1129.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1129.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1149.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1149.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1149.
-
-
-
-[20]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1167.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1167.
-
-
-
-[21]
-
-[22]
- 2.
-<./assets/images/cpp-array-declaration_0.png, id=2214, 1198.4775pt x 313.17pt>
-File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
-<use ./assets/images/cpp-array-declaration_0.png>
-Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
-(pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-
-
-[23
-
- <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=2227, 1198.4775pt x 313.17pt>
-File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
-<use ./assets/images/cpp-array-initialization_0.png>
-Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
-(pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-
-
-[24 <./assets/images/cpp-array-initialization_0.png>]
-File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
-<use ./assets/images/cpp-array-initialization_0.png>
-Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
-(pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=2250, 752.8125pt x 230.36063pt>
-File: ./assets/images/Arrays-in-C.png Graphic file (type png)
-<use ./assets/images/Arrays-in-C.png>
-Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
-(pdftex.def)             Requested size: 362.37569pt x 110.88818pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[25]
-<./assets/images/two-d.png, id=2262, 557.08125pt x 212.29312pt>
-File: ./assets/images/two-d.png Graphic file (type png)
-<use ./assets/images/two-d.png>
-Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
-(pdftex.def)             Requested size: 362.37569pt x 138.09578pt.
-
-
-[26 <./assets/images/Arrays-in-C.png> <./assets/images/two-d.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[27]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[28]
-
-[29]
-
-[30]
-
-[31]
-Overfull \hbox (44.0579pt too wide) in paragraph at lines 1981--1982
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[32]
-
-[33]
-Overfull \hbox (44.0579pt too wide) in paragraph at lines 2084--2085
- [][] 
- []
-
-
-
-[34]
-
-[35]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[36]
-
-[37]
-
-[38]
-
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 2532--2533
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2662--2663
+Overfull \hbox (41.66989pt too wide) in paragraph at lines 331--333
+[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1uc3ehhK4Mv84KXPe8oV3l3AGI6czVhBx ?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
 
-
-[40]
-
-[41]
- 3.
-
-
-[42
-
-]
-Overfull \vbox (105.79999pt too high) has occurred while \output is active []
-
-
-
-[43]
- 4.
-
-
-[44
-
-]
-Overfull \vbox (327.3568pt too high) has occurred while \output is active []
-
-
-
-[45]
- 5.
-
-
-[46
-
-]
-Overfull \vbox (455.69252pt too high) has occurred while \output is active []
-
-
-
-[47]
- 6.
-
-
-[48
-
-]
-Overfull \vbox (32.49893pt too high) has occurred while \output is active []
-
-
-
-[49]
- 7.
-
-
-[50
-
-]
- 8.
-
-
-[51
-
-]
-Overfull \vbox (361.64044pt too high) has occurred while \output is active []
-
-
-
-[52]
- 9.
-
-
-[53
-
-]
-Overfull \vbox (248.51913pt too high) has occurred while \output is active []
-
-
-
-[54]
- 10.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3186.
-(c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (12.406pt too wide) in paragraph at lines 3192--3193
-\T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
+Overfull \hbox (24.42369pt too wide) in paragraph at lines 331--333
+[][]$\T1/lmtt/m/n/10.95 https : / / drive . google . com / drive / folders / 1eIkUp3t2cAKIpd9KZGbQlZEGU516S _
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 3193--3194
-[]\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
+Overfull \hbox (18.10008pt too wide) in paragraph at lines 346--349
+[][]$\T1/lmtt/m/n/10.95 https : / / docs . google . com / document / d / 1zZf3W0Hj6NfCGU7sKAaz _ cztSER5e7Vx /
  []
 
 
 
-[55
+[2]
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./Data Structures and Algorithms.aux)
+[3] (./DSA - 2 Arrays and Linked Lists.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
-Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: F72B756EB34DB9A7FE354D96D74DDCC6;46873.
+Package rerunfilecheck Info: File `"DSA - 2 Arrays and Linked Lists".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34252 strings out of 475496
- 618397 string characters out of 5776763
- 2051960 words of memory out of 5000000
- 54972 multiletter control sequences out of 15000+600000
- 679882 words of font info for 247 fonts, out of 8000000 for 9000
+ 31774 strings out of 475496
+ 581111 string characters out of 5776763
+ 1947960 words of memory out of 5000000
+ 53725 multiletter control sequences out of 15000+600000
+ 658929 words of font info for 174 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 117i,11n,121p,1342b,2096s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (68 pages, 1017024 bytes).
+ 117i,11n,121p,1380b,844s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on "DSA - 2 Arrays and Linked Lists.pdf" (5 pages, 255222 bytes).
 PDF statistics:
- 3059 PDF objects out of 3580 (max. 8388607)
- 2914 compressed objects within 30 object streams
- 1092 named destinations out of 1200 (max. 500000)
- 69118 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 56333 words of extra memory for PDF output out of 61914 (max. 10000000)
 

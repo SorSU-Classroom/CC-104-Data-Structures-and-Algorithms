@@ -2530,8 +2530,7 @@ linked lists based on their characteristics and use cases.
             \text{arr = \{19, 10, 8, 17, 9, 15\};}
         \end{align*}
         \item Reverse the array using a loop. \\
-        \begin{figure*}[h]
-            \centering
+        \begin{center}
             \begin{tikzpicture}[scale=1]
                 \draw (0, 0) grid (6, 1);
                 \node at (0.5, 0.5) {19};
@@ -2553,9 +2552,7 @@ linked lists based on their characteristics and use cases.
                 \node at (5.5, -1.5) {19};
                 \node at (-1.75, -1.5) {Reversed Array};
             \end{tikzpicture}
-            \caption{Reversing an Array}
-            \label{fig:reverse-array}
-        \end{figure*}
+        \end{center}
         \item Print the reversed array to the console.
         \begin{align*}
             \text{Reversed Array: 15, 9, 17, 8, 10, 19}
@@ -2663,49 +2660,57 @@ linked lists based on their characteristics and use cases.
     found." Else, output the position of the element in the list.
     \begin{enumerate}
         \item Create a circular linked list with nodes containing the elements \\
-        \begin{tikzpicture}[scale=1]
-            % Draw the nodes of the circular linked list
-            \draw (0, 0) rectangle (1, 1);
-            \node at (0.5, 0.5) {19};
-            \draw[fill=gray] (1, 1) rectangle (1.25, 0);
-    
-            \draw (2, 0) rectangle (3, 1);
-            \node at (2.5, 0.5) {10};
-            \draw[fill=gray] (3, 1) rectangle (3.25, 0);
-    
-            \draw (4, 0) rectangle (5, 1);
-            \node at (4.5, 0.5) {8};
-            \draw[fill=gray] (5, 1) rectangle (5.25, 0);
-    
-            \draw (6, 0) rectangle (7, 1);
-            \node at (6.5, 0.5) {17};
-            \draw[fill=gray] (7, 1) rectangle (7.25, 0);
-    
-            \draw (8, 0) rectangle (9, 1);
-            \node at (8.5, 0.5) {9};
-            \draw[fill=gray] (9, 1) rectangle (9.25, 0);
-    
-            \draw (10, 0) rectangle (11, 1);
-            \node at (10.5, 0.5) {15};
-            \draw[fill=gray] (11, 1) rectangle (11.25, 0);
-    
-            % Draw the arrows between the nodes
-            \draw[->] (1.125, 0.5) -- (2, 0.5);
-            \draw[->] (3.125, 0.5) -- (4, 0.5);
-            \draw[->] (5.125, 0.5) -- (6, 0.5);
-            \draw[->] (7.125, 0.5) -- (8, 0.5);
-            \draw[->] (9.125, 0.5) -- (10, 0.5);
-    
-            % Add Curved Arrow from last node to first node
-            \draw[->] (11.125, 0.5) to [out=45, in=135] (0, 0.5);
-        \end{tikzpicture}
+        \begin{center}
+            \begin{tikzpicture}[scale=1]
+                % Draw the nodes of the circular linked list
+                \draw (0, 0) rectangle (1, 1);
+                \node at (0.5, 0.5) {19};
+                \draw[fill=gray] (1, 1) rectangle (1.25, 0);
+        
+                \draw (2, 0) rectangle (3, 1);
+                \node at (2.5, 0.5) {10};
+                \draw[fill=gray] (3, 1) rectangle (3.25, 0);
+        
+                \draw (4, 0) rectangle (5, 1);
+                \node at (4.5, 0.5) {8};
+                \draw[fill=gray] (5, 1) rectangle (5.25, 0);
+        
+                \draw (6, 0) rectangle (7, 1);
+                \node at (6.5, 0.5) {17};
+                \draw[fill=gray] (7, 1) rectangle (7.25, 0);
+        
+                \draw (8, 0) rectangle (9, 1);
+                \node at (8.5, 0.5) {9};
+                \draw[fill=gray] (9, 1) rectangle (9.25, 0);
+        
+                \draw (10, 0) rectangle (11, 1);
+                \node at (10.5, 0.5) {15};
+                \draw[fill=gray] (11, 1) rectangle (11.25, 0);
+        
+                % Draw the arrows between the nodes
+                \draw[->] (1.125, 0.5) -- (2, 0.5);
+                \draw[->] (3.125, 0.5) -- (4, 0.5);
+                \draw[->] (5.125, 0.5) -- (6, 0.5);
+                \draw[->] (7.125, 0.5) -- (8, 0.5);
+                \draw[->] (9.125, 0.5) -- (10, 0.5);
+        
+                % Add Curved Arrow from last node to first node
+                % \draw[->] (11.125, 0.5) to [out=45, in=135] (0, 0.5);
+                \draw[->] (11.125, 0.5)
+                    -- (11.5, 0.5)
+                    -- (11.5, 1.5)
+                    -- (-0.375, 1.5)
+                    -- (-0.375, 0.5)
+                    -- (0, 0.5);
+            \end{tikzpicture}
+        \end{center}
         \item Using \textit{cin}, take the input element to search for
         \begin{align*}
             \text{Search Element: 21}
         \end{align*}
         \item Search for the element in the circular linked list
         \begin{align*}
-            \text{Element not found.}
+            \text{Output: Element not found.}
         \end{align*}
         \item Determine the \textbf{time complexity} and
         \textbf{space complexity} of the program.
