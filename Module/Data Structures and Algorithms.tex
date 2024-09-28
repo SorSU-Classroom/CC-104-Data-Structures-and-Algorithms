@@ -2459,14 +2459,14 @@ int main() {
 
     int searchValue = 17;
     Node *temp = head;
-    int position = 1;
+    int index = 0;
 
     while (temp != NULL) {
         if (temp->data == searchValue) {
             break;
         }
         temp = temp->next;
-        position++;
+        index++;
     }
 
     return 0;

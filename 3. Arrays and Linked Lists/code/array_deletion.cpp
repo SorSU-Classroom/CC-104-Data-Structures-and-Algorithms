@@ -21,6 +21,7 @@ int main() {
     for (int i = index; i < n - 1; i++) {
         arr[i] = arr[i + 1];
     }
+    arr[n - 1] = 0;
     n--;
 
     cout << "After Deletion: " << endl;
