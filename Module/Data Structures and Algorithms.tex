@@ -3218,28 +3218,568 @@ method is called.
 
 % \subsection{Complexity Analysis of Stack}
 
+% The time complexity of the `Push', `Pop', `Top', `Size', and `Empty' operations
+% on a stack is $O(1)$, as they involve only a single operation to insert, remove,
+% get the top element, get the size, and check if the stack is empty, respectively.
+% The space complexity of a stack is $O(n)$, where $n$ is the number of elements in
+% the stack, as it requires memory to store the elements.
+
 % % \subsection{Implementation of Stack Using Arrays}
 
 % % \subsection{Implementation of Stack Using Linked Lists}
 
 \section{Queue}
 
+A `Queue' is a linear data structure that follows the First In First Out
+(FIFO) principle, where the first element inserted is the first one to be
+removed. The operations on a queue are `Push' (to insert an element),
+`Pop' (to remove an element), `Front' (to get the front element),
+`Back' (to get the back element), `Size' (to get the number of elements),
+and `Empty' (to check if the queue is empty).
+
+% One particular application of a queue is in the scheduling of processes in
+% an operating system. The processes are added to the queue in the order they
+% arrive and are executed in the same order.
+
+% Draw a queue data structure using TikZ
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the queue data structure
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+
+        % Add the front and back pointers
+        \draw[->] (0.5, -0.75) -- (0.5, 0);
+        \node at (0.5, -1) {Front};
+        \draw[->] (5.5, -0.75) -- (5.5, 0);
+        \node at (5.5, -1) {Back};
+
+        % Add the Push and Pop pointers
+        \draw[->] (0, 0.5) -- (-1, 0.5);
+        \node at (-1.5, 0.5) {Pop};
+        \draw[->] (7, 0.5) -- (6, 0.5);
+        \node at (7.5, 0.5) {Push};
+    \end{tikzpicture}
+    \caption{Queue Data Structure}
+    \label{fig:queue-data-structure}
+\end{figure}
+
+Figure \ref{fig:queue-data-structure} shows the visual representation of a
+queue data structure. The queue contains elements 19, 10, 8, 17, 9, and 15,
+where 19 is the front element and 15 is the back element of the queue.
+
 \subsection{Operations on Queue}
 
 \subsubsection{Push}
 
+The `Push' operation is used to insert an element into the queue. The new
+element is added to the back of the queue.
+
+% Draw the Queue for each Push operation for a total of 6 pushes
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw a line for initial queue
+        \draw (0, 0) -- (6, 0);
+        \node at (3.5, 0.25) {Empty Queue};
+
+        % Draw the queue after first push
+        \draw (0, -2) -- (6, -2);
+        \draw (0, -2) rectangle (1, -1);
+        \node at (0.5, -1.5) {19};
+
+        \draw[->] (7, -1.5) -- (6, -1.5);
+        \node at (7.25, -1.5) {19};
+        \node at (6.5, -1.125) {Push};
+
+        % Draw the queue after second push
+        \draw (0, -4) -- (6, -4);
+        \draw (0, -4) rectangle (1, -3);
+        \node at (0.5, -3.5) {19};
+        \draw (1, -4) rectangle (2, -3);
+        \node at (1.5, -3.5) {10};
+
+        \draw[->] (7, -3.5) -- (6, -3.5);
+        \node at (7.25, -3.5) {10};
+        \node at (6.5, -3.125) {Push};
+
+        % Draw the queue after third push
+        \draw (0, -6) -- (6, -6);
+        \draw (0, -6) rectangle (1, -5);
+        \node at (0.5, -5.5) {19};
+        \draw (1, -6) rectangle (2, -5);
+        \node at (1.5, -5.5) {10};
+        \draw (2, -6) rectangle (3, -5);
+        \node at (2.5, -5.5) {8};
+
+        \draw[->] (7, -5.5) -- (6, -5.5);
+        \node at (7.25, -5.5) {8};
+        \node at (6.5, -5.125) {Push};
+
+        % Draw the queue after fourth push
+        \draw (0, -8) -- (6, -8);
+        \draw (0, -8) rectangle (1, -7);
+        \node at (0.5, -7.5) {19};
+        \draw (1, -8) rectangle (2, -7);
+        \node at (1.5, -7.5) {10};
+        \draw (2, -8) rectangle (3, -7);
+        \node at (2.5, -7.5) {8};
+        \draw (3, -8) rectangle (4, -7);
+        \node at (3.5, -7.5) {17};
+
+        \draw[->] (7, -7.5) -- (6, -7.5);
+        \node at (7.25, -7.5) {17};
+        \node at (6.5, -7.125) {Push};
+
+        % Draw the queue after fifth push
+        \draw (0, -10) -- (6, -10);
+        \draw (0, -10) rectangle (1, -9);
+        \node at (0.5, -9.5) {19};
+        \draw (1, -10) rectangle (2, -9);
+        \node at (1.5, -9.5) {10};
+        \draw (2, -10) rectangle (3, -9);
+        \node at (2.5, -9.5) {8};
+        \draw (3, -10) rectangle (4, -9);
+        \node at (3.5, -9.5) {17};
+        \draw (4, -10) rectangle (5, -9);
+        \node at (4.5, -9.5) {9};
+
+        \draw[->] (7, -9.5) -- (6, -9.5);
+        \node at (7.25, -9.5) {9};
+        \node at (6.5, -9.125) {Push};
+
+        % Draw the queue after sixth push
+        \draw (0, -12) -- (6, -12);
+        \draw (0, -12) rectangle (1, -11);
+        \node at (0.5, -11.5) {19};
+        \draw (1, -12) rectangle (2, -11);
+        \node at (1.5, -11.5) {10};
+        \draw (2, -12) rectangle (3, -11);
+        \node at (2.5, -11.5) {8};
+        \draw (3, -12) rectangle (4, -11);
+        \node at (3.5, -11.5) {17};
+        \draw (4, -12) rectangle (5, -11);
+        \node at (4.5, -11.5) {9};
+        \draw (5, -12) rectangle (6, -11);
+        \node at (5.5, -11.5) {15};
+
+        \draw[->] (7, -11.5) -- (6, -11.5);
+        \node at (7.25, -11.5) {15};
+        \node at (6.5, -11.125) {Push};
+    \end{tikzpicture}
+    \caption{Queue Push Operation}
+    \label{fig:queue-push-operation}
+\end{figure}
+
+Figure \ref{fig:queue-push-operation} shows the visual representation of the
+`Push' operation on a queue. The queue is initially empty, and elements 19, 10,
+8, 17, 9, and 15 are pushed into the queue one by one.
+
+% Code example for queue push operation
+\begin{lstlisting}[language=C++, caption={Queue Push Operation}, label={lst:queue-push-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q;
+
+    q.push(19);
+    q.push(10);
+    q.push(8);
+    q.push(17);
+    q.push(9);
+    q.push(15);
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-push-operation} shows the code for the `Push' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and pushes elements 19, 10, 8, 17, 9,
+and 15 into the queue. To `push' an element into the queue, the \texttt{push()}
+method is called with the element to be inserted as an argument.
+
 \subsubsection{Pop}
+
+The `Pop' operation is used to remove the front element from the queue. The
+element is removed from the front of the queue, and the queue is adjusted
+accordingly.
+
+% Draw the Queue for each Pop operation for a total of 6 pops
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial queue after all Push operations
+        \draw (0, 0) -- (6, 0);
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+        
+        % Draw the queue after first pop
+        \draw (0, -2) -- (6, -2);
+        \draw (0, -2) rectangle (1, -1);
+        \node at (0.5, -1.5) {10};
+        \draw (1, -2) rectangle (2, -1);
+        \node at (1.5, -1.5) {8};
+        \draw (2, -2) rectangle (3, -1);
+        \node at (2.5, -1.5) {17};
+        \draw (3, -2) rectangle (4, -1);
+        \node at (3.5, -1.5) {9};
+        \draw (4, -2) rectangle (5, -1);
+        \node at (4.5, -1.5) {15};
+        
+        \draw[->] (0, -1.5) -- (-1, -1.5);
+        \node at (-0.5, -1.25) {Pop};
+        \draw (-1, -2) rectangle (-2, -1);
+        \node at (-1.5, -1.5) {19};
+
+        % Draw the queue after second pop
+        \draw (0, -4) -- (6, -4);
+        \draw (0, -4) rectangle (1, -3);
+        \node at (0.5, -3.5) {8};
+        \draw (1, -4) rectangle (2, -3);
+        \node at (1.5, -3.5) {17};
+        \draw (2, -4) rectangle (3, -3);
+        \node at (2.5, -3.5) {9};
+        \draw (3, -4) rectangle (4, -3);
+        \node at (3.5, -3.5) {15};
+
+        \draw[->] (0, -3.5) -- (-1, -3.5);
+        \node at (-0.5, -3.25) {Pop};
+        \draw (-1, -4) rectangle (-2, -3);
+        \node at (-1.5, -3.5) {10};
+
+        % Draw the queue after third pop
+        \draw (0, -6) -- (6, -6);
+        \draw (0, -6) rectangle (1, -5);
+        \node at (0.5, -5.5) {17};
+        \draw (1, -6) rectangle (2, -5);
+        \node at (1.5, -5.5) {9};
+        \draw (2, -6) rectangle (3, -5);
+        \node at (2.5, -5.5) {15};
+
+        \draw[->] (0, -5.5) -- (-1, -5.5);
+        \node at (-0.5, -5.25) {Pop};
+        \draw (-1, -6) rectangle (-2, -5);
+        \node at (-1.5, -5.5) {8};
+
+        % Draw the queue after fourth pop
+        \draw (0, -8) -- (6, -8);
+        \draw (0, -8) rectangle (1, -7);
+        \node at (0.5, -7.5) {9};
+        \draw (1, -8) rectangle (2, -7);
+        \node at (1.5, -7.5) {15};
+
+        \draw[->] (0, -7.5) -- (-1, -7.5);
+        \node at (-0.5, -7.25) {Pop};
+        \draw (-1, -8) rectangle (-2, -7);
+        \node at (-1.5, -7.5) {17};
+
+        % Draw the queue after fifth pop
+        \draw (0, -10) -- (6, -10);
+        \draw (0, -10) rectangle (1, -9);
+        \node at (0.5, -9.5) {15};
+
+        \draw[->] (0, -9.5) -- (-1, -9.5);
+        \node at (-0.5, -9.25) {Pop};
+        \draw (-1, -10) rectangle (-2, -9);
+        \node at (-1.5, -9.5) {9};
+
+        % Draw the queue after sixth pop
+        \draw (0, -12) -- (6, -12);
+        \node at (3.5, -11.75) {Empty Queue};
+
+        \draw[->] (0, -11.5) -- (-1, -11.5);
+        \node at (-0.5, -11.25) {Pop};
+        \draw (-1, -12) rectangle (-2, -11);
+        \node at (-1.5, -11.5) {15};
+    \end{tikzpicture}
+    \caption{Queue Pop Operation}
+    \label{fig:queue-pop-operation}
+\end{figure}
+
+Figure \ref{fig:queue-pop-operation} shows the visual representation of the
+`Pop' operation on a queue. The queue contains elements 19, 10, 8, 17, 9, and
+15, and each element is popped from the queue one by one.
+
+% Code example for queue pop operation
+\begin{lstlisting}[language=C++, caption={Queue Pop Operation}, label={lst:queue-pop-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q = queue<int>({19, 10, 8, 17, 9, 15});
+
+    q.pop(); // Remove 19
+    q.pop(); // Remove 10
+    q.pop(); // Remove 8
+    q.pop(); // Remove 17
+    q.pop(); // Remove 9
+    q.pop(); // Remove 15
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-pop-operation} shows the code for the `Pop' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. The elements are then popped from the queue one by one
+using the \texttt{pop()} method.
 
 \subsubsection{Front}
 
+The `Front' operation is used to get the front element of the queue without
+removing it from the queue.
+
+% Draw the Queue for the Front operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial queue after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+
+        % Draw the queue after Front operation
+        \node at (0.5, -1.5) {19};
+        \draw[->] (0.5, -1) -- (0.5, 0);
+        \node at (1, -0.5) {Front};
+    \end{tikzpicture}
+    \caption{Queue Front Operation}
+    \label{fig:queue-front-operation}
+\end{figure}
+
+Figure \ref{fig:queue-front-operation} shows the visual representation of the
+`Front' operation on a queue. The queue contains elements 19, 10, 8, 17, 9, and
+15, and the front element of the queue is 19.
+
+% Code example for queue front operation
+\begin{lstlisting}[language=C++, caption={Queue Front Operation}, label={lst:queue-front-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q = queue<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Front Element: " << q.front() << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-front-operation} shows the code for the `Front' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To get the front element of the queue, the \texttt{front()}
+method is called.
+
 \subsubsection{Back}
+
+The `Back' operation is used to get the back element of the queue without
+removing it from the queue.
+
+% Draw the Queue for the Back operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial queue after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+
+        % Draw the queue after Back operation
+        \node at (5.5, -1.5) {15};
+        \draw[->] (5.5, -1) -- (5.5, 0);
+        \node at (6, -0.5) {Back};
+    \end{tikzpicture}
+    \caption{Queue Back Operation}
+    \label{fig:queue-back-operation}
+\end{figure}
+
+Figure \ref{fig:queue-back-operation} shows the visual representation of the
+`Back' operation on a queue. The queue contains elements 19, 10, 8, 17, 9, and
+15, and the back element of the queue is 15.
+
+% Code example for queue back operation
+\begin{lstlisting}[language=C++, caption={Queue Back Operation}, label={lst:queue-back-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q = queue<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Back Element: " << q.back() << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-back-operation} shows the code for the `Back' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To get the back element of the queue, the \texttt{back()}
+method is called.
 
 \subsubsection{Size}
 
+The `Size' operation is used to get the number of elements in the queue.
+
+% Draw the Queue for the Size operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial queue after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+
+        % Draw the queue after Size operation
+        \draw[dashed] (6, 1) -- (6, 2) -- (0, 2) -- (0, 1);
+        \node at (3, 2.25) {Size: 6};
+    \end{tikzpicture}
+    \caption{Queue Size Operation}
+    \label{fig:queue-size-operation}
+\end{figure}
+
+Figure \ref{fig:queue-size-operation} shows the visual representation of the
+`Size' operation on a queue. The queue contains elements 19, 10, 8, 17, 9, and
+15, and the size of the queue is 6.
+
+% Code example for queue size operation
+\begin{lstlisting}[language=C++, caption={Queue Size Operation}, label={lst:queue-size-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q = queue<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Size of Queue: " << q.size() << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-size-operation} shows the code for the `Size' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To get the size of the queue, the \texttt{size()} method
+is called.
+
 \subsubsection{Empty}
 
+The `Empty' operation is used to check if the queue is empty or not. It returns
+\texttt{true} if the queue is empty and \texttt{false} otherwise.
+
+% Draw the Queue for the Empty operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial queue after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {10};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {17};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {9};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {15};
+
+        % Draw the queue after Empty operation
+        \draw[dashed] (6, 1) -- (6, 2) -- (0, 2) -- (0, 1);
+        \node at (3, 2.25) {Empty: false};
+    \end{tikzpicture}
+    \caption{Queue Empty Operation}
+    \label{fig:queue-empty-operation}
+\end{figure}
+
+Figure \ref{fig:queue-empty-operation} shows the visual representation of the
+`Empty' operation on a queue. The queue contains elements 19, 10, 8, 17, 9, and
+15, and the queue is not empty.
+
+% Code example for queue empty operation
+\begin{lstlisting}[language=C++, caption={Queue Empty Operation}, label={lst:queue-empty-operation}]
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q = queue<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Is Queue Empty: " << (q.empty() ? "true" : "false") << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:queue-empty-operation} shows the code for the `Empty' operation on
+a queue in C++. The code snippet creates a queue using the \texttt{queue} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To check if the queue is empty, the \texttt{empty()}
+method is called.
 
 % \subsection{Complexity Analysis of Queue}
+
+% The time complexity of the `Push', `Pop', `Front', `Back', `Size', and `Empty'
+% operations on a queue is $O(1)$. The space complexity of a queue is $O(n)$, where
+% $n$ is the number of elements in the queue.
 
 % \subsection{Implementation of Queue Using Arrays}
 
@@ -3247,7 +3787,27 @@ method is called.
 
 \section{Comparison of Stack and Queue}
 
+The key differences between a `Stack' and a `Queue' is that a stack follows the
+Last In First Out (LIFO) principle, while a queue follows the First In First Out
+(FIFO) principle. You can visualize a stack as a stack of plates, where the last
+plate added is the first one to be removed. On the other hand, you can visualize
+a queue as a line of people waiting for a bus, where the first person in line is
+the first one to board the bus.
+
+In `stack' you can only access the top element, while in `queue' you can access
+both the front and back elements. In `stack' you can only push and pop elements
+at the top, while in `queue' you can push elements at the back and pop elements
+from the front. The time complexity of the `push', `pop', `front', `back', `size',
+and `empty' operations is the same for both stack and queue. Both also have the
+same space complexity. In `stack' you can only access the top element while in
+`queue' you can access both the front and back elements.
+
 \section{Summary}
+
+In this chapter, we discussed the `Queue' data structure. A queue is a linear
+data structure that follows the First In First Out (FIFO) principle. We learned
+about the basic operations on a queue, such as `Push', `Pop', `Front', `Back',
+`Size', and `Empty'. We also compared the `Stack' and `Queue' data structures.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%

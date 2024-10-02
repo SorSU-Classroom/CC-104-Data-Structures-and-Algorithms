@@ -67,3 +67,9 @@
 \contentsline {lstlisting}{\numberline {3.3}{\ignorespaces Stack Top Operation}}{45}{lstlisting.3.3}%
 \contentsline {lstlisting}{\numberline {3.4}{\ignorespaces Stack Size Operation}}{46}{lstlisting.3.4}%
 \contentsline {lstlisting}{\numberline {3.5}{\ignorespaces Stack Empty Operation}}{46}{lstlisting.3.5}%
+\contentsline {lstlisting}{\numberline {3.6}{\ignorespaces Queue Push Operation}}{48}{lstlisting.3.6}%
+\contentsline {lstlisting}{\numberline {3.7}{\ignorespaces Queue Pop Operation}}{49}{lstlisting.3.7}%
+\contentsline {lstlisting}{\numberline {3.8}{\ignorespaces Queue Front Operation}}{50}{lstlisting.3.8}%
+\contentsline {lstlisting}{\numberline {3.9}{\ignorespaces Queue Back Operation}}{51}{lstlisting.3.9}%
+\contentsline {lstlisting}{\numberline {3.10}{\ignorespaces Queue Size Operation}}{51}{lstlisting.3.10}%
+\contentsline {lstlisting}{\numberline {3.11}{\ignorespaces Queue Empty Operation}}{52}{lstlisting.3.11}%
