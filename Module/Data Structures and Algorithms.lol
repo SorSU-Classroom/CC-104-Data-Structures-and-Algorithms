@@ -62,3 +62,8 @@
 \contentsline {lstlisting}{\numberline {2.16}{\ignorespaces Linked List Insertion}}{35}{lstlisting.2.16}%
 \contentsline {lstlisting}{\numberline {2.17}{\ignorespaces Linked List Deletion}}{36}{lstlisting.2.17}%
 \contentsline {lstlisting}{\numberline {2.18}{\ignorespaces Linked List Searching}}{38}{lstlisting.2.18}%
+\contentsline {lstlisting}{\numberline {3.1}{\ignorespaces Stack Push Operation}}{43}{lstlisting.3.1}%
+\contentsline {lstlisting}{\numberline {3.2}{\ignorespaces Stack Pop Operation}}{44}{lstlisting.3.2}%
+\contentsline {lstlisting}{\numberline {3.3}{\ignorespaces Stack Top Operation}}{45}{lstlisting.3.3}%
+\contentsline {lstlisting}{\numberline {3.4}{\ignorespaces Stack Size Operation}}{46}{lstlisting.3.4}%
+\contentsline {lstlisting}{\numberline {3.5}{\ignorespaces Stack Empty Operation}}{46}{lstlisting.3.5}%

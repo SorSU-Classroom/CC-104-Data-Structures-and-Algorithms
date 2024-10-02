@@ -2720,59 +2720,532 @@ linked lists based on their characteristics and use cases.
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Stacks and Queues}
+\chapter{Stack and Queue}
 
 \section{Introduction}
 
-\section{Stacks}
+`Stack' and `Queue' are two fundamental data structures in computer
+science that are used to store and manage data in a specific order.
+They are widely used in various applications, such as operating systems,
+compilers, and network protocols, to manage data efficiently.
 
-\subsection{Operations on Stacks}
+\section{Stack}
+
+A `Stack' is a linear data structure that follows the Last In First Out
+(LIFO) principle, where the last element inserted is the first one to be
+removed. The operations on a stack are `Push' (to insert an element),
+`Pop' (to remove an element), `Top' (to get the top element), `Size'
+(to get the number of elements), and `Empty' (to check if the stack is
+empty).
+
+% Draw a stack data structure using TikZ
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the stack data structure
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (0, 1) -- (1, 1);
+        \draw (0, 0) -- (0, 1);
+        \draw (1, 0) -- (1, 1);
+
+        \draw (0, 1) rectangle (1, 2);
+        \node at (0.5, 1.5) {10};
+        \draw (0, 2) -- (1, 2);
+        \draw (0, 1) -- (0, 2);
+        \draw (1, 1) -- (1, 2);
+
+        \draw (0, 2) rectangle (1, 3);
+        \node at (0.5, 2.5) {8};
+        \draw (0, 3) -- (1, 3);
+        \draw (0, 2) -- (0, 3);
+        \draw (1, 2) -- (1, 3);
+
+        \draw (0, 3) rectangle (1, 4);
+        \node at (0.5, 3.5) {17};
+        \draw (0, 4) -- (1, 4);
+        \draw (0, 3) -- (0, 4);
+        \draw (1, 3) -- (1, 4);
+
+        \draw (0, 4) rectangle (1, 5);
+        \node at (0.5, 4.5) {9};
+        \draw (0, 5) -- (1, 5);
+        \draw (0, 4) -- (0, 5);
+        \draw (1, 4) -- (1, 5);
+
+        \draw (0, 5) rectangle (1, 6);
+        \node at (0.5, 5.5) {15};
+        \draw (0, 6) -- (1, 6);
+        \draw (0, 5) -- (0, 6);
+        \draw (1, 5) -- (1, 6);
+        
+        % Add the top pointer
+        \draw[->] (1.5, 5.5) -- (2, 5.5);
+        \node at (2.5, 5.5) {Top};
+    \end{tikzpicture}
+    \caption{Stack Data Structure}
+    \label{fig:stack-data-structure}
+\end{figure}
+
+Figure \ref{fig:stack-data-structure} shows the visual representation of a
+stack data structure. The stack contains elements 19, 10, 8, 17, 9, and 15,
+where 15 is the top element of the stack.
+
+\subsection{Operations on Stack}
+
+\subsubsection{Push}
+
+The `Push' operation is used to insert an element into the stack. The new
+element is added to the top of the stack.
+
+% Draw the Stack for each Push operation for a total of 6 pushes
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw a line for initial stack
+        \draw (0, 0) -- (1, 0);
+
+        % Draw the stack after first push
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {19};
+        \node at (2.5, 2) {19};
+        \draw[->] (2.5, 1.75) -- (2.5, 1);
+        \node at (3, 1.4) {Push};
+
+        % Draw the stack after second push
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {19};
+
+        \draw (4, 1) rectangle (5, 2);
+        \node at (4.5, 1.5) {10};
+        \node at (4.5, 3) {10};
+        \draw[->] (4.5, 2.75) -- (4.5, 2);
+        \node at (5, 2.4) {Push};
+
+        % Draw the stack after third push
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {19};
+        \draw (6, 1) rectangle (7, 2);
+        \node at (6.5, 1.5) {10};
+
+        \draw (6, 2) rectangle (7, 3);
+        \node at (6.5, 2.5) {8};
+        \node at (6.5, 4) {8};
+        \draw[->] (6.5, 3.75) -- (6.5, 3);
+        \node at (7, 3.4) {Push};
+
+        % Draw the stack after fourth push
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {19};
+        \draw (8, 1) rectangle (9, 2);
+        \node at (8.5, 1.5) {10};
+        \draw (8, 2) rectangle (9, 3);
+        \node at (8.5, 2.5) {8};
+
+        \draw (8, 3) rectangle (9, 4);
+        \node at (8.5, 3.5) {17};
+        \node at (8.5, 5) {17};
+        \draw[->] (8.5, 4.75) -- (8.5, 4);
+        \node at (9, 4.4) {Push};
+
+        % Draw the stack after fifth push
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {19};
+        \draw (10, 1) rectangle (11, 2);
+        \node at (10.5, 1.5) {10};
+        \draw (10, 2) rectangle (11, 3);
+        \node at (10.5, 2.5) {8};
+        \draw (10, 3) rectangle (11, 4);
+        \node at (10.5, 3.5) {17};
+
+        \draw (10, 4) rectangle (11, 5);
+        \node at (10.5, 4.5) {9};
+        \node at (10.5, 6) {9};
+        \draw[->] (10.5, 5.75) -- (10.5, 5);
+        \node at (11, 5.4) {Push};
+
+        % Draw the stack after sixth push
+        \draw (12, 0) rectangle (13, 1);
+        \node at (12.5, 0.5) {19};
+        \draw (12, 1) rectangle (13, 2);
+        \node at (12.5, 1.5) {10};
+        \draw (12, 2) rectangle (13, 3);
+        \node at (12.5, 2.5) {8};
+        \draw (12, 3) rectangle (13, 4);
+        \node at (12.5, 3.5) {17};
+        \draw (12, 4) rectangle (13, 5);
+        \node at (12.5, 4.5) {9};
+
+        \draw (12, 5) rectangle (13, 6);
+        \node at (12.5, 5.5) {15};
+        \node at (12.5, 7) {15};
+        \draw[->] (12.5, 6.75) -- (12.5, 6);
+        \node at (13, 6.4) {Push};
+
+        \end{tikzpicture}
+    \caption{Stack Push Operation}
+    \label{fig:stack-push-operation}
+\end{figure}
+
+Figure \ref{fig:stack-push-operation} shows the visual representation of the
+`Push' operation on a stack. The stack is initially empty, and elements 19, 10,
+8, 17, 9, and 15 are pushed onto the stack one by one.
+
+% Code example for stack push operation
+\begin{lstlisting}[language=C++, caption={Stack Push Operation}, label={lst:stack-push-operation}]
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s;
+
+    s.push(19);
+    s.push(10);
+    s.push(8);
+    s.push(17);
+    s.push(9);
+    s.push(15);
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:stack-push-operation} shows the code for the `Push' operation on
+a stack in C++. The code snippet creates a stack using the \texttt{stack} class
+from the Standard Template Library (STL) and pushes elements 19, 10, 8, 17, 9,
+and 15 onto the stack. To `push' an element onto the stack, the \texttt{push()}
+method is called with the element to be inserted as an argument.
+
+\subsubsection{Pop}
+
+The `Pop' operation is used to remove the top element from the stack. The
+element is removed from the top of the stack, and the stack is adjusted
+accordingly.
+
+% Draw the Stack for each Pop operation for a total of 6 pops
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial stack after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (0, 1) rectangle (1, 2);
+        \node at (0.5, 1.5) {10};
+        \draw (0, 2) rectangle (1, 3);
+        \node at (0.5, 2.5) {8};
+        \draw (0, 3) rectangle (1, 4);
+        \node at (0.5, 3.5) {17};
+        \draw (0, 4) rectangle (1, 5);
+        \node at (0.5, 4.5) {9};
+        \draw (0, 5) rectangle (1, 6);
+        \node at (0.5, 5.5) {15};
+
+        % Draw the stack after first pop
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {19};
+        \draw (2, 1) rectangle (3, 2);
+        \node at (2.5, 1.5) {10};
+        \draw (2, 2) rectangle (3, 3);
+        \node at (2.5, 2.5) {8};
+        \draw (2, 3) rectangle (3, 4);
+        \node at (2.5, 3.5) {17};
+        \draw (2, 4) rectangle (3, 5);
+        \node at (2.5, 4.5) {9};
+
+        \draw (2, 6) rectangle (3, 7);
+        \node at (2.5, 6.5) {15};
+        \draw[->] (2.5, 5) -- (2.5, 6);
+        \node at (3, 5.5) {Pop};
+
+        % Draw the stack after second pop
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {19};
+        \draw (4, 1) rectangle (5, 2);
+        \node at (4.5, 1.5) {10};
+        \draw (4, 2) rectangle (5, 3);
+        \node at (4.5, 2.5) {8};
+        \draw (4, 3) rectangle (5, 4);
+        \node at (4.5, 3.5) {17};
+        
+        \draw (4, 5) rectangle (5, 6);
+        \node at (4.5, 5.5) {9};
+        \draw[->] (4.5, 4) -- (4.5, 5);
+        \node at (5, 4.5) {Pop};
+
+        % Draw the stack after third pop
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {19};
+        \draw (6, 1) rectangle (7, 2);
+        \node at (6.5, 1.5) {10};
+        \draw (6, 2) rectangle (7, 3);
+        \node at (6.5, 2.5) {8};
+        
+        \draw (6, 4) rectangle (7, 5);
+        \node at (6.5, 4.5) {17};
+        \draw[->] (6.5, 3) -- (6.5, 4);
+        \node at (7, 3.5) {Pop};
+
+        % Draw the stack after fourth pop
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {19};
+        \draw (8, 1) rectangle (9, 2);
+        \node at (8.5, 1.5) {10};
+
+        \draw (8, 3) rectangle (9, 4);
+        \node at (8.5, 3.5) {8};
+        \draw[->] (8.5, 2) -- (8.5, 3);
+        \node at (9, 2.5) {Pop};
+
+        % Draw the stack after fifth pop
+        \draw (10, 0) rectangle (11, 1);
+        \node at (10.5, 0.5) {19};
+
+        \draw (10, 2) rectangle (11, 3);
+        \node at (10.5, 2.5) {10};
+        \draw[->] (10.5, 1) -- (10.5, 2);
+        \node at (11, 1.5) {Pop};
+
+        % Draw the stack after sixth pop
+        \draw (12, 0) -- (13, 0);
+
+        \draw (12, 1) rectangle (13, 2);
+        \node at (12.5, 1.5) {19};
+        \draw[->] (12.5, 0) -- (12.5, 1);
+        \node at (13, 0.5) {Pop};
+    \end{tikzpicture}
+    \caption{Stack Pop Operation}
+    \label{fig:stack-pop-operation}
+\end{figure}
+
+Figure \ref{fig:stack-pop-operation} shows the visual representation of the
+`Pop' operation on a stack. The stack contains elements 19, 10, 8, 17, 9, and
+15, and each element is popped from the stack one by one.
+
+% Code example for stack pop operation
+\begin{lstlisting}[language=C++, caption={Stack Pop Operation}, label={lst:stack-pop-operation}]
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s = stack<int>({19, 10, 8, 17, 9, 15});
+
+    s.pop(); // Remove 15
+    s.pop(); // Remove 9
+    s.pop(); // Remove 17
+    s.pop(); // Remove 8
+    s.pop(); // Remove 10
+    s.pop(); // Remove 19
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:stack-pop-operation} shows the code for the `Pop' operation on
+a stack in C++. The code snippet creates a stack using the \texttt{stack} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. The elements are then popped from the stack one by one
+using the \texttt{pop()} method.
+
+\subsubsection{Top}
+
+The `Top' operation is used to get the top element of the stack without
+removing it from the stack.
+
+% Draw the Stack for the Top operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial stack after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (0, 1) rectangle (1, 2);
+        \node at (0.5, 1.5) {10};
+        \draw (0, 2) rectangle (1, 3);
+        \node at (0.5, 2.5) {8};
+        \draw (0, 3) rectangle (1, 4);
+        \node at (0.5, 3.5) {17};
+        \draw (0, 4) rectangle (1, 5);
+        \node at (0.5, 4.5) {9};
+        \draw (0, 5) rectangle (1, 6);
+        \node at (0.5, 5.5) {15};
+
+        % Draw the stack after Top operation
+        \node at (0.5, 7.5) {15};
+        \draw[->] (0.5, 6) -- (0.5, 7);
+        \node at (1, 6.5) {Top};
+    \end{tikzpicture}
+    \caption{Stack Top Operation}
+    \label{fig:stack-top-operation}
+\end{figure}
+
+Figure \ref{fig:stack-top-operation} shows the visual representation of the
+`Top' operation on a stack. The stack contains elements 19, 10, 8, 17, 9, and
+15, and the top element of the stack is 15.
+
+% Code example for stack top operation
+\begin{lstlisting}[language=C++, caption={Stack Top Operation}, label={lst:stack-top-operation}]
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s = stack<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Top Element: " << s.top() << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:stack-top-operation} shows the code for the `Top' operation on
+a stack in C++. The code snippet creates a stack using the \texttt{stack} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To get the top element of the stack, the \texttt{top()}
+method is called.
+
+\subsubsection{Size}
+
+The `Size' operation is used to get the number of elements in the stack.
+
+% Draw the Stack for the Size operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial stack after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (0, 1) rectangle (1, 2);
+        \node at (0.5, 1.5) {10};
+        \draw (0, 2) rectangle (1, 3);
+        \node at (0.5, 2.5) {8};
+        \draw (0, 3) rectangle (1, 4);
+        \node at (0.5, 3.5) {17};
+        \draw (0, 4) rectangle (1, 5);
+        \node at (0.5, 4.5) {9};
+        \draw (0, 5) rectangle (1, 6);
+        \node at (0.5, 5.5) {15};
+
+        % Draw the stack after Size operation
+        \draw[dashed] (1, 6) -- (2, 6) -- (2, 0) -- (1, 0);
+        \node at (2.75, 3) {Size: 6};
+    \end{tikzpicture}
+    \caption{Stack Size Operation}
+    \label{fig:stack-size-operation}
+\end{figure}
+
+Figure \ref{fig:stack-size-operation} shows the visual representation of the
+`Size' operation on a stack. The stack contains elements 19, 10, 8, 17, 9, and
+15, and the size of the stack is 6.
+
+% Code example for stack size operation
+\begin{lstlisting}[language=C++, caption={Stack Size Operation}, label={lst:stack-size-operation}]
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s = stack<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Size of Stack: " << s.size() << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:stack-size-operation} shows the code for the `Size' operation on
+a stack in C++. The code snippet creates a stack using the \texttt{stack} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To get the size of the stack, the \texttt{size()} method
+is called.
+
+\subsubsection{Empty}
+
+The `Empty' operation is used to check if the stack is empty or not. It returns
+\texttt{true} if the stack is empty and \texttt{false} otherwise.
+
+% Draw the Stack for the Empty operation
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        % Draw the initial stack after all Push operations
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {19};
+        \draw (0, 1) rectangle (1, 2);
+        \node at (0.5, 1.5) {10};
+        \draw (0, 2) rectangle (1, 3);
+        \node at (0.5, 2.5) {8};
+        \draw (0, 3) rectangle (1, 4);
+        \node at (0.5, 3.5) {17};
+        \draw (0, 4) rectangle (1, 5);
+        \node at (0.5, 4.5) {9};
+        \draw (0, 5) rectangle (1, 6);
+        \node at (0.5, 5.5) {15};
+
+        % Draw the stack after Empty operation
+        \draw[dashed] (1, 6) -- (2, 6) -- (2, 0) -- (1, 0);
+        \node at (3.25, 3) {Empty: false};
+    \end{tikzpicture}
+    \caption{Stack Empty Operation}
+    \label{fig:stack-empty-operation}
+\end{figure}
+
+Figure \ref{fig:stack-empty-operation} shows the visual representation of the
+`Empty' operation on a stack. The stack contains elements 19, 10, 8, 17, 9, and
+15, and the stack is not empty.
+
+% Code example for stack empty operation
+\begin{lstlisting}[language=C++, caption={Stack Empty Operation}, label={lst:stack-empty-operation}]
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s = stack<int>({19, 10, 8, 17, 9, 15});
+
+    cout << "Is Stack Empty: " << (s.empty() ? "true" : "false") << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:stack-empty-operation} shows the code for the `Empty' operation on
+a stack in C++. The code snippet creates a stack using the \texttt{stack} class
+from the Standard Template Library (STL) and initializes it with elements 19,
+10, 8, 17, 9, and 15. To check if the stack is empty, the \texttt{empty()}
+method is called.
+
+% \subsection{Complexity Analysis of Stack}
+
+% % \subsection{Implementation of Stack Using Arrays}
+
+% % \subsection{Implementation of Stack Using Linked Lists}
+
+\section{Queue}
+
+\subsection{Operations on Queue}
 
 \subsubsection{Push}
 
 \subsubsection{Pop}
 
-\subsubsection{Peek}
-
-\subsubsection{isEmpty}
-
-\subsubsection{isFull}
-
-\subsection{Complexity Analysis of Stacks}
-
-\subsection{Implementation of Stacks Using Arrays}
-
-\subsection{Implementation of Stacks Using Linked Lists}
-
-\section{Queues}
-
-\subsection{Types of Queues}
-
-\subsubsection{Linear Queue}
-
-\subsubsection{Circular Queue}
-
-\subsubsection{Priority Queue}
-
-\subsubsection{Double-ended Queue (Deque)}
-
-\subsection{Operations on Queues}
-
-\subsubsection{Enqueue}
-
-\subsubsection{Dequeue}
-
 \subsubsection{Front}
 
-\subsubsection{Rear}
+\subsubsection{Back}
 
-\subsection{Complexity Analysis of Queues}
+\subsubsection{Size}
 
-\subsection{Implementation of Queues Using Arrays}
+\subsubsection{Empty}
 
-\subsection{Implementation of Queues Using Linked Lists}
 
-\section{Comparison of Stacks and Queues}
+% \subsection{Complexity Analysis of Queue}
+
+% \subsection{Implementation of Queue Using Arrays}
+
+% \subsection{Implementation of Queue Using Linked Lists}
+
+\section{Comparison of Stack and Queue}
 
 \section{Summary}
 
