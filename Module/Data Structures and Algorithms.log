@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  3 OCT 2024 09:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  13 NOV 2024 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,7 +601,55 @@ File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \arrowsize=\dimen306
-)) (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box116
+\pgfnodeparttwobox=\box117
+\pgfnodepartthreebox=\box118
+\pgfnodepartfourbox=\box119
+\pgfnodeparttwentybox=\box120
+\pgfnodepartnineteenbox=\box121
+\pgfnodeparteighteenbox=\box122
+\pgfnodepartseventeenbox=\box123
+\pgfnodepartsixteenbox=\box124
+\pgfnodepartfifteenbox=\box125
+\pgfnodepartfourteenbox=\box126
+\pgfnodepartthirteenbox=\box127
+\pgfnodeparttwelvebox=\box128
+\pgfnodepartelevenbox=\box129
+\pgfnodeparttenbox=\box130
+\pgfnodepartninebox=\box131
+\pgfnodeparteightbox=\box132
+\pgfnodepartsevenbox=\box133
+\pgfnodepartsixbox=\box134
+\pgfnodepartfivebox=\box135
+))) (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
  (c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -690,7 +738,8 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
- (c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
@@ -729,7 +778,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ) (c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box116
+\ttl@box=\box136
 \beforetitleunit=\skip84
 \aftertitleunit=\skip85
 \ttl@plus=\dimen315
@@ -748,7 +797,7 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \c@r@tfl@t=\count365
 \rotFPtop=\skip86
 \rotFPbot=\skip87
-\rot@float@box=\box117
+\rot@float@box=\box137
 \rot@mess@toks=\toks45
 ) (c:/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/08/18 v24.8 The Babel package
@@ -785,7 +834,7 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
  (c:/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box118
+\collectedbox=\box138
 )
 \tc@llx=\dimen321
 \tc@lly=\dimen322
@@ -812,12 +861,12 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip88
 \enit@outerparindent=\dimen333
 \enit@toks=\toks48
-\enit@inbox=\box119
+\enit@inbox=\box139
 \enit@count@id=\count369
 \enitdp@description=\count370
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count371
-\lst@gtempboxa=\box120
+\lst@gtempboxa=\box140
 \lst@token=\toks49
 \lst@length=\count372
 \lst@currlwidth=\dimen334
@@ -828,14 +877,13 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \lst@newlines=\count375
 \lst@lineno=\count376
 \lst@maxwidth=\dimen337
-
-(c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+ (c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/05/25 1.10b (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/05/25 1.10b (Carsten Heinz)
 \c@lstnumber=\count377
 \lst@skipnumbers=\count378
-\lst@framebox=\box121
+\lst@framebox=\box141
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/05/25 1.10b listings configuration
 ))
@@ -844,7 +892,7 @@ Package: modulestyle 2011/05/07 v1.2a modulestyle
  (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 148.
+Package hyperref Info: Option `colorlinks' set `true' on input line 196.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 73.
  (c:/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
@@ -931,7 +979,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count379
 \scratchdimen=\dimen338
-\scratchbox=\box122
+\scratchbox=\box142
 \nofMPsegments=\count380
 \nofMParguments=\count381
 \everyMPshowfont=\toks50
@@ -1040,23 +1088,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [4]
 
-[5]
-
-[6]
-
-[7])
+[5])
 \tf@toc=\write5
 \openout5 = `"Data Structures and Algorithms.toc"'.
 
 
 
-[8] (./Data Structures and Algorithms.lof)
+[6] (./Data Structures and Algorithms.lof)
 \tf@lof=\write6
 \openout6 = `"Data Structures and Algorithms.lof"'.
 
 
 
-[9
+[7
 
 ] (./Data Structures and Algorithms.lot)
 \tf@lot=\write7
@@ -1064,11 +1108,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-[10
+[8
 
 ] (./Data Structures and Algorithms.lol
 
-[11
+[9
 
 ])
 \tf@lol=\write8
@@ -1076,7 +1120,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-[12]
+[10]
 
 [1
 
@@ -1128,7 +1172,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14]
-<./assets/images/Asymptotic Notations.png, id=2034, 662.475pt x 418.56375pt>
+<./assets/images/Asymptotic Notations.png, id=1700, 662.475pt x 418.56375pt>
 File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
 <use ./assets/images/Asymptotic Notations.png>
 Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
@@ -1281,7 +1325,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [22]
  2.
-<./assets/images/cpp-array-declaration_0.png, id=2217, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-declaration_0.png, id=1883, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-declaration_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
@@ -1291,7 +1335,7 @@ Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on in
 [23
 
  <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=2230, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-initialization_0.png, id=1896, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
@@ -1303,7 +1347,7 @@ File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
 (pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=2253, 752.8125pt x 230.36063pt>
+<./assets/images/Arrays-in-C.png, id=1918, 752.8125pt x 230.36063pt>
 File: ./assets/images/Arrays-in-C.png Graphic file (type png)
 <use ./assets/images/Arrays-in-C.png>
 Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
@@ -1315,7 +1359,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [25]
-<./assets/images/two-d.png, id=2265, 557.08125pt x 212.29312pt>
+<./assets/images/two-d.png, id=1930, 557.08125pt x 212.29312pt>
 File: ./assets/images/two-d.png Graphic file (type png)
 <use ./assets/images/two-d.png>
 Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
@@ -1430,27 +1474,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [53]
  4.
 
+Overfull \hbox (5.8295pt too wide) in paragraph at lines 4013--4013
+ [][]\T1/lmr/m/n/10.95 (-20) Output 
+ []
+
+
 
 [54
 
 ]
-Overfull \vbox (327.3568pt too high) has occurred while \output is active []
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4031.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
+[55{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 
-
-[55]
- 5.
-
-
-[56
-
-]
-Overfull \vbox (455.69252pt too high) has occurred while \output is active []
-
-
+[56]
 
 [57]
- 6.
+ 5.
 
 
 [58
@@ -1461,13 +1504,13 @@ Overfull \vbox (32.49893pt too high) has occurred while \output is active []
 
 
 [59]
- 7.
+ 6.
 
 
 [60
 
 ]
- 8.
+ 7.
 
 
 [61
@@ -1478,7 +1521,7 @@ Overfull \vbox (361.64044pt too high) has occurred while \output is active []
 
 
 [62]
- 9.
+ 8.
 
 
 [63
@@ -1489,17 +1532,14 @@ Overfull \vbox (248.51913pt too high) has occurred while \output is active []
 
 
 [64]
- 10.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4219.
-(c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (12.406pt too wide) in paragraph at lines 4225--4226
+ 9.
+
+Overfull \hbox (12.406pt too wide) in paragraph at lines 4471--4472
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 4226--4227
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 4472--4473
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
@@ -1507,27 +1547,27 @@ Overfull \hbox (29.39276pt too wide) in paragraph at lines 4226--4227
 
 [65
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] (./Data Structures and Algorithms.aux)
+] (./Data Structures and Algorithms.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: 142921E5B5476574A6D2B0077C987AC6;44647.
+(rerunfilecheck)             Checksum: 8DD5B605DC288E7F56B75D1E98D9A050;35516.
  ) 
 Here is how much of TeX's memory you used:
- 34474 strings out of 475496
- 621926 string characters out of 5776763
+ 36386 strings out of 475496
+ 679024 string characters out of 5776763
  2051960 words of memory out of 5000000
- 55028 multiletter control sequences out of 15000+600000
- 679882 words of font info for 247 fonts, out of 8000000 for 9000
+ 56929 multiletter control sequences out of 15000+600000
+ 680634 words of font info for 255 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2098s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (78 pages, 1055782 bytes).
+Output written on "Data Structures and Algorithms.pdf" (76 pages, 1054621 bytes).
 PDF statistics:
- 3303 PDF objects out of 3580 (max. 8388607)
- 3146 compressed objects within 32 object streams
- 1258 named destinations out of 1440 (max. 500000)
- 69046 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2976 PDF objects out of 2984 (max. 8388607)
+ 2808 compressed objects within 29 object streams
+ 1204 named destinations out of 1440 (max. 500000)
+ 68582 words of extra memory for PDF output out of 74296 (max. 10000000)
 

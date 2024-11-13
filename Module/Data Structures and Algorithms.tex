@@ -3812,172 +3812,418 @@ about the basic operations on a queue, such as `Push', `Pop', `Front', `Back',
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Trees}
+% \chapter{Trees}
 
-\section{Introduction}
+% \section{Introduction}
 
-\section{Properties of Trees}
+% \section{Properties of Trees}
 
-\subsection{Root Node}
+% \subsection{Root Node}
 
-\subsection{Parent Node}
+% \subsection{Parent Node}
 
-\subsection{Child Node}
+% \subsection{Child Node}
 
-\subsection{Leaf Node}
+% \subsection{Leaf Node}
 
-\subsection{Ancestors}
+% \subsection{Ancestors}
 
-\subsection{Siblings}
+% \subsection{Siblings}
 
-\subsection{Descendants}
+% \subsection{Descendants}
 
-\subsection{Height of a Tree}
+% \subsection{Height of a Tree}
 
-\subsection{Depth of a Node}
+% \subsection{Depth of a Node}
 
-\subsection{Degree of a Node}
+% \subsection{Degree of a Node}
 
-\subsection{Level of a Node}
+% \subsection{Level of a Node}
 
-\subsection{Subtree}
+% \subsection{Subtree}
 
-\section{Types of Trees}
+% \section{Types of Trees}
 
-\subsection{Binary Tree}
+% \subsection{Binary Tree}
 
-\subsubsection{Types of Binary Trees}
+% \subsubsection{Types of Binary Trees}
 
-\paragraph{Left-skewed Binary Tree}
+% \paragraph{Left-skewed Binary Tree}
 
-\paragraph{Right-skewed Binary Tree}
+% \paragraph{Right-skewed Binary Tree}
 
-\paragraph{Complete Binary Tree}
+% \paragraph{Complete Binary Tree}
 
-\subsection{Ternary Tree}
+% \subsection{Ternary Tree}
 
-\subsection{N-ary Tree}
+% \subsection{N-ary Tree}
 
-\subsection{Binary Search Tree}
+% \subsection{Binary Search Tree}
 
-\subsection{AVL Tree}
+% \subsection{AVL Tree}
 
-\subsection{Red-Black Tree}
+% \subsection{Red-Black Tree}
 
-\section{Basic Operations on Trees}
+% \section{Basic Operations on Trees}
 
-\subsection{Creation of a Tree}
+% \subsection{Creation of a Tree}
 
-\subsection{Insertion}
+% \subsection{Insertion}
 
-\subsection{Deletion}
+% \subsection{Deletion}
 
-\subsection{Searching}
+% \subsection{Searching}
 
-\subsection{Traversal}
+% \subsection{Traversal}
 
-\subsubsection{Preorder Traversal}
+% \subsubsection{Preorder Traversal}
 
-\subsubsection{Inorder Traversal}
+% \subsubsection{Inorder Traversal}
 
-\subsubsection{Postorder Traversal}
+% \subsubsection{Postorder Traversal}
 
-\subsubsection{Level-order Traversal}
+% \subsubsection{Level-order Traversal}
 
-\section{Complexity Analysis of Trees}
+% \section{Complexity Analysis of Trees}
 
-\section{Summary}
+% \section{Summary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Graphs}
+% \chapter{Graphs}
+
+% \section{Introduction}
+
+% \section{Properties of Graphs}
+
+% \subsection{Vertex}
+
+% \subsection{Edge}
+
+% \subsection{Degree of a Vertex}
+
+% \subsection{Path}
+
+% \section{Types of Graphs}
+
+% \subsection{Finite Graph}
+
+% \subsection{Infinite Graph}
+
+% \subsection{Trivial Graph}
+
+% \subsection{Simple Graph}
+
+% \subsection{Multi Graph}
+
+% \subsection{Null Graph}
+
+% \subsection{Complete Graph}
+
+% \subsection{Pseudo Graph}
+
+% \subsection{Regular Graph}
+
+% \subsection{Bipartite Graph}
+
+% \subsection{Labelled Graph}
+
+% \subsection{Weighted Graph}
+
+% \subsection{Directed Graph}
+
+% \subsection{Undirected Graph}
+
+% \subsection{Connected Graph}
+
+% \subsection{Disconnected Graph}
+
+% \subsection{Cyclic Graph}
+
+% \subsection{Acyclic Graph}
+
+% \subsection{Directed Acyclic Graph (DAG)}
+
+% \subsection{Digraph}
+
+% \subsection{Subgraph}
+
+% \section{Operations on Graphs}
+
+% \subsection{Creation of a Graph}
+
+% \subsection{Insertion}
+
+% \subsubsection{Insertion of a Vertex}
+
+% \subsubsection{Insertion of an Edge}
+
+% \subsection{Deletion}
+
+% \subsubsection{Deletion of a Vertex}
+
+% \subsubsection{Deletion of an Edge}
+
+% \subsection{Traversal}
+
+% \subsubsection{Depth First Search (DFS)}
+
+% \subsubsection{Breadth First Search (BFS)}
+
+% \subsection{Shortest Path}
+
+% \subsection{Minimum Spanning Tree}
+
+% \section{Complexity Analysis of Graphs}
+
+% \section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction to Algorithms}
 
 \section{Introduction}
 
-\section{Properties of Graphs}
+Algorithms are a fundamental concept in computer science and play a crucial role
+in solving computational problems efficiently. An algorithm is a step-by-step
+procedure or a set of rules to solve a specific problem. It is a sequence of
+instructions that takes an input, performs some computation, and produces an
+output. Algorithms are used in various applications, such as search engines,
+social media platforms, e-commerce websites, navigation systems, and many more.
 
-\subsection{Vertex}
+\section{How do Algorithms Work?}
 
-\subsection{Edge}
+Algorithms work by taking an input, processing it through a series of steps, and
+producing an output. The input to an algorithm can be any data, such as numbers,
+strings, arrays, graphs, or any other data structure. The algorithm processes
+the input data using a set of rules or instructions to perform a specific task.
+The output of the algorithm is the result obtained after processing the input
+data. The output can be a single value, a set of values, or any other form of
+data, depending on the problem being solved.
 
-\subsection{Degree of a Vertex}
+% Create a flowchart for an algorithm
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[node distance=1.5cm]
+        \node (input) [io] at (0, 0) {Input};
+        \node (algorithm) [decision] at (5.5, 0) {Set of rules to obtain the expected output from the given input};
+        \node (output) [io] at (11, 0) {Output};
+        \node [below of=algorithm, yshift=-2cm] {Algorithm};
 
-\subsection{Path}
+        \draw [arrow] (input) -- (algorithm);
+        \draw [arrow] (algorithm) -- (output);
+    \end{tikzpicture}
+    \caption{Flowchart for an Algorithm}
+    \label{fig:algorithm-flowchart}
+\end{figure}
 
-\section{Types of Graphs}
+Figure \ref{fig:algorithm-flowchart} shows a flowchart for an algorithm. The
+algorithm takes an input, processes it using an algorithm, and produces an output.
 
-\subsection{Finite Graph}
+\section{Characteristics of an Algorithm}
 
-\subsection{Infinite Graph}
+An algorithm has the following characteristics:
 
-\subsection{Trivial Graph}
+\begin{itemize}
+    \item \textbf{Clear and Unambiguous}: The algorithm should be
+    unambiguous. Each of its steps should be clear in all aspects
+    and must lead to only one meaning.
+    
+    \item \textbf{Well-defined Inputs}: If an algorithm says to take
+    inputs, it should be well-defined inputs. It may or may not take
+    input.
 
-\subsection{Simple Graph}
+    \item \textbf{Well-defined Outputs}: The algorithm must clearly
+    define what output will be yielded and it should be well-defined
+    as well. It should produce at least 1 output.
 
-\subsection{Multi Graph}
+    \item \textbf{Finiteness}: The algorithm must be finite, i.e. it
+    should terminate after a finite time.
 
-\subsection{Null Graph}
+    \item \textbf{Feasible}: The algorithm must be simple, generic,
+    and practical, such that it can be executed using reasonable
+    constraints and resources.
 
-\subsection{Complete Graph}
+    \item \textbf{Language Independent}: Algorithm must be
+    language-independent, i.e. it must be just plain instructions
+    that can be implemented in any language, and yet the output will
+    be the same, as expected.
+\end{itemize}
 
-\subsection{Pseudo Graph}
+\section{What is the Need for Algorithms?}
 
-\subsection{Regular Graph}
+Algorithms are essential for solving complex computational problems efficiently
+and effectively. They can be used to solve a wide range of problems, such as
+searching, sorting, optimization, and many more. They provide a systematic
+approach to:
 
-\subsection{Bipartite Graph}
+\begin{itemize}
+    \item \textbf{Solving Problems}: Algorithms break down problems into smaller,
+    manageable steps, making it easier to solve complex problems.
 
-\subsection{Labelled Graph}
+    \item \textbf{Optimizing Solutions}: Algorithms find the best or near-optimal
+    solutions to problems, helping to optimize the performance of systems.
 
-\subsection{Weighted Graph}
+    \item \textbf{Automating Tasks}: Algorithms can automate repetitive or complex
+    tasks, saving time and effort in performing these tasks manually.
+\end{itemize}
 
-\subsection{Directed Graph}
+\section{Types of Algorithms}
 
-\subsection{Undirected Graph}
+There are various types of algorithms based on their design and functionality.
+Some common types of algorithms include:
 
-\subsection{Connected Graph}
+\begin{itemize}
+    \item \textbf{Brute Force Algorithm}: It is the simplest approach
+    to a problem. A brute force algorithm is the first approach that
+    comes to finding when we see a problem.
 
-\subsection{Disconnected Graph}
+    \item \textbf{Recursive Algorithm}: A recursive algorithm is
+    based on recursion. In this case, a problem is broken into several
+    sub-parts and called the same function again and again.
 
-\subsection{Cyclic Graph}
+    \item \textbf{Backtracking}: The backtracking algorithm builds the 
+    solution by searching among all possible solutions. Using this 
+    algorithm, we keep on building the solution following criteria. 
+    Whenever a solution fails, we trace back to the failure point build 
+    on the next solution and continue this process till we find the 
+    solution or all possible solutions are looked after.
 
-\subsection{Acyclic Graph}
+    \item \textbf{Searching Algorithm}: Searching algorithms are the
+    ones that are used for searching elements or groups of elements 
+    from a particular data structure. They can be of different types 
+    based on their approach or the data structure in which the 
+    element should be found.
 
-\subsection{Directed Acyclic Graph (DAG)}
+    \item \textbf{Sorting Algorithm}: Sorting is arranging a group 
+    of data in a particular manner according to the requirement. The 
+    algorithms which help in performing this function are called 
+    sorting algorithms. Generally sorting algorithms are used to sort 
+    groups of data in an increasing or decreasing manner.
 
-\subsection{Digraph}
+    \item \textbf{Hashing Algorithm}: Hashing algorithms work 
+    similarly to the searching algorithm. But they contain an index 
+    with a key ID. In hashing, a key is assigned to specific data.
 
-\subsection{Subgraph}
+    \item \textbf{Divide and Conquer Algorithm}: This algorithm 
+    breaks a problem into sub-problems, solves a single sub-problem, 
+    and merges the solutions to get the final solution. It consists 
+    of the following three steps: Divide, Solve, and Combine.
 
-\section{Operations on Graphs}
+    \item \textbf{Greedy Algorithm}: In this type of algorithm, the 
+    solution is built part by part. The solution for the next part 
+    is built based on the immediate benefit of the next part. The 
+    one solution that gives the most benefit will be chosen as the 
+    solution for the next part.
 
-\subsection{Creation of a Graph}
+    \item \textbf{Dynamic Programming Algorithm}: This algorithm 
+    uses the concept of using the already found solution to avoid 
+    repetitive calculation of the same part of the problem. It 
+    divides the problem into smaller overlapping sub-problems and 
+    solves them.
 
-\subsection{Insertion}
+    \item \textbf{Randomized Algorithm}: In the randomized algorithm, 
+    we use a random number so it gives immediate benefit. The random 
+    number helps in deciding the expected outcome.
+\end{itemize}
 
-\subsubsection{Insertion of a Vertex}
+\section{Examples of Algorithms}
 
-\subsubsection{Insertion of an Edge}
+Below are some examples of algorithms:
 
-\subsection{Deletion}
+\begin{itemize}
+    \item \textbf{Sorting Algorithms}: Merge sort, Quick sort, Heap sort
+    \item \textbf{Searching Algorithms}: Linear search, Binary search, Hashing
+    \item \textbf{Graph Algorithms}: Dijkstra's algorithm, Prim's algorithm, Floyd-Warshall algorithm
+    \item \textbf{String Matching Algorithms}: Knuth-Morris-Pratt algorithm, Boyer-Moore algorithm
+\end{itemize}
 
-\subsubsection{Deletion of a Vertex}
+\section{How to Write an Algorithm?}
 
-\subsubsection{Deletion of an Edge}
+To write an algorithm, follow these steps:
 
-\subsection{Traversal}
+\begin{itemize}
+    \item \textbf{Define the problem}: Clearly state the problem to be 
+    solved.
+    
+    \item \textbf{Design the algorithm}: Choose an appropriate 
+    algorithm design paradigm and develop a step-by-step procedure.
+    
+    \item \textbf{Implement the algorithm}: Translate the algorithm 
+    into a programming language.
+    
+    \item \textbf{Test and debug}: Execute the algorithm with various
+    inputs to ensure its correctness and efficiency.
 
-\subsubsection{Depth First Search (DFS)}
+    \item \textbf{Analyze the algorithm}: Determine its time and space
+    complexity and compare it to alternative algorithms.
+\end{itemize}
 
-\subsubsection{Breadth First Search (BFS)}
+\section{How to Design an Algorithm?}
 
-\subsection{Shortest Path}
+To write an algorithm, the following things are needed as a 
+pre-requisite:
 
-\subsection{Minimum Spanning Tree}
+\begin{enumerate}
+    \item The problem that is to be solved by this algorithm i.e.
+    clear problem definition.
 
-\section{Complexity Analysis of Graphs}
+    \item The constraints of the problem must be considered while 
+    solving the problem.
 
-\section{Summary}
+    \item The input to be taken to solve the problem.
+
+    \item The output is to be expected when the problem is solved.
+    
+    \item The solution to this problem is within the given constraints.
+\end{enumerate}
+
+Then the algorithm is written with the help of the above parameters 
+such that it solves the problem.
+
+\subsection{Example}
+
+Consider the example to add three numbers and print the sum.
+
+\subsubsection{Step 1: Fulfilling the pre-requisites}
+
+\begin{enumerate}
+    \item The problem that is to be solved by this algorithm: Add 3 
+    numbers and print their sum.
+
+    \item The constraints of the problem that must be considered 
+    while solving the problem: The numbers must contain only digits 
+    and no other characters.
+
+    \item The input to be taken to solve the problem: The three 
+    numbers to be added.
+
+    \item The output to be expected when the problem is solved: 
+    The sum of the three numbers taken as the input i.e. a single 
+    integer value.
+
+    \item The solution to this problem, in the given constraints: 
+    The solution consists of adding the 3 numbers. It can be done 
+    with the help of the ‘+’ operator, or bit-wise, or any other 
+    method.
+\end{enumerate}
+
+\subsubsection{Step 2: Designing the algorithm}
+
+\begin{enumerate}
+    \item START
+    \item Declare 3 integer variables num1, num2, and num3.
+    \item Take the three numbers, to be added, as inputs in variables 
+    num1, num2, and num3 respectively.
+    \item Declare an integer variable sum to store the resultant sum 
+    of the 3 numbers.
+    \item Add the 3 numbers and store the result in the variable sum.
+    \item Print the value of the variable sum
+    \item END
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%

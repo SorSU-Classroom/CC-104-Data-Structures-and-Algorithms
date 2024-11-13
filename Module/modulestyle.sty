@@ -25,7 +25,7 @@
 
 % Tikz
 \usepackage{tikz}
-\usetikzlibrary{positioning, calc, matrix, arrows.meta, arrows}
+\usetikzlibrary{positioning, calc, matrix, arrows.meta, arrows, shadows, shapes.geometric, shapes}
 
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -64,6 +64,54 @@
 \definecolor{pgrey}{rgb}{0.46,0.45,0.48}
 
 \NeedsTeXFormat{LaTeX2e}%
+
+\tikzstyle{startstop} = [
+   rectangle,
+   rounded corners,
+   minimum width=3cm,
+   minimum height=1cm,text centered,
+   text width=1cm,
+   draw=black,
+   fill=red!30
+]
+
+\tikzstyle{io} = [
+   trapezium,
+   trapezium left angle=70,
+   trapezium right angle=110,
+   minimum width=3cm,
+   minimum height=1cm,
+   text centered,
+   text width=1cm,
+   draw=black,
+   fill=blue!30
+]
+
+\tikzstyle{process} = [
+   rectangle,
+   minimum width=3cm,
+   minimum height=1cm,
+   text centered,
+   text width=1cm,
+   draw=black,
+   fill=orange!30
+]
+
+\tikzstyle{decision} = [
+   diamond,
+   minimum width=3cm,
+   minimum height=1cm,
+   text centered,
+   text width=3cm,
+   draw=black,
+   fill=green!30
+]
+
+\tikzstyle{arrow} = [
+   thick,
+   ->,
+   >=stealth
+]
 
 \ProvidesPackage{modulestyle}[2011/05/07 v1.2a modulestyle]
 
