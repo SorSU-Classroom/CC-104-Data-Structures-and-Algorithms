@@ -25,7 +25,7 @@
 
 % Tikz
 \usepackage{tikz}
-\usetikzlibrary{positioning, calc, matrix, arrows.meta, arrows, shadows, shapes.geometric, shapes}
+\usetikzlibrary{positioning, calc, matrix, arrows, shadows, shapes}
 
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -111,6 +111,16 @@
    thick,
    ->,
    >=stealth
+]
+
+% Custom TikZ
+\tikzstyle{box rounded} = [
+   rectangle,
+   rounded corners,
+   minimum width=3cm,
+   minimum height=1cm,
+   text centered,
+   draw=black,
 ]
 
 \ProvidesPackage{modulestyle}[2011/05/07 v1.2a modulestyle]

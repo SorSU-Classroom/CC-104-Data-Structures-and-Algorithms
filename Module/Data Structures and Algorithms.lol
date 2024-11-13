@@ -73,3 +73,8 @@
 \contentsline {lstlisting}{\numberline {3.9}{\ignorespaces Queue Back Operation}}{51}{lstlisting.3.9}%
 \contentsline {lstlisting}{\numberline {3.10}{\ignorespaces Queue Size Operation}}{51}{lstlisting.3.10}%
 \contentsline {lstlisting}{\numberline {3.11}{\ignorespaces Queue Empty Operation}}{52}{lstlisting.3.11}%
+\contentsline {lstlisting}{\numberline {4.1}{\ignorespaces Adding Three Numbers}}{57}{lstlisting.4.1}%
+\contentsline {lstlisting}{\numberline {5.1}{\ignorespaces Linear Search Pseudo-code}}{61}{lstlisting.5.1}%
+\contentsline {lstlisting}{\numberline {5.2}{\ignorespaces Linear Search in C++}}{61}{lstlisting.5.2}%
+\contentsline {lstlisting}{\numberline {5.3}{\ignorespaces Binary Search Pseudo-code}}{63}{lstlisting.5.3}%
+\contentsline {lstlisting}{\numberline {5.4}{\ignorespaces Binary Search in C++}}{64}{lstlisting.5.4}%

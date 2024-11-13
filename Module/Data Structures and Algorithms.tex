@@ -4211,7 +4211,7 @@ Consider the example to add three numbers and print the sum.
     method.
 \end{enumerate}
 
-\subsubsection{Step 2: Designing the algorithm}
+\subsubsection{Step 2: Designing the Algorithm (Pseudo-code)}
 
 \begin{enumerate}
     \item START
@@ -4225,56 +4225,811 @@ Consider the example to add three numbers and print the sum.
     \item END
 \end{enumerate}
 
+\subsubsection{Step 3: Testing the Algorithm}
+
+% Code example for adding three numbers using C++
+\begin{lstlisting}[language=C++, caption={Adding Three Numbers}, label={lst:adding-three-numbers}]
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+
+    int sum;
+
+    cout << "Enter 1st number: ";
+    cin >> num1;
+    cout << " " << num1 << endl;
+
+    cout << "Enter 2nd number: ";
+    cin >> num2;
+    cout << " " << num2 << endl;
+
+    cout << "Enter 3rd number: ";
+    cin >> num3;
+    cout << " " << num3 << endl;
+
+    sum = num1 + num2 + num3;
+
+    cout << "Sum of the three numbers: " << sum << endl;
+
+    return 0;
+}
+\end{lstlisting}
+
+Problem 1:
+\begin{itemize}
+    \item Input: num1 = 10, num2 = 20, num3 = 30
+    \item Output: sum = 60
+\end{itemize}
+
+Problem 2:
+\begin{itemize}
+    \item Input: num1 = 5, num2 = 15, num3 = 25
+    \item Output: sum = 45
+\end{itemize}
+
+Code \ref{lst:adding-three-numbers} shows the code for adding 
+three numbers in C++. The code snippet takes three numbers as
+input from the user, adds them, and prints the sum. Here's the
+step-by-step algorithm of the code:
+
+\begin{enumerate}
+    \item Declare 3 integer variables ``num1'', ``num2'', and ``num3'' to store
+    the three numbers to be added.
+
+    \item Declare an integer variable ``sum'' to store the sum of the
+    three numbers.
+
+    \item Take the three numbers as input from the user and store
+    them in the variables ``num1'', ``num2'', and ``num3''.
+
+    \item Add the three numbers and store the result in the variable
+    ``sum''.
+
+    \item Print the sum of the three numbers.
+\end{enumerate}
+
+\section{Summary}
+
+In this chapter, we discussed the concept of algorithms and their importance
+in computer science. Algorithms are step-by-step procedures or a set of rules
+to solve a specific problem. We learned about the characteristics of an algorithm,
+the need for algorithms, types of algorithms, and how to write and design an
+algorithm. We also saw an example of adding three numbers using an algorithm.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Sorting and Searching}
+\chapter{Searching Algorithms}
 
 \section{Introduction}
 
-\section{Sorting}
+Searching is the process of finding a specific element in a collection of
+elements. Searching algorithms are used to search for an element in a data
+structure, such as an array, list, tree, or graph. There are various searching
+algorithms, each with its own approach and complexity. Searching algorithms
+play a crucial role in various applications, such as search engines, databases,
+and information retrieval systems.
 
-\subsection{Types of Sorting Algorithms}
+\section{Importance of Searching Algorithms}
 
-\subsubsection{Bubble Sort}
+Searching algorithms are essential for finding specific information in a large
+collection of data. They help in quickly locating the desired element without
+the need to scan the entire data structure. Searching algorithms are used in
+various applications, such as:
 
-\subsubsection{Selection Sort}
+\begin{itemize}
+    \item \textbf{Search Engines}: Search engines use searching algorithms to
+    retrieve relevant information from the web.
 
-\subsubsection{Insertion Sort}
+    \item \textbf{Databases}: Databases use searching algorithms to search for
+    specific records or data.
 
-\subsubsection{Merge Sort}
+    \item \textbf{Information Retrieval Systems}: Information retrieval systems
+    use searching algorithms to retrieve relevant information from a large
+    collection of documents.
 
-\subsubsection{Quick Sort}
+    \item \textbf{E-commerce Websites}: E-commerce websites use searching
+    algorithms to search for products based on user queries.
 
-\subsubsection{Heap Sort}
+    \item \textbf{Social Media Platforms}: Social media platforms use searching
+    algorithms to search for users, posts, or content.
 
-\subsubsection{Radix Sort}
+    \item \textbf{Navigation Systems}: Navigation systems use searching algorithms
+    to find the shortest path or route between two locations.
+\end{itemize}
 
-\subsubsection{Counting Sort}
+\section{Characteristics of Searching Algorithms}
 
-\subsubsection{Bucket Sort}
+Understanding the characteristics of searching in data structures 
+and algorithms is crucial for designing efficient algorithms and 
+making informed decisions about which searching technique to employ. 
+Here, we explore key aspects and characteristics associated with 
+searching:
 
-\subsection{Comparison of Sorting Algorithms}
+\begin{itemize}
+    \item \textbf{Target Element}: In searching, there is always a 
+    specific target element or item that you want to find within the 
+    data collection. This target could be a value, a record, a key, 
+    or any other data entity of interest.
 
-\section{Searching}
+    \item \textbf{Search Space}: The search space refers to the entire 
+    collection of data within which you are looking for the target 
+    element. Depending on the data structure used, the search space 
+    may vary in size and organization.
 
-\subsection{Types of Searching Algorithms}
+    \item \textbf{Search Order}: The search order determines the
+    sequence in which elements are examined during the search process.
+    The order can be linear, binary, or any other specific pattern
+    based on the algorithm used.
 
-\subsubsection{Linear Search}
+    \item \textbf{Search Result}: The search result is the outcome of
+    the search process. It indicates whether the target element was
+    found or not, and may include additional information such as the
+    location of the element in the data structure.
 
-\subsubsection{Binary Search}
+    \item \textbf{Complexity}: Searching can have different levels of 
+    complexity depending on the data structure and the algorithm used. 
+    The complexity is often measured in terms of time and space 
+    requirements.
 
-\subsubsection{Jump Search}
+\end{itemize} 
 
-\subsubsection{Interpolation Search}
+\section{Types of Searching Algorithms}
 
-\subsubsection{Exponential Search}
+There are several types of searching algorithms, each with its own approach
+and complexity. These searching algorithms have advantages and disadvantages
+based on the type of data structure and the size of the data. Deter
 
-\subsubsection{Fibonacci Search}
+\subsection{Linear Search}
 
-\subsubsection{Ternary Search}
+Linear search is a simple searching algorithm that searches for an element in
+a collection of elements by checking each element one by one until the desired
+element is found or the end of the collection is reached. It is also known as
+``sequential search''.
 
-\subsection{Comparison of Searching Algorithms}
+% TikZ Figure for Linear Search
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        % \node[fill=blue!30] (search) [box rounded] at (2, 4) {Search Element: 30};
+
+        % 1st Element
+        \draw (0.5, 2.5) circle (0.5);
+        \node at (0.5, 2.5) {30};
+        \draw[dashed] (0.5, 2) -- (0.5, 1);
+        \node at (1.5, 1.5) {Not Equal};
+
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {10};
+        \node at (0.5, -0.25) {0};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {50};
+        \node at (1.5, -0.25) {1};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {30};
+        \node at (2.5, -0.25) {2};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {70};
+        \node at (3.5, -0.25) {3};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {80};
+        \node at (4.5, -0.25) {4};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {60};
+        \node at (5.5, -0.25) {5};
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {20};
+        \node at (6.5, -0.25) {6};
+        \draw (7, 0) rectangle (8, 1);
+        \node at (7.5, 0.5) {90};
+        \node at (7.5, -0.25) {7};
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {40};
+        \node at (8.5, -0.25) {8};
+
+        % 2nd Element
+        \draw (1.5, -1.5) circle (0.5);
+        \node at (1.5, -1.5) {30};
+        \draw[dashed] (1.5, -2) -- (1.5, -3);
+        \node at (2.5, -2.5) {Not Equal};
+
+        \draw (0, -4) rectangle (1, -3);
+        \node at (0.5, -3.5) {10};
+        \node at (0.5, -4.25) {0};
+        \draw (1, -4) rectangle (2, -3);
+        \node at (1.5, -3.5) {50};
+        \node at (1.5, -4.25) {1};
+        \draw (2, -4) rectangle (3, -3);
+        \node at (2.5, -3.5) {30};
+        \node at (2.5, -4.25) {2};
+        \draw (3, -4) rectangle (4, -3);
+        \node at (3.5, -3.5) {70};
+        \node at (3.5, -4.25) {3};
+        \draw (4, -4) rectangle (5, -3);
+        \node at (4.5, -3.5) {80};
+        \node at (4.5, -4.25) {4};
+        \draw (5, -4) rectangle (6, -3);
+        \node at (5.5, -3.5) {60};
+        \node at (5.5, -4.25) {5};
+        \draw (6, -4) rectangle (7, -3);
+        \node at (6.5, -3.5) {20};
+        \node at (6.5, -4.25) {6};
+        \draw (7, -4) rectangle (8, -3);
+        \node at (7.5, -3.5) {90};
+        \node at (7.5, -4.25) {7};
+        \draw (8, -4) rectangle (9, -3);
+        \node at (8.5, -3.5) {40};
+        \node at (8.5, -4.25) {8};
+
+        % 3rd Element
+        \draw (2.5, -5.5) circle (0.5);
+        \node at (2.5, -5.5) {30};
+        \draw[dashed] (2.5, -6) -- (2.5, -7);
+        \node at (3.5, -6.5) {Equal};
+
+        \draw (0, -8) rectangle (1, -7);
+        \node at (0.5, -7.5) {10};
+        \node at (0.5, -8.25) {0};
+        \draw (1, -8) rectangle (2, -7);
+        \node at (1.5, -7.5) {50};
+        \node at (1.5, -8.25) {1};
+        \draw (2, -8) rectangle (3, -7);
+        \node at (2.5, -7.5) {30};
+        \node at (2.5, -8.25) {2};
+        \draw (3, -8) rectangle (4, -7);
+        \node at (3.5, -7.5) {70};
+        \node at (3.5, -8.25) {3};
+        \draw (4, -8) rectangle (5, -7);
+        \node at (4.5, -7.5) {80};
+        \node at (4.5, -8.25) {4};
+        \draw (5, -8) rectangle (6, -7);
+        \node at (5.5, -7.5) {60};
+        \node at (5.5, -8.25) {5};
+        \draw (6, -8) rectangle (7, -7);
+        \node at (6.5, -7.5) {20};
+        \node at (6.5, -8.25) {6};
+        \draw (7, -8) rectangle (8, -7);
+        \node at (7.5, -7.5) {90};
+        \node at (7.5, -8.25) {7};
+        \draw (8, -8) rectangle (9, -7);
+        \node at (8.5, -7.5) {40};
+        \node at (8.5, -8.25) {8};
+
+        % \node[fill=green!30] (search) [box rounded] at (2, -9.5) {30 Found at Index 2};
+    \end{tikzpicture}
+    \caption{Linear Search}
+    \label{fig:linear-search}
+\end{figure}
+
+Figure \ref{fig:linear-search} shows the linear search algorithm in action.
+The algorithm searches for the element 30 in an array of elements. It checks
+each element one by one until it finds the desired element or reaches the end
+of the array. In this case, the element 30 is found at index 2.
+
+\subsubsection{Algorithm of Linear Search}
+
+\begin{itemize}
+    \item The Algorithm examines each element, one by one, in the 
+    collection, treating each element as a potential match for the key 
+    you’re searching for.
+
+    \item The Algorithm examines each element, one by one, in the
+    collection, treating each element as a potential match for the key
+    you’re searching for.
+
+    \item If it goes through all the elements and none of them matches
+    the key, then that means “No match is Found”.
+\end{itemize}
+
+\subsubsection{Pseudo-code of Linear Search}
+
+\begin{lstlisting}[caption={Linear Search Pseudo-code}]
+LinearSearch(arr, key)
+    for i = 0 to arr.length - 1
+        if arr[i] == key
+            return i
+    return -1
+\end{lstlisting}
+
+Pseudo-code for Linear Search is shown in the code snippet. The algorithm
+takes an array and a key as input and searches for the key in the array.
+If the key is found, it returns the index of the key in the array; otherwise,
+it returns -1.
+
+\subsubsection{Linear Search in C++}
+
+\begin{lstlisting}[language=C++, caption={Linear Search in C++}, label={lst:linear-search-cpp}]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int linearSearch(vector<int> &arr, int key) {
+    int n = arr.size();
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main() {
+    vector<int> arr = {10, 20, 30, 40, 50};
+    int key = 30;
+
+    int index = linearSearch(arr, key);
+
+    if (index != -1) {
+        cout << "Element found at index: " << index << endl;
+    } else {
+        cout << "Element not found" << endl;
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:linear-search-cpp} shows the implementation of the linear 
+search algorithm in C++. The code snippet defines a function 
+\texttt{linearSearch} that takes a vector of integers and a key as input
+and searches for the key in the vector. If the key is found, it returns
+the index of the key in the vector; otherwise, it returns -1. In the
+example, the linear search algorithm is used to search for the element
+30 in an array of elements. And the element is found at index 2.
+
+\subsubsection{Application of Linear Search}
+
+Linear search can be used in various applications, such as:
+
+\begin{itemize}
+    \item \textbf{Unsorted Lists}: Linear search is suitable for
+    searching in unsorted lists where the elements are not in any
+    particular order.
+
+    \item \textbf{Small Data Sets}: Linear search is efficient for
+    small data sets where the overhead of sorting the data is not
+    justified.
+
+    \item \textbf{Linear Data Structures}: Linear search is commonly
+    used in linear data structures like arrays and linked lists as
+    it traverses the elements sequentially.
+
+    \item \textbf{Simple Search Operations}: Linear search is useful
+    for simple search operations where the data is not too large and
+    the search is infrequent.
+\end{itemize}
+
+\subsubsection{Advantages and Disadvantages of Linear Search}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item Suitable for small data sets.
+    \item Works well for unsorted lists.
+    \item Does not require any additional memory.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item Inefficient for large data sets as it has a time complexity
+    of O(n) in the worst case.
+    \item Not suitable for sorted lists.
+    \item Slower than other searching algorithms like binary search.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Linear Search}
+
+The time complexity of linear search is \texttt{O(n)}, where \texttt{n}
+is the number of elements in the collection. In the worst-case scenario,
+the algorithm may have to examine all elements in the collection to find
+the desired element. The space complexity of linear search is \texttt{O(1)},
+as it does not require any additional memory.
+
+\subsection{Binary Search}
+
+Binary search is a searching algorithm that finds the position of a target
+value within a sorted array. It compares the target value to the middle element
+of the array and eliminates half of the remaining elements each time. Binary
+search is more efficient than linear search for large data sets.
+
+% TikZ Figure for Binary Search
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        % Initial
+        \node[text width=4cm] (search) [box rounded] at (-3, 0.5) {Search Element: 23};
+
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {2};
+        \node at (0.5, -0.25) {0};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {5};
+        \node at (1.5, -0.25) {1};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {8};
+        \node at (2.5, -0.25) {2};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {12};
+        \node at (3.5, -0.25) {3};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {16};
+        \node at (4.5, -0.25) {4};
+        \draw (5, 0) rectangle (6, 1);
+        \node at (5.5, 0.5) {23};
+        \node at (5.5, -0.25) {5};
+        \draw (6, 0) rectangle (7, 1);
+        \node at (6.5, 0.5) {38};
+        \node at (6.5, -0.25) {6};
+        \draw (7, 0) rectangle (8, 1);
+        \node at (7.5, 0.5) {56};
+        \node at (7.5, -0.25) {7};
+        \draw (8, 0) rectangle (9, 1);
+        \node at (8.5, 0.5) {72};
+        \node at (8.5, -0.25) {8};
+        \draw (9, 0) rectangle (10, 1);
+        \node at (9.5, 0.5) {91};
+        \node at (9.5, -0.25) {9};
+        
+        % 1st Iteration
+        \node[text width=4cm] (mid1) [box rounded] at (-3, -1.5) {
+            23 > 16, take 2nd half
+        };
+        
+        \draw (0, -2) rectangle (1, -1);
+        \node at (0.5, -1.5) {2};
+        \node[text=blue] at (0.5, -2.25) {L=0};
+        \draw (1, -2) rectangle (2, -1);
+        \node at (1.5, -1.5) {5};
+        \node at (1.5, -2.25) {1};
+        \draw (2, -2) rectangle (3, -1);
+        \node at (2.5, -1.5) {8};
+        \node at (2.5, -2.25) {2};
+        \draw (3, -2) rectangle (4, -1);
+        \node at (3.5, -1.5) {12};
+        \node at (3.5, -2.25) {3};
+        \draw[fill=green!30] (4, -2) rectangle (5, -1);
+        \node at (4.5, -1.5) {16};
+        \node[text=black!20!green] at (4.5, -2.25) {M=4};
+        \draw (5, -2) rectangle (6, -1);
+        \node at (5.5, -1.5) {23};
+        \node at (5.5, -2.25) {5};
+        \draw (6, -2) rectangle (7, -1);
+        \node at (6.5, -1.5) {38};
+        \node at (6.5, -2.25) {6};
+        \draw (7, -2) rectangle (8, -1);
+        \node at (7.5, -1.5) {56};
+        \node at (7.5, -2.25) {7};
+        \draw (8, -2) rectangle (9, -1);
+        \node at (8.5, -1.5) {72};
+        \node at (8.5, -2.25) {8};
+        \draw (9, -2) rectangle (10, -1);
+        \node at (9.5, -1.5) {91};
+        \node[text=red] at (9.5, -2.25) {H=9};
+
+        % 2nd Iteration
+        \node[text width=4cm] (mid2) [box rounded] at (-3, -3.5) {
+            23 < 56, take 1st half
+        };
+
+        \draw[fill=gray!30] (0, -4) rectangle (1, -3);
+        \node at (0.5, -3.5) {2};
+        \node at (0.5, -4.25) {0};
+        \draw[fill=gray!30] (1, -4) rectangle (2, -3);
+        \node at (1.5, -3.5) {5};
+        \node at (1.5, -4.25) {1};
+        \draw[fill=gray!30] (2, -4) rectangle (3, -3);
+        \node at (2.5, -3.5) {8};
+        \node at (2.5, -4.25) {2};
+        \draw[fill=gray!30] (3, -4) rectangle (4, -3);
+        \node at (3.5, -3.5) {12};
+        \node at (3.5, -4.25) {3};
+        \draw[fill=gray!30] (4, -4) rectangle (5, -3);
+        \node at (4.5, -3.5) {16};
+        \node at (4.5, -4.25) {4};
+        \draw (5, -4) rectangle (6, -3);
+        \node at (5.5, -3.5) {23};
+        \node[text=blue] at (5.5, -4.25) {L=5};
+        \draw (6, -4) rectangle (7, -3);
+        \node at (6.5, -3.5) {38};
+        \node at (6.5, -4.25) {6};
+        \draw[fill=green!30] (7, -4) rectangle (8, -3);
+        \node at (7.5, -3.5) {56};
+        \node[text=black!20!green] at (7.5, -4.25) {M=7};
+        \draw (8, -4) rectangle (9, -3);
+        \node at (8.5, -3.5) {72};
+        \node at (8.5, -4.25) {8};
+        \draw (9, -4) rectangle (10, -3);
+        \node at (9.5, -3.5) {91};
+        \node[text=red] at (9.5, -4.25) {H=9};
+
+        % 3rd Iteration
+        \node[text width=4cm] (mid3) [box rounded] at (-3, -5.5) {
+            Found 23, Return 5
+        };
+
+        \draw[fill=gray!30] (0, -6) rectangle (1, -5);
+        \node at (0.5, -5.5) {2};
+        \node at (0.5, -6.25) {0};
+        \draw[fill=gray!30] (1, -6) rectangle (2, -5);
+        \node at (1.5, -5.5) {5};
+        \node at (1.5, -6.25) {1};
+        \draw[fill=gray!30] (2, -6) rectangle (3, -5);
+        \node at (2.5, -5.5) {8};
+        \node at (2.5, -6.25) {2};
+        \draw[fill=gray!30] (3, -6) rectangle (4, -5);
+        \node at (3.5, -5.5) {12};
+        \node at (3.5, -6.25) {3};
+        \draw[fill=gray!30] (4, -6) rectangle (5, -5);
+        \node at (4.5, -5.5) {16};
+        \node at (4.5, -6.25) {4};
+        \draw[fill=green!30] (5, -6) rectangle (6, -5);
+        \node at (5.5, -5.5) {23};
+        \node[text=blue] at (5.5, -6.25) {L=5};
+        \node[text=black!20!green] at (5.5, -6.75) {M=5};
+        \draw (6, -6) rectangle (7, -5);
+        \node at (6.5, -5.5) {38};
+        \node[text=red] at (6.5, -6.25) {H=6};
+        \draw[fill=gray!30] (7, -6) rectangle (8, -5);
+        \node at (7.5, -5.5) {56};
+        \node at (7.5, -6.25) {7};
+        \draw[fill=gray!30] (8, -6) rectangle (9, -5);
+        \node at (8.5, -5.5) {72};
+        \node at (8.5, -6.25) {8};
+        \draw[fill=gray!30] (9, -6) rectangle (10, -5);
+        \node at (9.5, -5.5) {91};
+        \node at (9.5, -6.25) {9};
+    \end{tikzpicture}
+    \caption{Binary Search}
+    \label{fig:binary-search}    
+\end{figure}
+
+Figure \ref{fig:binary-search} shows the binary search algorithm in 
+action. The algorithm searches for the element 23 in a sorted array
+of elements. It compares the target value to the middle element of
+the array and eliminates half of the remaining elements each time.
+In the 1st iteration, the algorithm compares 23 with 16 and decides
+to take the 2nd half since 23 > 16. In the 2nd iteration, the algorithm
+compares 23 with 56 and decides to take the 1st half since 23 < 56.
+In the 3rd iteration, the algorithm finds 23 at index 5 and returns
+the index.
+
+\subsubsection{Algorithm of Binary Search}
+
+\begin{itemize}
+    \item Divide the search space into two halves by finding the 
+    middle index ``mid''.
+
+    \item Compare the middle element of the search space with the key.
+    
+    \item Compare the middle element of the search space with the key.
+
+    \item If the key is not found at middle element, choose which
+    half will be used as the next search space.
+    \begin{itemize}
+        \item If the key is not found at middle element, choose which
+        half will be used as the next search space.
+        
+        \item If the key is not found at middle element, choose which
+        half will be used as the next search space.
+    \end{itemize}
+
+    \item If the key is not found at middle element, choose which half
+    will be used as the next search space.
+\end{itemize}
+
+\subsubsection{Pseudo-code of Binary Search}
+
+\begin{lstlisting}[caption={Binary Search Pseudo-code}]
+BinarySearch(arr, key)
+    low = 0
+    high = arr.length - 1
+    while low <= high
+        mid = (low + high) / 2
+        if arr[mid] == key
+            return mid
+        else if arr[mid] < key
+            low = mid + 1
+        else
+            high = mid - 1
+    return -1
+\end{lstlisting}
+
+Pseudo-code for Binary Search is shown in the code snippet. The algorithm
+takes a sorted array and a key as input and searches for the key in the
+array using the binary search technique. If the key is found, it returns
+the index of the key in the array; otherwise, it returns -1.
+
+\subsubsection{Binary Search in C++}
+
+\begin{lstlisting}[language=C++, caption={Binary Search in C++}, label={lst:binary-search-cpp}]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int binarySearch(vector<int> &arr, int key) {
+    int low = 0;
+    int high = arr.size() - 1;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == key) {
+            return mid;
+        } else if (arr[mid] < key) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    return -1;
+}
+
+int main() {
+    vector<int> arr = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
+    int key = 23;
+
+    int index = binarySearch(arr, key);
+
+    if (index != -1) {
+        cout << "Element found at index: " << index << endl;
+    } else {
+        cout << "Element not found" << endl;
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:binary-search-cpp} shows the implementation of the binary
+search algorithm in C++. The code snippet defines a function
+\texttt{binarySearch} that takes a vector of integers and a key as input
+and searches for the key in the vector using the binary search technique.
+If the key is found, it returns the index of the key in the vector;
+otherwise, it returns -1. In the example, the binary search algorithm is
+used to search for the element 23 in a sorted array of elements. And the
+element is found at index 5. During the search process, the algorithm
+compares the target value to the middle element of the array and eliminates
+half of the remaining elements each time. If the middle element is greater
+than the target value, the algorithm chooses the 1st half as the next search
+space; otherwise, it chooses the 2nd half. For each iteration, the algorithm
+updates the low and high indices to narrow down the search space until the
+target value is found or the search space is empty. If the search space is
+empty, the algorithm returns -1 to indicate that the target value is not
+present in the array.
+
+\subsubsection{Application of Binary Search}
+
+Binary search can be used in various applications, such as:
+
+\begin{itemize}
+    \item \textbf{Building Block}: Binary search can be used as a 
+    building block for more complex algorithms used in machine 
+    learning, such as algorithms for training neural networks or 
+    finding the optimal hyperparameters for a model.
+    
+    \item \textbf{Computer Graphics}: It can be used for searching 
+    in computer graphics such as algorithms for ray tracing or 
+    texture mapping.
+    
+    \item \textbf{Database}: It can be used for searching a database.
+\end{itemize}
+
+\subsubsection{Advantages and Disadvantages of Binary Search}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item More efficient than linear search for large data sets.
+    
+    \item More efficient than other searching algorithms with a 
+    similar time complexity, such as interpolation search or 
+    exponential search.
+    
+    \item Binary search is well-suited for searching large datasets 
+    that are stored in external memory, such as on a hard drive or 
+    in the cloud.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item The array should be sorted.
+    \item Binary search requires that the data structure being
+    searched be stored in contiguous memory locations. 
+    \item Binary search requires that the elements of the array be 
+    comparable, meaning that they must be able to be ordered.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Binary Search}
+
+The time complexity of binary search is \texttt{O(log n)}, where 
+\texttt{n} is the number of elements in the collection. In each
+iteration, the search space is divided in half, resulting in a
+time complexity of \texttt{O(log n)}. The space complexity of
+binary search is \texttt{O(1)}, as it does not require any
+additional memory.
+
+\subsection{Other Searching Algorithms}
+
+Apart from linear search and binary search, there are several other
+searching algorithms that are commonly used in practice. Some of the
+popular searching algorithms are:
+
+\begin{itemize}
+    \item \textbf{Jump Search}: Jump search is an algorithm for finding
+    the position of a target value within a sorted array. It works by
+    jumping ahead by fixed steps and then performing a linear search
+    to find the target value.
+    
+    \item \textbf{Interpolation Search}: Interpolation search is an
+    algorithm for finding the position of a target value within a sorted
+    array. It works by estimating the position of the target value based
+    on the values at the ends of the array and then performing a binary
+    search to find the target value.
+    
+    \item \textbf{Exponential Search}: Exponential search is an algorithm
+    for finding the position of a target value within a sorted array. It
+    works by doubling the size of the search space until the target value
+    is found, and then performing a binary search to find the target value.
+    
+    \item \textbf{Fibonacci Search}: Fibonacci search is an algorithm for
+    finding the position of a target value within a sorted array. It works
+    by dividing the search space into two parts using the Fibonacci numbers
+    and then performing a binary search to find the target value.
+    
+    \item \textbf{Hash Search}: Hash search is an algorithm for finding the
+    position of a target value within a hash table. It works by using a hash
+    function to map the target value to a key and then looking up the key in
+    the hash table to find the target value.
+\end{itemize}
+
+\section{Summary}
+
+In this chapter, we discussed the searching algorithms, especially the
+linear search and binary search algorithms. We explained the working
+principles of these algorithms, provided pseudo-code examples, and
+implemented them in C++. We also discussed the applications, advantages,
+disadvantages, and complexity analysis of these algorithms. Additionally,
+we introduced other searching algorithms such as jump search, interpolation
+search, exponential search, Fibonacci search, and hash search. These
+searching algorithms play a crucial role in various applications and are
+essential building blocks for more complex algorithms used in computer
+science and related fields.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Sorting Algorithms}
+
+\section{Introduction}
+
+\subsection{Selection Sort}
+
+\subsection{Bubble Sort}
+
+\subsection{Insertion Sort}
+
+\subsection{Merge Sort}
+
+\subsection{Quick Sort}
+
+\subsection{Heap Sort}
+
+\subsection{Counting Sort}
+
+\subsection{Radix Sort}
+
+\subsection{Bucket Sort}
+
+\section{Types of Sorting Algorithms}
+
+\section{Complexity Analysis of Sorting Algorithms}
 
 \section{Summary}
 
