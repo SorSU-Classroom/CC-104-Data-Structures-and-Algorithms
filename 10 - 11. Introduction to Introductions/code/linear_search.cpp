@@ -13,7 +13,7 @@ int linearSearch(vector<int> &arr, int key) {
 }
 
 int main() {
-    vector<int> arr = {10, 20, 30, 40, 50};
+    vector<int> arr = {10, 50, 30, 70, 80, 60, 20, 90, 40};
     int key = 30;
 
     int index = linearSearch(arr, key);
