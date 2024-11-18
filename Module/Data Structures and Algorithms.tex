@@ -5084,15 +5084,362 @@ classified:
     determine their order. The most common non-comparison-based sorting
 \end{enumerate}
 
-% \begin{figure}[h!]
-%     \centering
-%     \caption{Sorting Techniques}
-    
-% \end{figure}
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[
+        every node/.style={rectangle, fill=white, draw, align=center}
+    ]
+        % Nodes
+        \node (sorting) {Sorting Algorithms};
+        
+        \node (comparison) [below left=of sorting] {Comparison-Based};
+        \node (noncomparison) [below right=of sorting] {Non-comparison-Based};
+        
+        \node (bubble) [below=of comparison] {Bubble Sort};
+        \node (selection) [below=of bubble] {Selection Sort};
+        \node (insertion) [below=of selection] {Insertion Sort};
+        \node (merge) [below=of insertion] {Merge Sort};
+        \node (quick) [below=of merge] {Quick Sort};
+        \node (heap) [below=of quick] {Heap Sort};
+        \node (shell) [below=of heap] {Shell Sort};
+        \node (counting) [below=of noncomparison] {Counting Sort};
+        \node (radix) [below=of counting] {Radix Sort};
+        \node (bucket) [below=of radix] {Bucket Sort};
 
-\section{Types of Sorting Algorithms}
+        % Edges
+        \begin{scope}[on background layer]
+            \draw[->] (sorting) -- (comparison);
+            \draw[->] (sorting) -- (noncomparison);
+
+            \draw[-] (comparison) -- (bubble);
+            \draw[-] (comparison) -- (selection);
+            \draw[-] (comparison) -- (insertion);
+            \draw[-] (comparison) -- (merge);
+            \draw[-] (comparison) -- (quick);
+            \draw[-] (comparison) -- (heap);
+            \draw[-] (comparison) -- (shell);
+            
+            \draw[-] (noncomparison) -- (counting);
+            \draw[-] (noncomparison) -- (radix);
+            \draw[-] (noncomparison) -- (bucket);
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Sorting Techniques}
+    \label{fig:sorting-techniques}
+\end{figure}
+
+\section{Types of Comparison-Based Sorting Algorithms}
+
+There are various types of sorting algorithms used in computer science
+and programming. These sorting algorithms can be broadly classified
+into two categories: comparison-based sorting algorithms and
+non-comparison-based sorting algorithms.
 
 \subsection{Selection Sort}
+
+Selection Sort is a simple sorting algorithm that works by repeatedly
+selecting the minimum element from the unsorted portion of the array
+and swapping it with the first unsorted element. The algorithm divides
+the array into two parts: the sorted part at the beginning and the
+unsorted part at the end. In each iteration, the algorithm finds the
+minimum element in the unsorted part and swaps it with the first
+unsorted element. This process continues until the entire array is
+sorted.
+
+% Create a TikzPicture
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        % 1st Swap
+        \node[text width=5cm] (search) [box rounded] at (-4, 0.5) {
+            Current is 64, Minimum is 11, SWAP
+        };
+
+        \draw (0, 0) rectangle (1, 1);
+        \node at (0.5, 0.5) {64};
+        \node at (0.5, -0.25) {0};
+        \draw (1, 0) rectangle (2, 1);
+        \node at (1.5, 0.5) {25};
+        \node at (1.5, -0.25) {1};
+        \draw (2, 0) rectangle (3, 1);
+        \node at (2.5, 0.5) {12};
+        \node at (2.5, -0.25) {2};
+        \draw (3, 0) rectangle (4, 1);
+        \node at (3.5, 0.5) {22};
+        \node at (3.5, -0.25) {3};
+        \draw (4, 0) rectangle (5, 1);
+        \node at (4.5, 0.5) {11};
+        \node at (4.5, -0.25) {4};
+
+        % Curved Arrow From 0 to 4 and vice-versa
+        \draw[->, bend left=45] (0.5, 1) to (4.5, 1);
+        \draw[->, bend left=-45] (4.5, 1) to (0.5, 1);
+        \node at (2.5, 2.125) {Swap 64 and 11};
+
+        % 2nd Swap
+        \node[text width=5cm] (search) [box rounded] at (-4, -2.5) {
+            Current is 25, Minimum is 12, SWAP
+        };
+
+        \draw[fill=green!30] (0, -3) rectangle (1, -2); %SORTED
+        \node at (0.5, -2.5) {11};
+        \node at (0.5, -3.25) {0};
+        \draw (1, -3) rectangle (2, -2);
+        \node at (1.5, -2.5) {25};
+        \node at (1.5, -3.25) {1};
+        \draw (2, -3) rectangle (3, -2);
+        \node at (2.5, -2.5) {12};
+        \node at (2.5, -3.25) {2};
+        \draw (3, -3) rectangle (4, -2);
+        \node at (3.5, -2.5) {22};
+        \node at (3.5, -3.25) {3};
+        \draw (4, -3) rectangle (5, -2);
+        \node at (4.5, -2.5) {64};
+        \node at (4.5, -3.25) {4};
+
+        % Curved Arrow From 1 to 2 and vice-versa
+        \draw[->, bend left=45] (1.5, -2) to (2.5, -2);
+        \draw[->, bend left=-45] (2.5, -2) to (1.5, -2);
+        \node at (2, -1.5) {Swap 25 and 12};
+
+        % 3rd Swap
+        \node[text width=5cm] (search) [box rounded] at (-4, -5.5) {
+            Current is 22, Minimum is 12, SWAP
+        };
+
+        \draw[fill=green!30] (0, -6) rectangle (1, -5); %SORTED
+        \node at (0.5, -5.5) {11};
+        \node at (0.5, -6.25) {0};
+        \draw[fill=green!30] (1, -6) rectangle (2, -5); %SORTED
+        \node at (1.5, -5.5) {12};
+        \node at (1.5, -6.25) {1};
+        \draw (2, -6) rectangle (3, -5);
+        \node at (2.5, -5.5) {25};
+        \node at (2.5, -6.25) {2};
+        \draw (3, -6) rectangle (4, -5);
+        \node at (3.5, -5.5) {22};
+        \node at (3.5, -6.25) {3};
+        \draw (4, -6) rectangle (5, -5);
+        \node at (4.5, -5.5) {64};
+        \node at (4.5, -6.25) {4};
+        
+        % Curved Arrow From 2 to 3 and vice-versa
+        \draw[->, bend left=45] (2.5, -5) to (3.5, -5);
+        \draw[->, bend left=-45] (3.5, -5) to (2.5, -5);
+        \node at (3, -4.5) {Swap 25 and 22};
+
+        % 4th Swap
+        \node[text width=5cm] (search) [box rounded] at (-4, -8.5) {
+            Current is 25, Minimum is 25, NO SWAP
+        };
+
+        \draw[fill=green!30] (0, -9) rectangle (1, -8); %SORTED
+        \node at (0.5, -8.5) {11};
+        \node at (0.5, -9.25) {0};
+        \draw[fill=green!30] (1, -9) rectangle (2, -8); %SORTED
+        \node at (1.5, -8.5) {12};
+        \node at (1.5, -9.25) {1};
+        \draw[fill=green!30] (2, -9) rectangle (3, -8); %SORTED
+        \node at (2.5, -8.5) {22};
+        \node at (2.5, -9.25) {2};
+        \draw (3, -9) rectangle (4, -8);
+        \node at (3.5, -8.5) {25};
+        \node at (3.5, -9.25) {3};
+        \draw (4, -9) rectangle (5, -8);
+        \node at (4.5, -8.5) {64};
+        \node at (4.5, -9.25) {4};
+
+        %  5th Swap
+        \node[text width=5cm] (search) [box rounded] at (-4, -11.5) {
+            Current is 64, Minimum is 64, NO SWAP
+        };
+
+        \draw[fill=green!30] (0, -12) rectangle (1, -11); %SORTED
+        \node at (0.5, -11.5) {11};
+        \node at (0.5, -12.25) {0};
+        \draw[fill=green!30] (1, -12) rectangle (2, -11); %SORTED
+        \node at (1.5, -11.5) {12};
+        \node at (1.5, -12.25) {1};
+        \draw[fill=green!30] (2, -12) rectangle (3, -11); %SORTED
+        \node at (2.5, -11.5) {22};
+        \node at (2.5, -12.25) {2};
+        \draw[fill=green!30] (3, -12) rectangle (4, -11); %SORTED
+        \node at (3.5, -11.5) {25};
+        \node at (3.5, -12.25) {3};
+        \draw (4, -12) rectangle (5, -11);
+        \node at (4.5, -11.5) {64};
+        \node at (4.5, -12.25) {4};
+        
+        % Final
+        \node[text width=5cm] (search) [box rounded] at (-4, -14.5) {
+            Sorted Array: 11, 12, 22, 25, 64
+        };
+
+        \draw[fill=green!30] (0, -15) rectangle (1, -14); %SORTED
+        \node at (0.5, -14.5) {11};
+        \node at (0.5, -15.25) {0};
+        \draw[fill=green!30] (1, -15) rectangle (2, -14); %SORTED
+        \node at (1.5, -14.5) {12};
+        \node at (1.5, -15.25) {1};
+        \draw[fill=green!30] (2, -15) rectangle (3, -14); %SORTED
+        \node at (2.5, -14.5) {22};
+        \node at (2.5, -15.25) {2};
+        \draw[fill=green!30] (3, -15) rectangle (4, -14); %SORTED
+        \node at (3.5, -14.5) {25};
+        \node at (3.5, -15.25) {3};
+        \draw[fill=green!30] (4, -15) rectangle (5, -14); %SORTED
+        \node at (4.5, -14.5) {64};
+        \node at (4.5, -15.25) {4};
+    \end{tikzpicture}
+    \caption{Selection Sort}
+    \label{fig:selection-sort}
+\end{figure}
+
+Figure \ref{fig:selection-sort} shows the Selection Sort algorithm in
+action. The algorithm sorts an array of elements by repeatedly selecting
+the minimum element from the unsorted portion of the array and swapping
+it with the first unsorted element. In each iteration, the algorithm
+finds the minimum element in the unsorted part and swaps it with the
+first unsorted element. This process continues until the entire array
+is sorted.
+
+\subsubsection{Algorithm of Selection Sort}
+
+\begin{itemize}
+    \item Divide the array into two parts: the sorted part at the
+    beginning and the unsorted part at the end.
+    
+    \item Find the minimum element in the unsorted part of the array.
+    
+    \item Swap the minimum element with the first unsorted element.
+    
+    \item Repeat the process for the remaining unsorted elements until
+    the entire array is sorted.
+\end{itemize}
+
+\subsubsection{Pseudo-code of Selection Sort}
+
+\begin{lstlisting}[caption={Selection Sort Pseudo-code}]
+SelectionSort(arr)
+    n = arr.length
+    for i = 0 to n-1
+        minIndex = i
+        for j = i+1 to n
+            if arr[j] < arr[minIndex]
+                minIndex = j
+        swap(arr[i], arr[minIndex])
+\end{lstlisting}
+
+Pseudo-code for Selection Sort is shown in the code snippet. The algorithm
+takes an array of elements as input and sorts the array using the Selection
+Sort technique. The algorithm iterates through the array, finds the minimum
+element in the unsorted part, and swaps it with the first unsorted element.
+This process continues until the entire array is sorted.
+
+\subsubsection{Selection Sort in C++}
+
+\begin{lstlisting}[language=C++, caption={Selection Sort in C++}, label={lst:selection-sort-cpp}]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void selectionSort(vector<int> &arr) {
+    int n = arr.size();
+
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        swap(arr[i], arr[minIndex]);
+    }
+}
+
+void printArray(vector<int> &arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<int> arr = {64, 25, 12, 22, 11};
+    
+    cout << "Original Array: ";
+    printArray(arr);
+
+    selectionSort(arr);
+
+    cout << "Sorted Array: ";
+    printArray(arr);
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:selection-sort-cpp} shows the implementation of the Selection
+Sort algorithm in C++. The code snippet defines a function \texttt{selectionSort}
+that takes a vector of integers as input and sorts the array using the Selection
+Sort technique. The algorithm iterates through the array, finds the minimum element
+in the unsorted part, and swaps it with the first unsorted element. This process
+continues until the entire array is sorted. In the example, the Selection Sort
+algorithm is used to sort an array of elements, and the sorted array is printed
+to the console.
+
+\subsubsection{Application of Selection Sort}
+
+\begin{itemize}
+    \item \textbf{Teaching}: Selection Sort is often used in computer science
+    courses to teach fundamental sorting mechanisms and algorithm design.
+    
+    \item \textbf{Small Lists}: Selection Sort is suitable for small lists
+    where the overhead of more complex algorithms isn't justified.
+    
+    \item \textbf{Limited Memory}: Selection Sort is ideal for systems with
+    limited memory due to its in-place sorting capability.
+    
+    \item \textbf{Embedded Systems}: Selection Sort is used in simple embedded
+    systems where resource availability is limited, and simplicity is important.
+\end{itemize}
+
+\subsubsection{Advantages and Disadvantages of Selection Sort}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item Easy to understand and implement, making it ideal for teaching
+    basic sorting concepts.
+    
+    \item Requires only a constant \texttt{$O(1)$} extra memory space.
+    
+    \item Requires less number of swaps (or memory writes) compared to
+    many other standard algorithms. Only cycle sort beats it in terms
+    of memory writes. Therefore, it can be a simple algorithm choice
+    when memory writes are costly.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item Selection sort has a time complexity of \texttt{$O(n^2)$} makes
+    it slower compared to algorithms like Quick Sort or Merge Sort.
+    
+    \item Does not maintain the relative order of equal elements.
+    
+    \item Does not preserve the relative order of items with equal keys
+    which means it is not stable.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Selection Sort}
+
+The time complexity of Selection Sort is \texttt{$O(n^2)$}, where
+\texttt{$n$} is the number of elements in the array. The space
+complexity of Selection Sort is \texttt{$O(1)$}, as it does not
+require any additional memory.
 
 \subsection{Bubble Sort}
 
@@ -5102,15 +5449,13 @@ classified:
 
 \subsection{Quick Sort}
 
-\subsection{Other Sorting Algorithms}
+\subsection{Heap Sort}
 
-% \subsection{Heap Sort}
+\subsection{Types of Non-comparison-based Sorting Algorithms}
 
-% \subsection{Counting Sort}
+\subsection{Counting Sort}
 
-% \subsection{Radix Sort}
-
-% \subsection{Bucket Sort}
+\subsection{Radix Sort}
 
 \section{Summary}
 

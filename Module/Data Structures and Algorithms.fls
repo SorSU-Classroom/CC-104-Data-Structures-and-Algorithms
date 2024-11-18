@@ -238,6 +238,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/ti
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+INPUT c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 INPUT c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -544,27 +546,3 @@ INPUT ./assets/images/two-d.png
 INPUT ./assets/images/two-d.png
 INPUT ./assets/images/two-d.png
 INPUT ./assets/images/two-d.png
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/tex/latex/lm/ts1lmr.fd
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
-INPUT Data Structures and Algorithms.aux
-INPUT ./Data Structures and Algorithms.out
-INPUT ./Data Structures and Algorithms.out
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
