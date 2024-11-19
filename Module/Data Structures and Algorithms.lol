@@ -80,3 +80,7 @@
 \contentsline {lstlisting}{\numberline {5.4}{\ignorespaces Binary Search in C++}}{64}{lstlisting.5.4}%
 \contentsline {lstlisting}{\numberline {6.1}{\ignorespaces Selection Sort Pseudo-code}}{70}{lstlisting.6.1}%
 \contentsline {lstlisting}{\numberline {6.2}{\ignorespaces Selection Sort in C++}}{70}{lstlisting.6.2}%
+\contentsline {lstlisting}{\numberline {6.3}{\ignorespaces Bubble Sort Pseudo-code}}{73}{lstlisting.6.3}%
+\contentsline {lstlisting}{\numberline {6.4}{\ignorespaces Bubble Sort in C++}}{74}{lstlisting.6.4}%
+\contentsline {lstlisting}{\numberline {6.5}{\ignorespaces Insertion Sort Pseudo-code}}{76}{lstlisting.6.5}%
+\contentsline {lstlisting}{\numberline {6.6}{\ignorespaces Insertion Sort in C++}}{76}{lstlisting.6.6}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  18 NOV 2024 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  19 NOV 2024 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1174,7 +1174,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14]
-<./assets/images/Asymptotic Notations.png, id=1825, 662.475pt x 418.56375pt>
+<./assets/images/Asymptotic Notations.png, id=1888, 662.475pt x 418.56375pt>
 File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
 <use ./assets/images/Asymptotic Notations.png>
 Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
@@ -1327,7 +1327,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [22]
  2.
-<./assets/images/cpp-array-declaration_0.png, id=2009, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-declaration_0.png, id=2071, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-declaration_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
@@ -1337,7 +1337,7 @@ Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on in
 [23
 
  <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=2022, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-initialization_0.png, id=2084, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
@@ -1349,7 +1349,7 @@ File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
 (pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=2045, 752.8125pt x 230.36063pt>
+<./assets/images/Arrays-in-C.png, id=2107, 752.8125pt x 230.36063pt>
 File: ./assets/images/Arrays-in-C.png Graphic file (type png)
 <use ./assets/images/Arrays-in-C.png>
 Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
@@ -1361,7 +1361,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [25]
-<./assets/images/two-d.png, id=2057, 557.08125pt x 212.29312pt>
+<./assets/images/two-d.png, id=2119, 557.08125pt x 212.29312pt>
 File: ./assets/images/two-d.png Graphic file (type png)
 <use ./assets/images/two-d.png>
 Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
@@ -1532,49 +1532,65 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 [71]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78]
  7.
 
 
-[73
+[79
 
 ]
  8.
 
 
-[74
+[80
 
 ]
 Overfull \vbox (361.64044pt too high) has occurred while \output is active []
 
 
 
-[75]
+[81]
  9.
 
 
-[76
+[82
 
 ]
 Overfull \vbox (248.51913pt too high) has occurred while \output is active []
 
 
 
-[77]
+[83]
  10.
 
-Overfull \hbox (12.406pt too wide) in paragraph at lines 5652--5653
+Overfull \hbox (12.406pt too wide) in paragraph at lines 6319--6320
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 5653--5654
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 6320--6321
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[78
+[84
 
 ] (./Data Structures and Algorithms.aux)
  ***********
@@ -1582,21 +1598,21 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: 6DD9D78EB42B2AF52BB3B260F5467589;40361.
+(rerunfilecheck)             Checksum: B553C75AF3EE954678F6D7D2F20D33DD;42729.
  ) 
 Here is how much of TeX's memory you used:
- 36630 strings out of 475496
- 680544 string characters out of 5776763
+ 36788 strings out of 475496
+ 683254 string characters out of 5776763
  2051960 words of memory out of 5000000
- 56954 multiletter control sequences out of 15000+600000
- 681198 words of font info for 261 fonts, out of 8000000 for 9000
+ 56996 multiletter control sequences out of 15000+600000
+ 681270 words of font info for 262 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (91 pages, 1108095 bytes).
+Output written on "Data Structures and Algorithms.pdf" (97 pages, 1132109 bytes).
 PDF statistics:
- 3373 PDF objects out of 3580 (max. 8388607)
- 3187 compressed objects within 32 object streams
- 1412 named destinations out of 1440 (max. 500000)
- 68734 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3581 PDF objects out of 4296 (max. 8388607)
+ 3387 compressed objects within 34 object streams
+ 1526 named destinations out of 1728 (max. 500000)
+ 68814 words of extra memory for PDF output out of 74296 (max. 10000000)
 
