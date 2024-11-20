@@ -84,3 +84,7 @@
 \contentsline {lstlisting}{\numberline {6.4}{\ignorespaces Bubble Sort in C++}}{74}{lstlisting.6.4}%
 \contentsline {lstlisting}{\numberline {6.5}{\ignorespaces Insertion Sort Pseudo-code}}{76}{lstlisting.6.5}%
 \contentsline {lstlisting}{\numberline {6.6}{\ignorespaces Insertion Sort in C++}}{76}{lstlisting.6.6}%
+\contentsline {lstlisting}{\numberline {6.7}{\ignorespaces Merge Sort Pseudo-code}}{79}{lstlisting.6.7}%
+\contentsline {lstlisting}{\numberline {6.8}{\ignorespaces Merge Sort in C++}}{80}{lstlisting.6.8}%
+\contentsline {lstlisting}{\numberline {6.9}{\ignorespaces Quick Sort Pseudo-code}}{83}{lstlisting.6.9}%
+\contentsline {lstlisting}{\numberline {6.10}{\ignorespaces Quick Sort in C++}}{84}{lstlisting.6.10}%
