@@ -183,6 +183,8 @@
 \contentsline {subsubsection}{\numberline {6.4.5.2}Pseudo-code of Quick Sort}{83}{subsubsection.6.4.5.2}%
 \contentsline {subsubsection}{\numberline {6.4.5.3}Quick Sort in C++}{84}{subsubsection.6.4.5.3}%
 \contentsline {subsubsection}{\numberline {6.4.5.4}Applications of Quick Sort}{85}{subsubsection.6.4.5.4}%
+\contentsline {subsubsection}{\numberline {6.4.5.5}Advantages and Disadvantages of Quick Sort}{85}{subsubsection.6.4.5.5}%
+\contentsline {subsubsection}{\numberline {6.4.5.6}Complexity Analysis of Quick Sort}{86}{subsubsection.6.4.5.6}%
 \contentsline {subsection}{\numberline {6.4.6}Heap Sort}{86}{subsection.6.4.6}%
 \contentsline {section}{\numberline {6.5}Types of Non-comparison-based Sorting Algorithms}{86}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Counting Sort}{86}{subsection.6.5.1}%

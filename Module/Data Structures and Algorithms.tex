@@ -6776,6 +6776,50 @@ sort an array of elements, and the sorted array is printed to the console.
     analyzing average-case complexity and developing new techniques.
 \end{itemize}
 
+\subsubsection{Advantages and Disadvantages of Quick Sort}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item Divide-and-conquer algorithm that simplifies problem-solving.
+    
+    \item Efficient on large datasets with an average-case time complexity
+    of \texttt{$O(n \log n)$}.
+    
+    \item Low overhead and memory requirements, making it suitable for
+    memory-constrained applications.
+    
+    \item Cache-friendly algorithm that operates on the same array to
+    sort without copying data to auxiliary arrays.
+    
+    \item Fastest general-purpose algorithm for large datasets when
+    stability is not required.
+    
+    \item Tail-recursive, allowing tail call optimization for improved
+    performance.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item Worst-case time complexity of \texttt{$O(n^2)$} when the pivot
+    is chosen poorly.
+    
+    \item Not suitable for small datasets due to overhead and partitioning
+    costs.
+    
+    \item Not a stable sort, meaning that the relative order of equal
+    elements may not be preserved in the sorted output.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Quick Sort}
+
+The worst-case time complexity of Quick Sort is \texttt{$O(n^2)$}, which
+occurs when the pivot element is chosen poorly. However, the average-case
+time complexity of Quick Sort is \texttt{$O(n \log n)$}, making it efficient
+for large datasets. The space complexity of Quick Sort is \texttt{$O(\log n)$}
+due to the recursive calls and partitioning steps.
+
 \subsection{Heap Sort}
 
 \section{Types of Non-comparison-based Sorting Algorithms}
