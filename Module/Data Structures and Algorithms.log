@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  20 NOV 2024 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  21 NOV 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1599,12 +1599,12 @@ Overfull \vbox (248.51913pt too high) has occurred while \output is active []
 [91]
  10.
 
-Overfull \hbox (12.406pt too wide) in paragraph at lines 7023--7024
+Overfull \hbox (12.406pt too wide) in paragraph at lines 7014--7015
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 7024--7025
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 7015--7016
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
@@ -1621,15 +1621,15 @@ Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not
 (rerunfilecheck)             Checksum: C21CC15CB8920A65C3943FF43A58E264;45391.
  ) 
 Here is how much of TeX's memory you used:
- 37050 strings out of 475496
- 687558 string characters out of 5776763
+ 37048 strings out of 475496
+ 687522 string characters out of 5776763
  2051960 words of memory out of 5000000
- 57047 multiletter control sequences out of 15000+600000
+ 57045 multiletter control sequences out of 15000+600000
  681353 words of font info for 263 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (105 pages, 1162324 bytes).
+Output written on "Data Structures and Algorithms.pdf" (105 pages, 1162294 bytes).
 PDF statistics:
  3919 PDF objects out of 4296 (max. 8388607)
  3713 compressed objects within 38 object streams
