@@ -9,19 +9,6 @@ int partition(vector<int> &arr, int low, int high) {
 
     int i = low - 1;
 
-    // Create a copy of the array from low to high
-    vector<int> copy;
-
-    for (int j = low; j <= high; j++) {
-        copy.push_back(arr[j]);
-    }
-
-    cout << "Pivot: " << pivot << endl;
-    cout << "Current: " << endl;
-    printArray(arr);
-    cout << "Area: " << endl;
-    printArray(copy);
-
     for (int j = low; j < high; j++) {
         if (arr[j] < pivot) {
             i++;
