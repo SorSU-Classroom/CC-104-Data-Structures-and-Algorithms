@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  21 NOV 2024 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  21 NOV 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,6 +647,8 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box136
 \pgf@layerboxsaved@background=\box137
+) (c:/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
  (c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -725,7 +727,8 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
- (c:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -736,8 +739,7 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-07-10 v7.01j Hyperref driver for pdfTeX
-
-(c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+ (c:/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
@@ -1174,7 +1176,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14]
-<./assets/images/Asymptotic Notations.png, id=1960, 662.475pt x 418.56375pt>
+<./assets/images/Asymptotic Notations.png, id=1991, 662.475pt x 418.56375pt>
 File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
 <use ./assets/images/Asymptotic Notations.png>
 Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
@@ -1327,7 +1329,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [22]
  2.
-<./assets/images/cpp-array-declaration_0.png, id=2143, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-declaration_0.png, id=2175, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-declaration_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
@@ -1337,7 +1339,7 @@ Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on in
 [23
 
  <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=2156, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-initialization_0.png, id=2188, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
@@ -1349,7 +1351,7 @@ File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
 (pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=2180, 752.8125pt x 230.36063pt>
+<./assets/images/Arrays-in-C.png, id=2211, 752.8125pt x 230.36063pt>
 File: ./assets/images/Arrays-in-C.png Graphic file (type png)
 <use ./assets/images/Arrays-in-C.png>
 Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
@@ -1361,7 +1363,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [25]
-<./assets/images/two-d.png, id=2192, 557.08125pt x 212.29312pt>
+<./assets/images/two-d.png, id=2223, 557.08125pt x 212.29312pt>
 File: ./assets/images/two-d.png Graphic file (type png)
 <use ./assets/images/two-d.png>
 Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
@@ -1568,49 +1570,80 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [85]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
 [86]
+
+LaTeX Warning: Text page 87 contains only floats.
+
+
+Overfull \vbox (4.45717pt too high) has occurred while \output is active []
+
+
+
+[87]
+
+LaTeX Warning: Text page 88 contains only floats.
+
+
+Overfull \vbox (6.07877pt too high) has occurred while \output is active []
+
+
+
+[88]
+
+[89]
+
+[90]
+
+[91]
  7.
 
 
-[87
+[92
 
 ]
  8.
 
 
-[88
+[93
 
 ]
 Overfull \vbox (361.64044pt too high) has occurred while \output is active []
 
 
 
-[89]
+[94]
  9.
 
 
-[90
+[95
 
 ]
 Overfull \vbox (248.51913pt too high) has occurred while \output is active []
 
 
 
-[91]
+[96]
  10.
 
-Overfull \hbox (12.406pt too wide) in paragraph at lines 7014--7015
+Overfull \hbox (12.406pt too wide) in paragraph at lines 7760--7761
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 7015--7016
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 7761--7762
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[92
+[97
 
 ] (./Data Structures and Algorithms.aux)
  ***********
@@ -1618,21 +1651,21 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: C21CC15CB8920A65C3943FF43A58E264;45391.
+(rerunfilecheck)             Checksum: 29129884983C6DBB7AD89AC015C542B9;46485.
  ) 
 Here is how much of TeX's memory you used:
- 37048 strings out of 475496
- 687522 string characters out of 5776763
+ 37314 strings out of 475496
+ 692457 string characters out of 5776763
  2051960 words of memory out of 5000000
- 57045 multiletter control sequences out of 15000+600000
- 681353 words of font info for 263 fonts, out of 8000000 for 9000
+ 57204 multiletter control sequences out of 15000+600000
+ 681519 words of font info for 265 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2100s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (105 pages, 1162294 bytes).
+Output written on "Data Structures and Algorithms.pdf" (110 pages, 1194216 bytes).
 PDF statistics:
- 3919 PDF objects out of 4296 (max. 8388607)
- 3713 compressed objects within 38 object streams
- 1735 named destinations out of 2073 (max. 500000)
- 68910 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 4080 PDF objects out of 4296 (max. 8388607)
+ 3868 compressed objects within 39 object streams
+ 1835 named destinations out of 2073 (max. 500000)
+ 68950 words of extra memory for PDF output out of 74296 (max. 10000000)
 

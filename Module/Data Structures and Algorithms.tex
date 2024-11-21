@@ -6813,6 +6813,752 @@ due to the recursive calls and partitioning steps.
 
 \subsection{Heap Sort}
 
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap
+data structure to sort an array of elements. It is an in-place sorting
+algorithm with a time complexity of \texttt{$O(n \log n)$} in the worst-case
+scenario. Heap Sort works by building a max heap from the input array,
+repeatedly extracting the maximum element from the heap, and then
+reconstructing the heap.
+
+% Create a TikzPicture
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{scope}
+            \node at (-3, 1.75) {Initial Array};
+            \draw[dashed] (-4, 1.5) -- (11, 1.5);
+
+            \draw (0, 0) rectangle (1, 1);
+            \node at (0.5, 0.5) {9};
+            \draw (1, 0) rectangle (2, 1);
+            \node at (1.5, 0.5) {4};
+            \draw (2, 0) rectangle (3, 1);
+            \node at (2.5, 0.5) {3};
+            \draw (3, 0) rectangle (4, 1);
+            \node at (3.5, 0.5) {8};
+            \draw (4, 0) rectangle (5, 1);
+            \node at (4.5, 0.5) {10};
+            \draw (5, 0) rectangle (6, 1);
+            \node at (5.5, 0.5) {2};
+            \draw (6, 0) rectangle (7, 1);
+            \node at (6.5, 0.5) {5};
+        \end{scope}
+
+        \begin{scope}
+            % \draw (1.5, -1.5) circle (0.5);
+            % \node at (1.5, -1.5) {30};
+            
+            % Step 1: Treat Array as a Binary Tree
+            \node at (-0.6, -0.5) {Step 1: Treat the Array as a Binary Tree};
+            \draw[dashed] (-4, -0.75) -- (11, -0.75);
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0] (a) at (3.5, -2) {9};
+            \node[draw, circle, label=above:1] (b) at (1.5, -3) {4};
+            \node[draw, circle, label=above:2] (c) at (5.5, -3) {3};
+            \node[draw, circle, label=above:3] (d) at (0.5, -4) {8};
+            \node[draw, circle, label=above:4] (e) at (2.5, -4) {10};
+            \node[draw, circle, label=above:5] (f) at (4.5, -4) {2};
+            \node[draw, circle, label=above:6] (g) at (6.5, -4) {5};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Array
+            \draw (0, -6) rectangle (1, -5);
+            \node at (0.5, -5.5) {9};
+            \node at (0.5, -4.75) {0};
+            \draw (1, -6) rectangle (2, -5);
+            \node at (1.5, -5.5) {4};
+            \node at (1.5, -4.75) {1};
+            \draw (2, -6) rectangle (3, -5);
+            \node at (2.5, -5.5) {3};
+            \node at (2.5, -4.75) {2};
+            \draw (3, -6) rectangle (4, -5);
+            \node at (3.5, -5.5) {8};
+            \node at (3.5, -4.75) {3};
+            \draw (4, -6) rectangle (5, -5);
+            \node at (4.5, -5.5) {10};
+            \node at (4.5, -4.75) {4};
+            \draw (5, -6) rectangle (6, -5);
+            \node at (5.5, -5.5) {2};
+            \node at (5.5, -4.75) {5};
+            \draw (6, -6) rectangle (7, -5);
+            \node at (6.5, -5.5) {5};
+            \node at (6.5, -4.75) {6};
+        \end{scope}
+
+        \begin{scope}
+            % Step 2: Build a Max Heap
+            \node at (-1.25, -6.5) {Step 2: Build a Max Heap (Leaf)};
+            \draw[dashed] (-4, -6.75) -- (11, -6.75);
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0] (a) at (3.5, -8) {9};
+            \node[draw, circle, label=above:1] (b) at (1.5, -9) {4};
+            \node[draw, circle, label=above:2] (c) at (5.5, -9) {3};
+            \node[draw, circle, label=above:3, fill=yellow!30] (d) at (0.5, -10) {8};
+            \node[draw, circle, label=above:4, fill=yellow!30] (e) at (2.5, -10) {10};
+            \node[draw, circle, label=above:5, fill=yellow!30] (f) at (4.5, -10) {2};
+            \node[draw, circle, label=above:6, fill=yellow!30] (g) at (6.5, -10) {5};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Array
+            \draw (0, -12) rectangle (1, -11);
+            \node at (0.5, -11.5) {9};
+            \node at (0.5, -10.75) {0};
+            \draw (1, -12) rectangle (2, -11);
+            \node at (1.5, -11.5) {4};
+            \node at (1.5, -10.75) {1};
+            \draw (2, -12) rectangle (3, -11);
+            \node at (2.5, -11.5) {3};
+            \node at (2.5, -10.75) {2};
+            \draw[fill=yellow!30] (3, -12) rectangle (4, -11);
+            \node at (3.5, -11.5) {8};
+            \node at (3.5, -10.75) {3};
+            \draw[fill=yellow!30] (4, -12) rectangle (5, -11);
+            \node at (4.5, -11.5) {10};
+            \node at (4.5, -10.75) {4};
+            \draw[fill=yellow!30] (5, -12) rectangle (6, -11);
+            \node at (5.5, -11.5) {2};
+            \node at (5.5, -10.75) {5};
+            \draw[fill=yellow!30] (6, -12) rectangle (7, -11);
+            \node at (6.5, -11.5) {5};
+            \node at (6.5, -10.75) {6};
+        \end{scope}
+    \end{tikzpicture}
+    % \caption{Heap Sort}
+    % \label{fig:heap-sort}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{scope}
+            % Step 2: Build a Max Heap (1st Swap)
+            \node at (-0.1, 1.25) {Step 2: Build a Max Heap (Heapify 2nd Level)};
+            \draw[dashed] (-4, 1) -- (11, 1);
+
+            \begin{scope}
+                \node[text width=3.5cm] (search) [box rounded] at (-2, -1) {
+                    % Swap 4 and 10 since 4 is the parent and 10 is the
+                    % child. 10 is greater than 4, so swap them.
+                    Swap 4 and 10
+                    \begin{itemize}
+                        \item 10 is the largest element.
+                        \item 10 is greater than 4 and 8.
+                    \end{itemize}
+                };
+                
+
+                % Create Binary Tree
+                \node[draw, circle, label=above:0] (a) at (3.5, 0) {9};
+                \node[draw, circle, label=above:1, fill=yellow!30] (b) at (1.5, -1) {4};
+                \node[draw, circle, label=above:2] (c) at (5.5, -1) {3};
+                \node[draw, circle, label=above:3, fill=yellow!30] (d) at (0.5, -2) {8};
+                \node[draw, circle, label=above:4, fill=yellow!30] (e) at (2.5, -2) {10};
+                \node[draw, circle, label=above:5] (f) at (4.5, -2) {2};
+                \node[draw, circle, label=above:6] (g) at (6.5, -2) {5};
+
+                % Connect Nodes
+                \draw (a) -- (b);
+                \draw (a) -- (c);
+                \draw (b) -- (d);
+                \draw (b) -- (e);
+                \draw (c) -- (f);
+                \draw (c) -- (g);
+
+                % Curved Bidirectional Arrow from (b) to (e)
+                \draw[->, >=stealth] (b) to[bend right=45] (e);
+                \draw[->, >=stealth] (e) to[bend left=45] (b);
+
+                % Array
+                \draw (0, -4) rectangle (1, -3);
+                \node at (0.5, -3.5) {9};
+                \node at (0.5, -2.75) {0};
+                \draw[fill=yellow!30] (1, -4) rectangle (2, -3);
+                \node at (1.5, -3.5) {4};
+                \node at (1.5, -2.75) {1};
+                \draw (2, -4) rectangle (3, -3);
+                \node at (2.5, -3.5) {3};
+                \node at (2.5, -2.75) {2};
+                \draw[fill=yellow!30] (3, -4) rectangle (4, -3);
+                \node at (3.5, -3.5) {8};
+                \node at (3.5, -2.75) {3};
+                \draw[fill=yellow!30] (4, -4) rectangle (5, -3);
+                \node at (4.5, -3.5) {10};
+                \node at (4.5, -2.75) {4};
+                \draw (5, -4) rectangle (6, -3);
+                \node at (5.5, -3.5) {2};
+                \node at (5.5, -2.75) {5};
+                \draw (6, -4) rectangle (7, -3);
+                \node at (6.5, -3.5) {5};
+                \node at (6.5, -2.75) {6};
+
+                % Bidirectional Arrow from 4 to 10
+                \draw[->, >=stealth] (1.5, -4) -- (1.5, -4.25) -- (4.5, -4.25) -- (4.5, -4);
+                \draw[->, >=stealth] (4.5, -4) -- (4.5, -4.25) -- (1.5, -4.25) -- (1.5, -4);
+                \node at (3, -4.5) {Swap};
+            \end{scope}
+
+            \begin{scope}
+                \node[text width=3.5cm] (search) [box rounded] at (-2, -7) {
+                    % Swap 3 and 5 since 3 is the parent and 5 is the
+                    % child. 5 is greater than 3, so swap them.
+                    Swap 3 and 5
+                    \begin{itemize}
+                        \item 5 is the largest element.
+                        \item 5 is greater than 3 and 2.
+                    \end{itemize}
+                };
+
+                % Create Binary Tree
+                \node[draw, circle, label=above:0] (a) at (3.5, -6) {9};
+                \node[draw, circle, label=above:1] (b) at (1.5, -7) {4};
+                \node[draw, circle, label=above:2, fill=yellow!30] (c) at (5.5, -7) {3};
+                \node[draw, circle, label=above:3] (d) at (0.5, -8) {8};
+                \node[draw, circle, label=above:4] (e) at (2.5, -8) {10};
+                \node[draw, circle, label=above:5, fill=yellow!30] (f) at (4.5, -8) {2};
+                \node[draw, circle, label=above:6, fill=yellow!30] (g) at (6.5, -8) {5};
+
+                % Connect Nodes
+                \draw (a) -- (b);
+                \draw (a) -- (c);
+                \draw (b) -- (d);
+                \draw (b) -- (e);
+                \draw (c) -- (f);
+                \draw (c) -- (g);
+
+                % Curved Bidirectional Arrow from (c) to (g)
+                \draw[->, >=stealth] (c) to[bend right=45] (g);
+                \draw[->, >=stealth] (g) to[bend left=45] (c);
+
+                % Array
+                \draw (0, -10) rectangle (1, -9);
+                \node at (0.5, -9.5) {9};
+                \node at (0.5, -8.75) {0};
+                \draw (1, -10) rectangle (2, -9);
+                \node at (1.5, -9.5) {4};
+                \node at (1.5, -8.75) {1};
+                \draw[fill=yellow!30] (2, -10) rectangle (3, -9);
+                \node at (2.5, -9.5) {3};
+                \node at (2.5, -8.75) {2};
+                \draw (3, -10) rectangle (4, -9);
+                \node at (3.5, -9.5) {8};
+                \node at (3.5, -8.75) {3};
+                \draw (4, -10) rectangle (5, -9);
+                \node at (4.5, -9.5) {10};
+                \node at (4.5, -8.75) {4};
+                \draw[fill=yellow!30] (5, -10) rectangle (6, -9);
+                \node at (5.5, -9.5) {2};
+                \node at (5.5, -8.75) {5};
+                \draw[fill=yellow!30] (6, -10) rectangle (7, -9);
+                \node at (6.5, -9.5) {5};
+                \node at (6.5, -8.75) {6};
+
+                % Bidirectional Arrow from 3 to 5
+                \draw[->, >=stealth] (2.5, -10) -- (2.5, -10.25) -- (6.5, -10.25) -- (6.5, -10);
+                \draw[->, >=stealth] (6.5, -10) -- (6.5, -10.25) -- (2.5, -10.25) -- (2.5, -10);
+                \node at (4.5, -10.5) {Swap};
+            \end{scope}
+        \end{scope}
+
+        \begin{scope}
+            % Step 2: Build a Max Heap (1st Level)
+            \node at (-0.1, -10.75) {Step 2: Build a Max Heap (Heapify 1st Level)};
+            \draw[dashed] (-4, -11) -- (11, -11);
+            
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -13) {
+                % Swap 9 and 10 since 9 is the parent and 10 is the
+                % child. 10 is greater than 9, so swap them.
+                Swap 9 and 10
+                \begin{itemize}
+                    \item 10 is the largest element.
+                    \item 10 is greater than 9 and 8.
+                \end{itemize}
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=yellow!30] (a) at (3.5, -12) {9};
+            \node[draw, circle, label=above:1, fill=yellow!30] (b) at (1.5, -13) {10};
+            \node[draw, circle, label=above:2, fill=yellow!30] (c) at (5.5, -13) {5};
+            \node[draw, circle, label=above:3] (d) at (0.5, -14) {8};
+            \node[draw, circle, label=above:4] (e) at (2.5, -14) {4};
+            \node[draw, circle, label=above:5] (f) at (4.5, -14) {2};
+            \node[draw, circle, label=above:6] (g) at (6.5, -14) {3};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Curved Bidirectional Arrow from (a) to (b)
+            \draw[->, >=stealth] (a) to[bend right=45] (b);
+            \draw[->, >=stealth] (b) to[bend left=45] (a);
+
+            % Array
+            \draw[fill=yellow!30] (0, -16) rectangle (1, -15);
+            \node at (0.5, -15.5) {9};
+            \node at (0.5, -14.75) {0};
+            \draw[fill=yellow!30] (1, -16) rectangle (2, -15);
+            \node at (1.5, -15.5) {10};
+            \node at (1.5, -14.75) {1};
+            \draw[fill=yellow!30] (2, -16) rectangle (3, -15);
+            \node at (2.5, -15.5) {5};
+            \node at (2.5, -14.75) {2};
+            \draw (3, -16) rectangle (4, -15);
+            \node at (3.5, -15.5) {8};
+            \node at (3.5, -14.75) {3};
+            \draw (4, -16) rectangle (5, -15);
+            \node at (4.5, -15.5) {4};
+            \node at (4.5, -14.75) {4};
+            \draw (5, -16) rectangle (6, -15);
+            \node at (5.5, -15.5) {2};
+            \node at (5.5, -14.75) {5};
+            \draw (6, -16) rectangle (7, -15);
+            \node at (6.5, -15.5) {3};
+            \node at (6.5, -14.75) {6};
+
+            % Bidirectional Arrow from 9 to 10
+            \draw[->, >=stealth] (0.5, -16) -- (0.5, -16.25) -- (1.5, -16.25) -- (1.5, -16);
+            \draw[->, >=stealth] (1.5, -16) -- (1.5, -16.25) -- (0.5, -16.25) -- (0.5, -16);
+            \node at (1, -16.5) {Swap};
+        \end{scope}
+
+        \begin{scope}
+            % Step 2: Build a Max Heap (Max Heap)
+            \node at (-0.75, -17) {Step 2: Build a Max Heap (Max Heap)};
+            \draw[dashed] (-4, -17.25) -- (11, -17.25);
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0] (a) at (3.5, -18.25) {10};
+            \node[draw, circle, label=above:1] (b) at (1.5, -19.25) {9};
+            \node[draw, circle, label=above:2] (c) at (5.5, -19.25) {5};
+            \node[draw, circle, label=above:3] (d) at (0.5, -20.25) {8};
+            \node[draw, circle, label=above:4] (e) at (2.5, -20.25) {4};
+            \node[draw, circle, label=above:5] (f) at (4.5, -20.25) {2};
+            \node[draw, circle, label=above:6] (g) at (6.5, -20.25) {3};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Array
+            \draw (0, -22.25) rectangle (1, -21.25);
+            \node at (0.5, -21.75) {10};
+            \node at (0.5, -21) {0};
+            \draw (1, -22.25) rectangle (2, -21.25);
+            \node at (1.5, -21.75) {9};
+            \node at (1.5, -21) {1};
+            \draw (2, -22.25) rectangle (3, -21.25);
+            \node at (2.5, -21.75) {5};
+            \node at (2.5, -21) {2};
+            \draw (3, -22.25) rectangle (4, -21.25);
+            \node at (3.5, -21.75) {8};
+            \node at (3.5, -21) {3};
+            \draw (4, -22.25) rectangle (5, -21.25);
+            \node at (4.5, -21.75) {4};
+            \node at (4.5, -21) {4};
+            \draw (5, -22.25) rectangle (6, -21.25);
+            \node at (5.5, -21.75) {2};
+            \node at (5.5, -21) {5};
+            \draw (6, -22.25) rectangle (7, -21.25);
+            \node at (6.5, -21.75) {3};
+            \node at (6.5, -21) {6};
+        \end{scope}
+    \end{tikzpicture}
+    % \caption{Heap Sort}
+    % \label{fig:heap-sort}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        % Step 3: Sort by Placing Largest Number at the End
+        \node at (0.4, 1.25) {Step 3: Sort by Placing Largest Number at the End};
+        \draw[dashed] (-4, 1) -- (11, 1);
+
+        \begin{scope}
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -1) {
+                % Swap 10 and 3 since 10 is the largest unsorted
+                % element.
+                Swap 10 and 3
+                \begin{itemize}
+                    \item 10 is the largest element among the
+                    unsorted elements.
+                \end{itemize}
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=yellow!30] (a) at (3.5, 0) {10};
+            \node[draw, circle, label=above:1] (b) at (1.5, -1) {9};
+            \node[draw, circle, label=above:2] (c) at (5.5, -1) {5};
+            \node[draw, circle, label=above:3] (d) at (0.5, -2) {8};
+            \node[draw, circle, label=above:4] (e) at (2.5, -2) {4};
+            \node[draw, circle, label=above:5] (f) at (4.5, -2) {2};
+            \node[draw, circle, label=above:6, fill=yellow!30] (g) at (6.5, -2) {3};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Curved Bidirectional Arrow from (a) to (g)
+            \draw[->, >=stealth] (a) to[bend left=45] (g);
+            \draw[->, >=stealth] (g) to[bend right=45] (a);
+        \end{scope}
+
+        \begin{scope}
+            % Swap 3 and 9 since 3 is the parent and 9 is the
+            % largest child. 9 is greater than 3, so swap them.
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -4) {
+                Heapify the Array
+                \begin{enumerate}
+                    \item Swap 3 and 9
+                    \item Then, swap 3 and 8
+                \end{enumerate}
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=yellow!30] (a) at (3.5, -4) {3};
+            \node[draw, circle, label=above:1, fill=yellow!30] (b) at (1.5, -5) {9};
+            \node[draw, circle, label=above:2] (c) at (5.5, -5) {5};
+            \node[draw, circle, label=above:3, fill=yellow!30] (d) at (0.5, -6) {8};
+            \node[draw, circle, label=above:4] (e) at (2.5, -6) {4};
+            \node[draw, circle, label=above:5] (f) at (4.5, -6) {2};
+            \node[draw, circle, label=above:6, fill=green!30, dashed] (g) at (6.5, -6) {10};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw[dashed] (c) -- (g);
+
+            % Curved Bidirectional Arrow from (a) to (b)
+            \draw[->, >=stealth] (a) to[bend left=45] (b);
+            \draw[->, >=stealth] (b) to[bend right=45] (a);
+            
+            % Curved Bidirectional Arrow from (b) to (d)
+            \draw[->, >=stealth] (b) to[bend left=45] (d);
+            \draw[->, >=stealth] (d) to[bend right=45] (b);
+        \end{scope}
+
+        \begin{scope}
+            % Swap 9 and 2 since 9 is the largest unsorted
+            % element.
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -9) {
+                Swap 9 and 2
+                \begin{enumerate}
+                    \item Swap 9 and 2 since 9 is the largest unsorted 
+                    element.
+                \end{enumerate}
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=yellow!30] (a) at (3.5, -8) {9};
+            \node[draw, circle, label=above:1] (b) at (1.5, -9) {8};
+            \node[draw, circle, label=above:2] (c) at (5.5, -9) {5};
+            \node[draw, circle, label=above:3] (d) at (0.5, -10) {3};
+            \node[draw, circle, label=above:4] (e) at (2.5, -10) {4};
+            \node[draw, circle, label=above:5, fill=yellow!30] (f) at (4.5, -10) {2};
+            \node[draw, circle, label=above:6, fill=green!30, dashed] (g) at (6.5, -10) {10};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw[dashed] (c) -- (f);
+            \draw[dashed] (c) -- (g);
+
+            % Curved Bidirectional Arrow from (a) to (f)
+            \draw[->, >=stealth] (a) to[bend right=45] (f);
+            \draw[->, >=stealth] (f) to[bend left=45] (a);
+        \end{scope}
+
+        \begin{scope}
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -13) {
+                Heapify the Array
+                \begin{enumerate}
+                    \item Swap 2 and 8
+                    \item Then, swap 2 and 4
+                \end{enumerate}
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=yellow!30] (a) at (3.5, -12) {2};
+            \node[draw, circle, label=above:1, fill=yellow!30] (b) at (1.5, -13) {8};
+            \node[draw, circle, label=above:2] (c) at (5.5, -13) {5};
+            \node[draw, circle, label=above:3] (d) at (0.5, -14) {3};
+            \node[draw, circle, label=above:4, fill=yellow!30] (e) at (2.5, -14) {4};
+            \node[draw, circle, label=above:5, fill=green!30, dashed] (f) at (4.5, -14) {9};
+            \node[draw, circle, label=above:6, fill=green!30, dashed] (g) at (6.5, -14) {10};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw[dashed] (c) -- (f);
+            \draw[dashed] (c) -- (g);
+
+            % Curved Bidirectional Arrow from (a) to (b)
+            \draw[->, >=stealth] (a) to[bend right=45] (b);
+            \draw[->, >=stealth] (b) to[bend left=45] (a);
+            
+            % Curved Bidirectional Arrow from (b) to (e)
+            \draw[->, >=stealth] (b) to[bend right=45] (e);
+            \draw[->, >=stealth] (e) to[bend left=45] (b);
+        \end{scope}
+
+        % Repeat this process until the entire array is sorted
+        \node[text width=15cm] (search) [box rounded] at (3.5, -15) {
+            Repeat this process until the entire array is sorted
+            
+            % Swap 8 and 2, Heapify, Swap 5 and 3, Heapify, Swap 4 and 2,
+            % Heapify, No Swap, Heapify, No Swap, Heapify
+
+            \textit{Swap 8 and 2, Heapify, Swap 5 and 3, Heapify, Swap 4 and 2,}
+        };
+
+        \begin{scope}
+            % Sorted Array
+            \node at (-2.9, -16.25) {Sorted Array};
+            \draw[dashed] (-4, -16.5) -- (11, -16.5);
+
+            \node[text width=3.5cm] (search) [box rounded] at (-2, -17.5) {
+                Sorted Array:
+                
+                2, 3, 4, 5, 8, 9, 10
+            };
+
+            % Create Binary Tree
+            \node[draw, circle, label=above:0, fill=green!30] (a) at (3.5, -17.5) {2};
+            \node[draw, circle, label=above:1, fill=green!30] (b) at (1.5, -18.5) {3};
+            \node[draw, circle, label=above:2, fill=green!30] (c) at (5.5, -18.5) {4};
+            \node[draw, circle, label=above:3, fill=green!30] (d) at (0.5, -19.5) {5};
+            \node[draw, circle, label=above:4, fill=green!30] (e) at (2.5, -19.5) {8};
+            \node[draw, circle, label=above:5, fill=green!30] (f) at (4.5, -19.5) {9};
+            \node[draw, circle, label=above:6, fill=green!30] (g) at (6.5, -19.5) {10};
+
+            % Connect Nodes
+            \draw (a) -- (b);
+            \draw (a) -- (c);
+            \draw (b) -- (d);
+            \draw (b) -- (e);
+            \draw (c) -- (f);
+            \draw (c) -- (g);
+
+            % Array
+            \draw[fill=green!30] (0, -21.5) rectangle (1, -20.5);
+            \node at (0.5, -21) {2};
+            \node at (0.5, -20.25) {0};
+            \draw[fill=green!30] (1, -21.5) rectangle (2, -20.5);
+            \node at (1.5, -21) {3};
+            \node at (1.5, -20.25) {1};
+            \draw[fill=green!30] (2, -21.5) rectangle (3, -20.5);
+            \node at (2.5, -21) {4};
+            \node at (2.5, -20.25) {2};
+            \draw[fill=green!30] (3, -21.5) rectangle (4, -20.5);
+            \node at (3.5, -21) {5};
+            \node at (3.5, -20.25) {3};
+            \draw[fill=green!30] (4, -21.5) rectangle (5, -20.5);
+            \node at (4.5, -21) {8};
+            \node at (4.5, -20.25) {4};
+            \draw[fill=green!30] (5, -21.5) rectangle (6, -20.5);
+            \node at (5.5, -21) {9};
+            \node at (5.5, -20.25) {5};
+            \draw[fill=green!30] (6, -21.5) rectangle (7, -20.5);
+            \node at (6.5, -21) {10};
+            \node at (6.5, -20.25) {6};
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Heap Sort}
+    \label{fig:heap-sort}
+\end{figure}
+
+\pagebreak
+
+Figure \ref{fig:heap-sort} shows the Heap Sort algorithm in action. The
+algorithm sorts an array of elements by building a max heap from the input
+array, repeatedly extracting the maximum element from the heap, and then
+reconstructing the heap. In each step, the algorithm maintains the heap
+property by ensuring that the parent node is greater than its children.
+
+\subsubsection{Algorithm of Heap Sort}
+
+\begin{itemize}
+    \item Build a max heap from the input array.
+    
+    \item Repeatedly extract the maximum element from the heap.
+    
+    \item Reconstruct the heap to maintain the heap property.
+\end{itemize}
+
+\subsubsection{Pseudo-code of Heap Sort}
+
+\begin{lstlisting}[caption={Heap Sort Pseudo-code}]
+Heapify(arr, n, i)
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+
+    if left < n and arr[left] > arr[largest]
+        largest = left
+
+    if right < n and arr[right] > arr[largest]
+        largest = right
+
+    if largest != i
+        swap arr[i] and arr[largest]
+        Heapify(arr, n, largest)
+
+HeapSort(arr)
+    n = arr.size()
+
+    for i = n / 2 - 1 down to 0
+        Heapify(arr, n, i)
+
+    for i = n - 1 down to 1
+        swap arr[0] and arr[i]
+        Heapify(arr, i, 0)
+\end{lstlisting}
+
+Pseudo-code for Heap Sort is shown in the code snippet. The algorithm
+takes an array of elements as input and sorts the array using the Heap
+Sort technique. The algorithm builds a max heap from the input array,
+repeatedly extracts the maximum element from the heap, and then
+reconstructs the heap to maintain the heap property.
+
+\subsubsection{Heap Sort in C++}
+
+\begin{lstlisting}[language=C++, caption={Heap Sort in C++}, label={lst:heap-sort-cpp}]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void heapify(vector<int> &arr, int n, int i) {
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
+
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
+    }
+
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
+    }
+
+    if (largest != i) {
+        swap(arr[i], arr[largest]);
+        heapify(arr, n, largest);
+    }
+}
+
+void heapSort(vector<int> &arr) {
+    int n = arr.size();
+
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapify(arr, n, i);
+    }
+
+    for (int i = n - 1; i >= 1; i--) {
+        swap(arr[0], arr[i]);
+        heapify(arr, i, 0);
+    }
+}
+
+void printArray(vector<int> &arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<int> arr = {9, 4, 3, 8, 10, 2, 5};
+
+    cout << "Original Array: ";
+    printArray(arr);
+
+    heapSort(arr);
+
+    cout << "Sorted Array: ";
+    printArray(arr);
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:heap-sort-cpp} shows the implementation of the Heap Sort
+algorithm in C++. The code snippet defines a function \texttt{heapSort}
+that takes a vector of integers as input and sorts the array using the
+Heap Sort technique. The algorithm builds a max heap from the input
+array, repeatedly extracts the maximum element from the heap, and then
+reconstructs the heap. In the example, the Heap Sort algorithm is used
+to sort an array of elements, and the sorted array is printed to the
+console.
+
+\subsubsection{Advantages and Disadvantages of Heap Sort}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item Efficient time complexity of \texttt{$O(n \log n)$} in all cases,
+    making it suitable for sorting large datasets.
+    
+    \item Minimal memory usage, as it requires no additional memory space
+    apart from the initial list of items to be sorted.
+    
+    \item Simplicity in understanding compared to other equally efficient
+    sorting algorithms due to the absence of advanced concepts like recursion.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item Costly in terms of higher constants compared to other sorting
+    algorithms like Merge Sort.
+    
+    \item Unstable sorting algorithm that might rearrange the relative order
+    of equal elements.
+    
+    \item Inefficient due to high constants in the time complexity, making
+    it slower than other sorting algorithms like Merge Sort.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Heap Sort}
+
+The time complexity of Heap Sort is \texttt{$O(n \log n)$} in all cases,
+making it efficient for sorting large datasets. The space complexity of
+Heap Sort is \texttt{$O(1)$} as it is an in-place sorting algorithm that
+requires no additional memory apart from the initial array.
+
 \section{Types of Non-comparison-based Sorting Algorithms}
 
 \subsection{Counting Sort}

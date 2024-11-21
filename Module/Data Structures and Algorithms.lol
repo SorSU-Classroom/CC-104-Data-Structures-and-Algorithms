@@ -88,3 +88,5 @@
 \contentsline {lstlisting}{\numberline {6.8}{\ignorespaces Merge Sort in C++}}{80}{lstlisting.6.8}%
 \contentsline {lstlisting}{\numberline {6.9}{\ignorespaces Quick Sort Pseudo-code}}{83}{lstlisting.6.9}%
 \contentsline {lstlisting}{\numberline {6.10}{\ignorespaces Quick Sort in C++}}{84}{lstlisting.6.10}%
+\contentsline {lstlisting}{\numberline {6.11}{\ignorespaces Heap Sort Pseudo-code}}{89}{lstlisting.6.11}%
+\contentsline {lstlisting}{\numberline {6.12}{\ignorespaces Heap Sort in C++}}{89}{lstlisting.6.12}%
