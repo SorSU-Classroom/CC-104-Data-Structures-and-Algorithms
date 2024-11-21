@@ -2,8 +2,6 @@
 #include <vector>
 using namespace std;
 
-void printArray(vector<int> &arr);
-
 int partition(vector<int> &arr, int low, int high) {
     int pivot = arr[high];
 
