@@ -90,3 +90,5 @@
 \contentsline {lstlisting}{\numberline {6.10}{\ignorespaces Quick Sort in C++}}{84}{lstlisting.6.10}%
 \contentsline {lstlisting}{\numberline {6.11}{\ignorespaces Heap Sort Pseudo-code}}{89}{lstlisting.6.11}%
 \contentsline {lstlisting}{\numberline {6.12}{\ignorespaces Heap Sort in C++}}{89}{lstlisting.6.12}%
+\contentsline {lstlisting}{\numberline {6.13}{\ignorespaces Counting Sort Pseudo-code}}{92}{lstlisting.6.13}%
+\contentsline {lstlisting}{\numberline {6.14}{\ignorespaces Counting Sort in C++}}{92}{lstlisting.6.14}%
