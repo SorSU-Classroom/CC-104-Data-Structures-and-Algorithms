@@ -5076,7 +5076,7 @@ classified:
     sorting algorithms, elements are compared with each other to determine
     their relative order. The most common comparison-based sorting algorithms
     include Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick
-    Sort, Heap Sort, and Shell Sort.
+    Sort, and Heap Sort.
 
     \item \textbf{Non-comparison-based Sorting Algorithms}: In non-comparison-based
     sorting algorithms, elements are not compared with each other directly.
@@ -5101,10 +5101,10 @@ classified:
         \node (merge) [below=of insertion] {Merge Sort};
         \node (quick) [below=of merge] {Quick Sort};
         \node (heap) [below=of quick] {Heap Sort};
-        \node (shell) [below=of heap] {Shell Sort};
+        \node (left end) [below=of heap] {};
         \node (counting) [below=of noncomparison] {Counting Sort};
         \node (radix) [below=of counting] {Radix Sort};
-        \node (bucket) [below=of radix] {Bucket Sort};
+        \node (right end) [below=of radix] {};
 
         % Edges
         \begin{scope}[on background layer]
@@ -5117,11 +5117,11 @@ classified:
             \draw[-] (comparison) -- (merge);
             \draw[-] (comparison) -- (quick);
             \draw[-] (comparison) -- (heap);
-            \draw[-] (comparison) -- (shell);
+            \draw[-] (comparison) -- (left end);
             
             \draw[-] (noncomparison) -- (counting);
             \draw[-] (noncomparison) -- (radix);
-            \draw[-] (noncomparison) -- (bucket);
+            \draw[-] (noncomparison) -- (right end);
         \end{scope}
     \end{tikzpicture}
     \caption{Sorting Techniques}
