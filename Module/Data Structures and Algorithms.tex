@@ -7632,23 +7632,27 @@ elements in their correct sorted positions based on the count.
 
 \begin{lstlisting}[caption={Counting Sort Pseudo-code}]
 CountingSort(arr)
-    n = arr.size()
-    max_val = max(arr)
-    count = vector<int>(max_val + 1, 0)
-    
-    for i = 0 to n - 1
-        count[arr[i]]++
-    
-    for i = 1 to max_val
-        count[i] += count[i - 1]
+    N = arr.length
+    M = 0
 
-    output = vector<int>(n, 0)
+    for i = 0 to N - 1
+        M = max(M, arr[i])
 
-    for i = n - 1 down to 0
-        output[count[arr[i]] - 1] = arr[i]
-        count[arr[i]]--
-    
-    return output
+    countArray = Array(M + 1, 0)
+
+    for i = 0 to N - 1
+        countArray[arr[i]]++
+
+    for i = 1 to M
+        countArray[i] += countArray[i - 1]
+
+    outputArray = Array(N)
+
+    for i = N - 1 down to 0
+        outputArray[countArray[arr[i]] - 1] = arr[i]
+        countArray[arr[i]]--
+
+    return outputArray
 \end{lstlisting}
 
 Pseudo-code for Counting Sort is shown in the code snippet. The
@@ -7766,186 +7770,380 @@ elements in their correct sorted positions.
 
 \subsection{Radix Sort}
 
+Radix Sort is a non-comparison-based sorting algorithm that sorts
+elements based on their individual digits or characters. The basic idea
+behind Radix Sort is to sort the input array digit by digit, starting
+from the least significant digit to the most significant digit. Radix
+Sort is particularly efficient for sorting integers or strings with a
+fixed length.
+
+% TikZ code for Radix Sort
+
+\subsubsection{Algorithm of Radix Sort}
+
+\begin{itemize}
+    \item Sort the input array digit by digit, starting from the least
+    significant digit to the most significant digit.
+    
+    \item Use a stable sorting algorithm like Counting Sort or Bucket Sort
+    to sort the elements based on each digit.
+    
+    \item Repeat the process for each digit until the entire array is
+    sorted.
+\end{itemize}
+
+\subsubsection{Pseudo-code of Radix Sort}
+
+\begin{lstlisting}[caption={Radix Sort Pseudo-code}]
+GetMax(arr, n)
+    max_val = arr[0]
+    for i = 1 to n - 1
+        if arr[i] > max_val
+            max_val = arr[i]
+    return max_val
+
+CountingSort(arr, n, exp)
+    output = Array(n)
+    count = Array(10, 0)
+
+    for i = 0 to n - 1
+        count[(arr[i] / exp) % 10]++
+
+    for i = 1 to 9
+        count[i] += count[i - 1]
+
+    for i = n - 1 down to 0
+        output[count[(arr[i] / exp) % 10] - 1] = arr[i]
+        count[(arr[i] / exp) % 10]--
+
+    for i = 0 to n - 1
+        arr[i] = output[i]
+
+RadixSort(arr)
+    n = arr.length
+    max_val = GetMax(arr, n)
+
+    for exp = 1 to max_val
+        CountingSort(arr, n, exp)
+\end{lstlisting}
+
+Pseudo-code for Radix Sort is shown in the code snippet. The algorithm
+takes an array of integers as input and sorts the array using the Radix
+Sort technique. The algorithm sorts the input array digit by digit,
+starting from the least significant digit to the most significant digit,
+using a stable sorting algorithm like Counting Sort or Bucket Sort to
+sort the elements based on each digit.
+
+\subsubsection{Radix Sort in C++}
+
+\begin{lstlisting}[language=C++, caption={Radix Sort in C++}, label={lst:radix-sort-cpp}]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int getMax(vector<int> &arr, int n) {
+    int max_val = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max_val) {
+            max_val = arr[i];
+        }
+    }
+    return max_val;
+}
+
+void countingSort(vector<int> &arr, int n, int exp) {
+    vector<int> output(n);
+    vector<int> count(10, 0);
+
+    for (int i = 0; i < n; i++) {
+        count[(arr[i] / exp) % 10]++;
+    }
+
+    for (int i = 1; i < 10; i++) {
+        count[i] += count[i - 1];
+    }
+
+    for (int i = n - 1; i >= 0; i--) {
+        output[count[(arr[i] / exp) % 10] - 1] = arr[i];
+        count[(arr[i] / exp) % 10]--;
+    }
+
+    for (int i = 0; i < n; i++) {
+        arr[i] = output[i];
+    }
+}
+
+void radixSort(vector<int> &arr) {
+    int n = arr.size();
+    int max_val = getMax(arr, n);
+
+    for (int exp = 1; max_val / exp > 0; exp *= 10) {
+        countingSort(arr, n, exp);
+    }
+}
+
+void printArray(vector<int> &arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<int> arr = {170, 45, 75, 90, 802, 24, 2, 66};
+
+    cout << "Original Array: ";
+    printArray(arr);
+
+    radixSort(arr);
+
+    cout << "Sorted Array: ";
+    printArray(arr);
+
+    return 0;
+}
+\end{lstlisting}
+
+Code \ref{lst:radix-sort-cpp} shows the implementation of the Radix Sort
+algorithm in C++. The code snippet defines a function \texttt{radixSort}
+that takes a vector of integers as input and sorts the array using the
+Radix Sort technique. The algorithm sorts the input array digit by digit,
+starting from the least significant digit to the most significant digit,
+using a stable sorting algorithm like Counting Sort to sort the elements
+based on each digit. In the example, the Radix Sort algorithm is used to
+sort an array of integers, and the sorted array is printed to the console.
+
+\subsubsection{Advantages and Disadvantages of Radix Sort}
+
+\textbf{Advantages}:
+
+\begin{itemize}
+    \item Radix Sort is a stable sorting algorithm that maintains the
+    relative order of equal elements in the input array.
+    
+    \item Radix Sort is efficient for sorting integers or strings with a
+    fixed length, as it sorts the elements digit by digit.
+    
+    \item Radix Sort has a time complexity of \texttt{$O(nk)$}, where $n$
+    is the number of elements in the input array and $k$ is the number of
+    digits or characters in the input values.
+\end{itemize}
+
+\textbf{Disadvantages}:
+
+\begin{itemize}
+    \item Radix Sort is not suitable for sorting floating-point numbers or
+    strings with varying lengths, as it requires fixed-length input values.
+    
+    \item Radix Sort is not an in-place sorting algorithm, as it uses extra
+    space for counting and placing the array elements in their correct
+    sorted positions.
+    
+    \item Radix Sort is not as efficient as comparison-based sorting
+    algorithms like Merge Sort or Quick Sort for general-purpose sorting
+    tasks.
+\end{itemize}
+
+\subsubsection{Complexity Analysis of Radix Sort}
+
+The time complexity of Radix Sort is \texttt{$O(nk)$}, where $n$ is the
+number of elements in the input array and $k$ is the number of digits or
+characters in the input values. The space complexity of Radix Sort is
+\texttt{$O(n + k)$} due to the additional space required for counting
+and placing the array elements in their correct sorted positions.
+
 \section{Summary}
+
+In this chapter, we discussed comparison-based and non-comparison-based
+sorting algorithms. We explored various sorting algorithms, including
+Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort,
+Heap Sort, Counting Sort, and Radix Sort. We examined the algorithms,
+pseudo-code, implementations in C++, advantages, disadvantages, and
+complexity analysis of each sorting algorithm. Sorting algorithms are
+essential in computer science and play a crucial role in various
+applications, such as data processing, information retrieval, and
+optimization problems. Understanding the different sorting algorithms
+and their properties is fundamental for designing efficient algorithms
+and solving real-world problems.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Hashing}
+% \chapter{Hashing}
 
-\section{Introduction}
+% \section{Introduction}
 
-\section{Hash Table}
+% \section{Hash Table}
 
-\section{Hash Function}
+% \section{Hash Function}
 
-\section{Collision Resolution Techniques}
+% \section{Collision Resolution Techniques}
 
-\subsection{Separate Chaining}
+% \subsection{Separate Chaining}
 
-\subsection{Open Addressing}
+% \subsection{Open Addressing}
 
-\subsubsection{Linear Probing}
+% \subsubsection{Linear Probing}
 
-\subsubsection{Quadratic Probing}
+% \subsubsection{Quadratic Probing}
 
-\subsubsection{Double Hashing}
+% \subsubsection{Double Hashing}
 
-\section{Complexity Analysis of Hashing}
+% \section{Complexity Analysis of Hashing}
 
-\section{Summary}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%~ NEW CHAPTER STARTS HERE %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Advanced Data Structures and Algorithms}
-
-\section{Introduction}
-
-\section{Advanced Data Structures}
-
-\subsection{Segment Tree}
-
-\subsection{Fenwick Tree}
-
-\subsection{Suffix Tree}
-
-\subsection{Suffix Array}
-
-\subsection{Trie}
-
-\subsection{Heap}
-
-\subsection{Disjoint Set}
-
-\subsection{Skip List}
-
-\subsection{Splay Tree}
-
-\subsection{Bloom Filter}
-
-\subsection{KD Tree}
-
-\subsection{Quad Tree}
-
-\subsection{Octree}
-
-\subsection{B-Tree}
-
-\subsection{B+ Tree}
-
-\subsection{R-Tree}
-
-\subsection{X-Tree}
-
-\subsection{Y-Tree}
-
-\subsection{Z-Tree}
-
-\section{Advanced Algorithms}
-
-\subsection{Dynamic Programming}
-
-\subsection{Greedy Algorithms}
-
-\subsection{Backtracking}
-
-\subsection{Divide and Conquer}
-
-\subsection{Branch and Bound}
-
-\subsection{Randomized Algorithms}
-
-\subsection{Approximation Algorithms}
-
-\subsection{String Matching Algorithms}
-
-\subsection{Pattern Searching Algorithms}
-
-\subsection{Cryptography Algorithms}
-
-\subsection{Geometric Algorithms}
-
-\subsection{Graph Algorithms}
-
-\subsection{Network Flow Algorithms}
-
-\subsection{Game Theory Algorithms}
-
-\subsection{Quantum Algorithms}
-
-\section{Summary}
+% \section{Summary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%~ NEW CHAPTER STARTS HERE %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Applications of Data Structures and Algorithms}
+% \chapter{Advanced Data Structures and Algorithms}
 
-\section{Applications in Computer Science}
+% \section{Introduction}
 
-\subsection{Operating Systems}
+% \section{Advanced Data Structures}
 
-\subsection{Database Management Systems}
+% \subsection{Segment Tree}
 
-\subsection{Compiler Design}
+% \subsection{Fenwick Tree}
 
-\subsection{Networking}
+% \subsection{Suffix Tree}
 
-\subsection{Artificial Intelligence}
+% \subsection{Suffix Array}
 
-\subsection{Machine Learning}
+% \subsection{Trie}
 
-\subsection{Computer Graphics}
+% \subsection{Heap}
 
-\subsection{Computer Vision}
+% \subsection{Disjoint Set}
 
-\subsection{Robotics}
+% \subsection{Skip List}
 
-\subsection{Web Development}
+% \subsection{Splay Tree}
 
-\subsection{Mobile Development}
+% \subsection{Bloom Filter}
 
-\subsection{Game Development}
+% \subsection{KD Tree}
 
-\subsection{Cybersecurity}
+% \subsection{Quad Tree}
 
-\subsection{Quantum Computing}
+% \subsection{Octree}
 
-\section{Applications in Real Life}
+% \subsection{B-Tree}
 
-\subsection{Social Media}
+% \subsection{B+ Tree}
 
-\subsection{E-commerce}
+% \subsection{R-Tree}
 
-\subsection{Healthcare}
+% \subsection{X-Tree}
 
-\subsection{Finance}
+% \subsection{Y-Tree}
 
-\subsection{Transportation}
+% \subsection{Z-Tree}
 
-\subsection{Education}
+% \section{Advanced Algorithms}
 
-\subsection{Agriculture}
+% \subsection{Dynamic Programming}
 
-\subsection{Manufacturing}
+% \subsection{Greedy Algorithms}
 
-\subsection{Entertainment}
+% \subsection{Backtracking}
 
-\subsection{Sports}
+% \subsection{Divide and Conquer}
 
-\subsection{Travel}
+% \subsection{Branch and Bound}
 
-\subsection{Telecommunications}
+% \subsection{Randomized Algorithms}
 
-\subsection{Energy}
+% \subsection{Approximation Algorithms}
 
-\subsection{Environment}
+% \subsection{String Matching Algorithms}
 
-\subsection{Politics}
+% \subsection{Pattern Searching Algorithms}
 
-\subsection{Military}
+% \subsection{Cryptography Algorithms}
 
-\section{Summary}
+% \subsection{Geometric Algorithms}
+
+% \subsection{Graph Algorithms}
+
+% \subsection{Network Flow Algorithms}
+
+% \subsection{Game Theory Algorithms}
+
+% \subsection{Quantum Algorithms}
+
+% \section{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%~ NEW CHAPTER STARTS HERE %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \chapter{Applications of Data Structures and Algorithms}
+
+% \section{Applications in Computer Science}
+
+% \subsection{Operating Systems}
+
+% \subsection{Database Management Systems}
+
+% \subsection{Compiler Design}
+
+% \subsection{Networking}
+
+% \subsection{Artificial Intelligence}
+
+% \subsection{Machine Learning}
+
+% \subsection{Computer Graphics}
+
+% \subsection{Computer Vision}
+
+% \subsection{Robotics}
+
+% \subsection{Web Development}
+
+% \subsection{Mobile Development}
+
+% \subsection{Game Development}
+
+% \subsection{Cybersecurity}
+
+% \subsection{Quantum Computing}
+
+% \section{Applications in Real Life}
+
+% \subsection{Social Media}
+
+% \subsection{E-commerce}
+
+% \subsection{Healthcare}
+
+% \subsection{Finance}
+
+% \subsection{Transportation}
+
+% \subsection{Education}
+
+% \subsection{Agriculture}
+
+% \subsection{Manufacturing}
+
+% \subsection{Entertainment}
+
+% \subsection{Sports}
+
+% \subsection{Travel}
+
+% \subsection{Telecommunications}
+
+% \subsection{Energy}
+
+% \subsection{Environment}
+
+% \subsection{Politics}
+
+% \subsection{Military}
+
+% \section{Summary}
 
 \chapter{References}
 

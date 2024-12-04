@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  28 NOV 2024 08:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  4 DEC 2024 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1088,19 +1088,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [4]
 
-[5]
-
-[6]
-
-[7])
+[5])
 \tf@toc=\write5
 \openout5 = `"Data Structures and Algorithms.toc"'.
 
 
 
-[8] (./Data Structures and Algorithms.lof
+[6] (./Data Structures and Algorithms.lof
 
-[9
+[7
 
 ])
 \tf@lof=\write6
@@ -1108,27 +1104,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 
-[10] (./Data Structures and Algorithms.lot)
+[8] (./Data Structures and Algorithms.lot)
 \tf@lot=\write7
 \openout7 = `"Data Structures and Algorithms.lot"'.
 
 
 
-[11
+[9
 
 ] (./Data Structures and Algorithms.lol
 
-[12
+[10
 
 ]
 
-[13])
+[11])
 \tf@lol=\write8
 \openout8 = `"Data Structures and Algorithms.lol"'.
 
 
 
-[14]
+[12]
 
 [1
 
@@ -1180,7 +1176,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14]
-<./assets/images/Asymptotic Notations.png, id=2031, 662.475pt x 418.56375pt>
+<./assets/images/Asymptotic Notations.png, id=1624, 662.475pt x 418.56375pt>
 File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
 <use ./assets/images/Asymptotic Notations.png>
 Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
@@ -1333,7 +1329,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [22]
  2.
-<./assets/images/cpp-array-declaration_0.png, id=2215, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-declaration_0.png, id=1807, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-declaration_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
@@ -1343,7 +1339,7 @@ Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on in
 [23
 
  <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=2228, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-initialization_0.png, id=1820, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
@@ -1355,7 +1351,7 @@ File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
 (pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=2250, 752.8125pt x 230.36063pt>
+<./assets/images/Arrays-in-C.png, id=1844, 752.8125pt x 230.36063pt>
 File: ./assets/images/Arrays-in-C.png Graphic file (type png)
 <use ./assets/images/Arrays-in-C.png>
 Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
@@ -1367,7 +1363,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [25]
-<./assets/images/two-d.png, id=2262, 557.08125pt x 212.29312pt>
+<./assets/images/two-d.png, id=1856, 557.08125pt x 212.29312pt>
 File: ./assets/images/two-d.png Graphic file (type png)
 <use ./assets/images/two-d.png>
 Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
@@ -1616,48 +1612,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [93]
 
 [94]
- 7.
 
+[95]
 
-[95
-
-]
- 8.
-
-
-[96
-
-]
-Overfull \vbox (361.64044pt too high) has occurred while \output is active []
-
-
+[96]
 
 [97]
- 9.
+ 7.
 
-
-[98
-
-]
-Overfull \vbox (248.51913pt too high) has occurred while \output is active []
-
-
-
-[99]
- 10.
-
-Overfull \hbox (12.406pt too wide) in paragraph at lines 7961--7962
+Overfull \hbox (12.406pt too wide) in paragraph at lines 8159--8160
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 7962--7963
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 8160--8161
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[100
+[98
 
 ] (./Data Structures and Algorithms.aux)
  ***********
@@ -1665,21 +1639,21 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not changed.
-(rerunfilecheck)             Checksum: 1F2FCFE37843F9E68BC09EB40794D314;47679.
+(rerunfilecheck)             Checksum: 83D7A10BC045256159528DB8676D9814;37072.
  ) 
 Here is how much of TeX's memory you used:
- 37429 strings out of 475496
- 694340 string characters out of 5776763
- 2051960 words of memory out of 5000000
- 57233 multiletter control sequences out of 15000+600000
- 681602 words of font info for 266 fonts, out of 8000000 for 9000
+ 37383 strings out of 475496
+ 693615 string characters out of 5776763
+ 2058960 words of memory out of 5000000
+ 57166 multiletter control sequences out of 15000+600000
+ 681768 words of font info for 268 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (115 pages, 1206892 bytes).
+Output written on "Data Structures and Algorithms.pdf" (111 pages, 1199580 bytes).
 PDF statistics:
- 4224 PDF objects out of 4296 (max. 8388607)
- 4005 compressed objects within 41 object streams
- 1919 named destinations out of 2073 (max. 500000)
- 68990 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3910 PDF objects out of 4296 (max. 8388607)
+ 3699 compressed objects within 37 object streams
+ 1936 named destinations out of 2073 (max. 500000)
+ 68350 words of extra memory for PDF output out of 74296 (max. 10000000)
 
