@@ -5322,9 +5322,9 @@ is sorted.
 \begin{lstlisting}[caption={Selection Sort Pseudo-code}]
 SelectionSort(arr)
     n = arr.length
-    for i = 0 to n-1
+    for i = 0 to n-2
         minIndex = i
-        for j = i+1 to n
+        for j = i+1 to n - 1
             if arr[j] < arr[minIndex]
                 minIndex = j
         swap(arr[i], arr[minIndex])
@@ -5729,8 +5729,8 @@ process is repeated until the entire array is sorted.
 \begin{lstlisting}[caption={Bubble Sort Pseudo-code}]
 BubbleSort(arr)
     n = arr.length
-    for i = 0 to n-1
-        for j = 0 to n-i-1
+    for i = 0 to n-2
+        for j = 0 to n-i-2
             if arr[j] > arr[j+1]
                 swap(arr[j], arr[j+1])
 \end{lstlisting}
@@ -6243,10 +6243,10 @@ Merge(arr, left, mid, right)
 
     L[1..n1], R[1..n2]
 
-    for i = 0 to n1
+    for i = 0 to n1 -  1 
         L[i] = arr[left + i]
 
-    for j = 0 to n2
+    for j = 0 to n2 - 1
         R[j] = arr[mid + 1 + j]
 
     i = 0, j = 0, k = left
