@@ -7783,6 +7783,37 @@ Sort is particularly efficient for sorting integers or strings with a
 fixed length.
 
 % TikZ code for Radix Sort
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{./assets/images/rs1.jpg}
+\end{figure*}
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{./assets/images/rs2.jpg}
+\end{figure*}
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{./assets/images/rs3.jpg}
+\end{figure*}
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{./assets/images/rs4.jpg}
+\end{figure*}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{./assets/images/rs5.jpg}
+    \caption{Radix Sort}
+    \label{fig:radix-sort}
+\end{figure}
+
+Figure \ref{fig:radix-sort} shows the Radix Sort algorithm in action.
+The algorithm sorts an array of integers by sorting the elements digit
+by digit, starting from the least significant digit to the most
+significant digit. In each step, the algorithm uses a stable sorting
+algorithm like Counting Sort to sort the elements based on each digit.
+The algorithm applies Couting Sort to sort the elements based on the
+current digit, and then repeats the process for each digit until the
+entire array is sorted.
 
 \subsubsection{Algorithm of Radix Sort}
 

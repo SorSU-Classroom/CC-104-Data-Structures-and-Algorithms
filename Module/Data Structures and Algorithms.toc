@@ -199,10 +199,10 @@
 \contentsline {subsubsection}{\numberline {6.5.1.4}Advantages and Disadvantages of Counting Sort}{95}{subsubsection.6.5.1.4}%
 \contentsline {subsubsection}{\numberline {6.5.1.5}Complexity Analysis of Counting Sort}{96}{subsubsection.6.5.1.5}%
 \contentsline {subsection}{\numberline {6.5.2}Radix Sort}{96}{subsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.1}Algorithm of Radix Sort}{96}{subsubsection.6.5.2.1}%
-\contentsline {subsubsection}{\numberline {6.5.2.2}Pseudo-code of Radix Sort}{96}{subsubsection.6.5.2.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.3}Radix Sort in C++}{97}{subsubsection.6.5.2.3}%
-\contentsline {subsubsection}{\numberline {6.5.2.4}Advantages and Disadvantages of Radix Sort}{99}{subsubsection.6.5.2.4}%
-\contentsline {subsubsection}{\numberline {6.5.2.5}Complexity Analysis of Radix Sort}{99}{subsubsection.6.5.2.5}%
-\contentsline {section}{\numberline {6.6}Summary}{99}{section.6.6}%
-\contentsline {chapter}{\numberline {7}References}{100}{chapter.7}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Algorithm of Radix Sort}{97}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}Pseudo-code of Radix Sort}{97}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}Radix Sort in C++}{98}{subsubsection.6.5.2.3}%
+\contentsline {subsubsection}{\numberline {6.5.2.4}Advantages and Disadvantages of Radix Sort}{100}{subsubsection.6.5.2.4}%
+\contentsline {subsubsection}{\numberline {6.5.2.5}Complexity Analysis of Radix Sort}{100}{subsubsection.6.5.2.5}%
+\contentsline {section}{\numberline {6.6}Summary}{100}{section.6.6}%
+\contentsline {chapter}{\numberline {7}References}{101}{chapter.7}%

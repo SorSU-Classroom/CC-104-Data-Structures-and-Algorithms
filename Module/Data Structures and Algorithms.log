@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  5 DEC 2024 08:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  5 DEC 2024 09:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1176,7 +1176,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [14]
-<./assets/images/Asymptotic Notations.png, id=1624, 662.475pt x 418.56375pt>
+<./assets/images/Asymptotic Notations.png, id=1626, 662.475pt x 418.56375pt>
 File: ./assets/images/Asymptotic Notations.png Graphic file (type png)
 <use ./assets/images/Asymptotic Notations.png>
 Package pdftex.def Info: ./assets/images/Asymptotic Notations.png  used on input line 877.
@@ -1329,7 +1329,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [22]
  2.
-<./assets/images/cpp-array-declaration_0.png, id=1807, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-declaration_0.png, id=1809, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-declaration_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-declaration_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on input line 1286.
@@ -1339,7 +1339,7 @@ Package pdftex.def Info: ./assets/images/cpp-array-declaration_0.png  used on in
 [23
 
  <./assets/images/cpp-array-declaration_0.png>]
-<./assets/images/cpp-array-initialization_0.png, id=1820, 1198.4775pt x 313.17pt>
+<./assets/images/cpp-array-initialization_0.png, id=1822, 1198.4775pt x 313.17pt>
 File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1329.
@@ -1351,7 +1351,7 @@ File: ./assets/images/cpp-array-initialization_0.png Graphic file (type png)
 <use ./assets/images/cpp-array-initialization_0.png>
 Package pdftex.def Info: ./assets/images/cpp-array-initialization_0.png  used on input line 1372.
 (pdftex.def)             Requested size: 362.37569pt x 94.68762pt.
-<./assets/images/Arrays-in-C.png, id=1844, 752.8125pt x 230.36063pt>
+<./assets/images/Arrays-in-C.png, id=1846, 752.8125pt x 230.36063pt>
 File: ./assets/images/Arrays-in-C.png Graphic file (type png)
 <use ./assets/images/Arrays-in-C.png>
 Package pdftex.def Info: ./assets/images/Arrays-in-C.png  used on input line 1411.
@@ -1363,7 +1363,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [25]
-<./assets/images/two-d.png, id=1856, 557.08125pt x 212.29312pt>
+<./assets/images/two-d.png, id=1858, 557.08125pt x 212.29312pt>
 File: ./assets/images/two-d.png Graphic file (type png)
 <use ./assets/images/two-d.png>
 Package pdftex.def Info: ./assets/images/two-d.png  used on input line 1445.
@@ -1600,12 +1600,12 @@ Overfull \vbox (6.07877pt too high) has occurred while \output is active []
 [89]
 
 [90]
-<./assets/images/cs2.jpg, id=3216, 723.70375pt x 70.2625pt>
+<./assets/images/cs2.jpg, id=3218, 723.70375pt x 70.2625pt>
 File: ./assets/images/cs2.jpg Graphic file (type jpg)
 <use ./assets/images/cs2.jpg>
 Package pdftex.def Info: ./assets/images/cs2.jpg  used on input line 7582.
 (pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
-<./assets/images/cs3.jpg, id=3217, 723.70375pt x 70.2625pt>
+<./assets/images/cs3.jpg, id=3219, 723.70375pt x 70.2625pt>
 File: ./assets/images/cs3.jpg Graphic file (type jpg)
 <use ./assets/images/cs3.jpg>
 Package pdftex.def Info: ./assets/images/cs3.jpg  used on input line 7586.
@@ -1614,7 +1614,7 @@ Package pdftex.def Info: ./assets/images/cs3.jpg  used on input line 7586.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs4.jpg, id=3218, 723.70375pt x 70.2625pt>
+<./assets/images/cs4.jpg, id=3220, 723.70375pt x 70.2625pt>
 File: ./assets/images/cs4.jpg Graphic file (type jpg)
 <use ./assets/images/cs4.jpg>
 Package pdftex.def Info: ./assets/images/cs4.jpg  used on input line 7590.
@@ -1622,7 +1622,7 @@ Package pdftex.def Info: ./assets/images/cs4.jpg  used on input line 7590.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs5.jpg, id=3219, 723.70375pt x 70.2625pt>
+<./assets/images/cs5.jpg, id=3221, 723.70375pt x 70.2625pt>
 File: ./assets/images/cs5.jpg Graphic file (type jpg)
 <use ./assets/images/cs5.jpg>
 Package pdftex.def Info: ./assets/images/cs5.jpg  used on input line 7594.
@@ -1630,7 +1630,7 @@ Package pdftex.def Info: ./assets/images/cs5.jpg  used on input line 7594.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs6.jpg, id=3220, 723.70375pt x 362.35374pt>
+<./assets/images/cs6.jpg, id=3222, 723.70375pt x 362.35374pt>
 File: ./assets/images/cs6.jpg Graphic file (type jpg)
 <use ./assets/images/cs6.jpg>
 Package pdftex.def Info: ./assets/images/cs6.jpg  used on input line 7598.
@@ -1638,7 +1638,7 @@ Package pdftex.def Info: ./assets/images/cs6.jpg  used on input line 7598.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs7.jpg, id=3221, 723.70375pt x 362.35374pt>
+<./assets/images/cs7.jpg, id=3223, 723.70375pt x 362.35374pt>
 File: ./assets/images/cs7.jpg Graphic file (type jpg)
 <use ./assets/images/cs7.jpg>
 Package pdftex.def Info: ./assets/images/cs7.jpg  used on input line 7602.
@@ -1646,7 +1646,7 @@ Package pdftex.def Info: ./assets/images/cs7.jpg  used on input line 7602.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs8.jpg, id=3222, 723.70375pt x 362.35374pt>
+<./assets/images/cs8.jpg, id=3224, 723.70375pt x 362.35374pt>
 File: ./assets/images/cs8.jpg Graphic file (type jpg)
 <use ./assets/images/cs8.jpg>
 Package pdftex.def Info: ./assets/images/cs8.jpg  used on input line 7606.
@@ -1654,7 +1654,7 @@ Package pdftex.def Info: ./assets/images/cs8.jpg  used on input line 7606.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs9.jpg, id=3223, 723.70375pt x 402.50375pt>
+<./assets/images/cs9.jpg, id=3225, 723.70375pt x 402.50375pt>
 File: ./assets/images/cs9.jpg Graphic file (type jpg)
 <use ./assets/images/cs9.jpg>
 Package pdftex.def Info: ./assets/images/cs9.jpg  used on input line 7610.
@@ -1662,7 +1662,7 @@ Package pdftex.def Info: ./assets/images/cs9.jpg  used on input line 7610.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./assets/images/cs10.jpg, id=3224, 723.70375pt x 70.2625pt>
+<./assets/images/cs10.jpg, id=3226, 723.70375pt x 70.2625pt>
 File: ./assets/images/cs10.jpg Graphic file (type jpg)
 <use ./assets/images/cs10.jpg>
 Package pdftex.def Info: ./assets/images/cs10.jpg  used on input line 7614.
@@ -1681,28 +1681,66 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [94]
 
 [95]
+<./assets/images/rs1.jpg, id=3335, 723.70375pt x 70.2625pt>
+File: ./assets/images/rs1.jpg Graphic file (type jpg)
+<use ./assets/images/rs1.jpg>
+Package pdftex.def Info: ./assets/images/rs1.jpg  used on input line 7788.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+<./assets/images/rs2.jpg, id=3336, 723.70375pt x 230.8625pt>
+File: ./assets/images/rs2.jpg Graphic file (type jpg)
+<use ./assets/images/rs2.jpg>
+Package pdftex.def Info: ./assets/images/rs2.jpg  used on input line 7792.
+(pdftex.def)             Requested size: 452.9679pt x 144.50006pt.
+<./assets/images/rs3.jpg, id=3337, 723.70375pt x 230.8625pt>
+File: ./assets/images/rs3.jpg Graphic file (type jpg)
+<use ./assets/images/rs3.jpg>
+Package pdftex.def Info: ./assets/images/rs3.jpg  used on input line 7796.
+(pdftex.def)             Requested size: 452.9679pt x 144.50006pt.
 
-[96]
 
-[97]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/rs4.jpg, id=3338, 723.70375pt x 230.8625pt>
+File: ./assets/images/rs4.jpg Graphic file (type jpg)
+<use ./assets/images/rs4.jpg>
+Package pdftex.def Info: ./assets/images/rs4.jpg  used on input line 7800.
+(pdftex.def)             Requested size: 452.9679pt x 144.50006pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/rs5.jpg, id=3339, 723.70375pt x 70.2625pt>
+File: ./assets/images/rs5.jpg Graphic file (type jpg)
+<use ./assets/images/rs5.jpg>
+Package pdftex.def Info: ./assets/images/rs5.jpg  used on input line 7804.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[96 <./assets/images/rs1.jpg> <./assets/images/rs2.jpg>]
+
+[97 <./assets/images/rs3.jpg> <./assets/images/rs4.jpg> <./assets/images/rs5.jpg>]
 
 [98]
 
 [99]
+
+[100]
  7.
 
-Overfull \hbox (12.406pt too wide) in paragraph at lines 8164--8165
+Overfull \hbox (12.406pt too wide) in paragraph at lines 8195--8196
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 8165--8166
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 8196--8197
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[100
+[101
 
 ] (./Data Structures and Algorithms.aux)
  ***********
@@ -1713,18 +1751,18 @@ Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not
 (rerunfilecheck)             Checksum: 83D7A10BC045256159528DB8676D9814;37072.
  ) 
 Here is how much of TeX's memory you used:
- 37460 strings out of 475496
- 695755 string characters out of 5776763
+ 37502 strings out of 475496
+ 696909 string characters out of 5776763
  2051960 words of memory out of 5000000
- 57233 multiletter control sequences out of 15000+600000
+ 57269 multiletter control sequences out of 15000+600000
  681768 words of font info for 268 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (113 pages, 1332379 bytes).
+Output written on "Data Structures and Algorithms.pdf" (114 pages, 1431744 bytes).
 PDF statistics:
- 3940 PDF objects out of 4296 (max. 8388607)
- 3717 compressed objects within 38 object streams
- 1946 named destinations out of 2073 (max. 500000)
- 68395 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3957 PDF objects out of 4296 (max. 8388607)
+ 3728 compressed objects within 38 object streams
+ 1952 named destinations out of 2073 (max. 500000)
+ 68420 words of extra memory for PDF output out of 74296 (max. 10000000)
 
