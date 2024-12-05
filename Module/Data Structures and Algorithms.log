@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  4 DEC 2024 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.26)  5 DEC 2024 08:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1600,16 +1600,83 @@ Overfull \vbox (6.07877pt too high) has occurred while \output is active []
 [89]
 
 [90]
+<./assets/images/cs2.jpg, id=3216, 723.70375pt x 70.2625pt>
+File: ./assets/images/cs2.jpg Graphic file (type jpg)
+<use ./assets/images/cs2.jpg>
+Package pdftex.def Info: ./assets/images/cs2.jpg  used on input line 7582.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+<./assets/images/cs3.jpg, id=3217, 723.70375pt x 70.2625pt>
+File: ./assets/images/cs3.jpg Graphic file (type jpg)
+<use ./assets/images/cs3.jpg>
+Package pdftex.def Info: ./assets/images/cs3.jpg  used on input line 7586.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs4.jpg, id=3218, 723.70375pt x 70.2625pt>
+File: ./assets/images/cs4.jpg Graphic file (type jpg)
+<use ./assets/images/cs4.jpg>
+Package pdftex.def Info: ./assets/images/cs4.jpg  used on input line 7590.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs5.jpg, id=3219, 723.70375pt x 70.2625pt>
+File: ./assets/images/cs5.jpg Graphic file (type jpg)
+<use ./assets/images/cs5.jpg>
+Package pdftex.def Info: ./assets/images/cs5.jpg  used on input line 7594.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs6.jpg, id=3220, 723.70375pt x 362.35374pt>
+File: ./assets/images/cs6.jpg Graphic file (type jpg)
+<use ./assets/images/cs6.jpg>
+Package pdftex.def Info: ./assets/images/cs6.jpg  used on input line 7598.
+(pdftex.def)             Requested size: 452.9679pt x 226.80228pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs7.jpg, id=3221, 723.70375pt x 362.35374pt>
+File: ./assets/images/cs7.jpg Graphic file (type jpg)
+<use ./assets/images/cs7.jpg>
+Package pdftex.def Info: ./assets/images/cs7.jpg  used on input line 7602.
+(pdftex.def)             Requested size: 452.9679pt x 226.80228pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs8.jpg, id=3222, 723.70375pt x 362.35374pt>
+File: ./assets/images/cs8.jpg Graphic file (type jpg)
+<use ./assets/images/cs8.jpg>
+Package pdftex.def Info: ./assets/images/cs8.jpg  used on input line 7606.
+(pdftex.def)             Requested size: 452.9679pt x 226.80228pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs9.jpg, id=3223, 723.70375pt x 402.50375pt>
+File: ./assets/images/cs9.jpg Graphic file (type jpg)
+<use ./assets/images/cs9.jpg>
+Package pdftex.def Info: ./assets/images/cs9.jpg  used on input line 7610.
+(pdftex.def)             Requested size: 452.9679pt x 251.93272pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./assets/images/cs10.jpg, id=3224, 723.70375pt x 70.2625pt>
+File: ./assets/images/cs10.jpg Graphic file (type jpg)
+<use ./assets/images/cs10.jpg>
+Package pdftex.def Info: ./assets/images/cs10.jpg  used on input line 7614.
+(pdftex.def)             Requested size: 452.9679pt x 43.97827pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[91]
+[91 <./assets/images/cs2.jpg>]
 
-[92]
+[92 <./assets/images/cs3.jpg> <./assets/images/cs4.jpg> <./assets/images/cs5.jpg> <./assets/images/cs6.jpg> <./assets/images/cs7.jpg>]
 
-[93]
+[93 <./assets/images/cs8.jpg> <./assets/images/cs9.jpg> <./assets/images/cs10.jpg>]
 
 [94]
 
@@ -1618,20 +1685,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [96]
 
 [97]
+
+[98]
+
+[99]
  7.
 
-Overfull \hbox (12.406pt too wide) in paragraph at lines 8159--8160
+Overfull \hbox (12.406pt too wide) in paragraph at lines 8164--8165
 \T1/lmtt/m/n/10.95 tutorialspoint . com / data _ structures _ algorithms / data _ structures _ basics . htm$[][] 
  []
 
 
-Overfull \hbox (29.39276pt too wide) in paragraph at lines 8160--8161
+Overfull \hbox (29.39276pt too wide) in paragraph at lines 8165--8166
 []\T1/lmr/m/n/10.95 (-20) Algorithm Archive \TS1/lmr/m/n/10.95 (-20) · \T1/lmr/m/n/10.95 (-20) Ar-cane Al-go-rithm Archive. (n.d.). [][]$\T1/lmtt/m/n/10.95 https : / / www . algorithm-[]archive .
  []
 
 
 
-[98
+[100
 
 ] (./Data Structures and Algorithms.aux)
  ***********
@@ -1642,18 +1713,18 @@ Package rerunfilecheck Info: File `"Data Structures and Algorithms".out' has not
 (rerunfilecheck)             Checksum: 83D7A10BC045256159528DB8676D9814;37072.
  ) 
 Here is how much of TeX's memory you used:
- 37383 strings out of 475496
- 693615 string characters out of 5776763
- 2058960 words of memory out of 5000000
- 57166 multiletter control sequences out of 15000+600000
+ 37460 strings out of 475496
+ 695755 string characters out of 5776763
+ 2051960 words of memory out of 5000000
+ 57233 multiletter control sequences out of 15000+600000
  681768 words of font info for 268 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  117i,11n,121p,1342b,2104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Data Structures and Algorithms.pdf" (111 pages, 1199584 bytes).
+Output written on "Data Structures and Algorithms.pdf" (113 pages, 1332379 bytes).
 PDF statistics:
- 3910 PDF objects out of 4296 (max. 8388607)
- 3699 compressed objects within 37 object streams
- 1936 named destinations out of 2073 (max. 500000)
- 68350 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 3940 PDF objects out of 4296 (max. 8388607)
+ 3717 compressed objects within 38 object streams
+ 1946 named destinations out of 2073 (max. 500000)
+ 68395 words of extra memory for PDF output out of 74296 (max. 10000000)
 
